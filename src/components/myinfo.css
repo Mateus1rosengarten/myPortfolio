@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+.my-infos {
+  max-height: 81vh;
+  margin-top: 0;
+}
+.h1-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+}
+
+.h1-second-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+}
+
+.my-pic {
+  border-radius: 50%;
+  width: 100%;
+  width: 300px;
+  height: 300px;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.my-pic:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.div-my-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-skills {
+  font-style: italic;
+}
+
+.div-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+.btn-custom {
+  box-sizing: border-box;
+  color: white;
+  padding: 0.5em;
+  min-width: 10vw !important;
+  min-height: 5vh !important;
+  line-height: 2vh;
+  text-align: center;
+}
+
+.div-contact-me {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  width: 100%;
+  height: 24vh;
+}
+
+.social-icons {
+  animation: rotation 0.5s linear;
+}
+
+.social-icons:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@media (max-width: 835px) {
+  .my-infos {
+    margin-top: 8vh !important;
+  }
+  .my-pic {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .div-buttons {
+    width: 60%;
+  }
+  .my-infos {
+    margin-top: 8vh !important;
+  }
+  .my-pic {
+    width: 220px;
+    height: 220px;
+  }
+
+  .h1-text {
+    font-size: 2rem;
+  }
+
+  .h1-second-text {
+    font-size: 1.9rem;
+    margin-right: 15vw;
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 663px) {
+  .div-buttons {
+    width: 50%;
+  }
+
+  .my-infos {
+    margin-top: 8vh !important;
+  }
+  .my-pic {
+    width: 220px;
+    height: 220px;
+  }
+
+  .h1-text {
+    font-size: 2rem;
+  }
+
+  .h1-second-text {
+    font-size: 1.9rem;
+    margin-right: 10vw;
+  }
+}
+@media (min-width: 1500px) {
+  .my-pic {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .my-infos {
+    margin-top: 8vh;
+  }
+  .my-pic {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .div-contact-me {
+    height: 50vh;
+  }
+}

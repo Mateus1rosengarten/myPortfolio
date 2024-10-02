@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.custom-card {
+  cursor: pointer;
+}
+
+.card-big-content {
+  height: 35vh;
+}
+.card-title {
+  transition: color 0.3s ease;
+
+  cursor: pointer;
+  text-decoration: underline;
+}
+.img-big-card {
+  height: 100vh;
+}
+.img-big-custom {
+  height: 60vh;
+}
+.img-custom {
+  max-height: 35vh;
+  min-height: 300px;
+  border-bottom: 1px groove;
+}
+
+.the-big-card {
+  box-sizing: border-box;
+  box-shadow: 15px 20px 20px #c0c0c0 !important;
+}
+
+.the-card {
+  max-width: 70%;
+  min-width: 350px !important;
+  box-sizing: border-box;
+  min-height: 90vh;
+  margin-left: 15%;
+  margin-bottom: 10%;
+
+  box-shadow: 15px 20px 20px #c0c0c0 !important;
+}
+
+.the-card:hover,
+.the-big-card {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.the-card-link {
+  text-decoration: none;
+  color: black;
+  font-size: 150%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.github-icon {
+  margin-left: 1vh;
+  color: #87cefa;
+}
+.site-icon {
+  color: #39ff14;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.github-icon:hover {
+  color: #0056b3;
+}
+
+.site-icon:hover {
+  color: #32cd32;
+}
+.ul-technologies {
+  margin-top: 4vh;
+  margin-left: -2vw;
+}
+
+.big-ul-technologies {
+  margin-top: 2vh;
+}
+
+.carousel-indicators {
+  display: none !important;
+}
+
+@media only screen and (max-width: 663px) {
+  .div-projects {
+    margin-top: 10vh !important;
+    margin-bottom: 5vh;
+  }
+
+  .custom-card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vh;
+  }
+
+  .the-card {
+    min-width: 90vw !important;
+    box-sizing: border-box;
+    min-height: 80vh;
+    margin-left: 0;
+    margin-bottom: 10%;
+    box-shadow: 5px 5px 10px 0px #c0c0c0;
+  }
+
+  .the-card-link {
+    font-size: 1.5rem;
+  }
+
+  .ul-technologies {
+    margin-top: 4vh;
+    margin-left: -8vw;
+  }
+
+  .img-custom {
+    max-height: 45vh;
+  }
+}
+
+@media only screen and (min-height: 1000px) {
+  .card-body {
+    margin-top: 10vh;
+  }
+}

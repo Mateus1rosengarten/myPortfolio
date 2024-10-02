@@ -1,0 +1,54 @@
+.div-projects-page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.div-projects {
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.div-big-project {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  width: 80vw;
+}
+
+.the-big-card {
+  justify-content: center;
+  width: 75%;
+}
+
+.custom-big-card {
+  width: 60%;
+}
+
+li {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  display: inline-block !important;
+  list-style: none !important;
+  margin: 10px !important;
+  padding: 4px 8px !important;
+  box-shadow: 5px 5px 10px #c0c0c0 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+li:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 950px) {
+  .div-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90vw, 1fr));
+    margin-top: 20vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.footer-text {
+  font-family: "Montserrat", sans-serif;
+}
+
+footer:hover {
+  background-color: #424649 !important ;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
