@@ -4,11 +4,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
-footer:hover {
+.my-footer:hover {
   background-color: #424649 !important ;
 }
 
-footer {
+.my-footer ,.footer-black{
   position: fixed;
   bottom: 0;
 }

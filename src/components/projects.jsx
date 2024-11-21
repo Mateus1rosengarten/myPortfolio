@@ -1,9 +1,13 @@
 import ProjectCard from "./card";
 import "../components/projects.css";
+import { useContext } from "react";
+import { contextBgColor } from "../contextBgColor";
 
 function Projects() {
+
+  const {itsDark} = useContext(contextBgColor);
   return (
-    <div className="div-projects-page">
+    <div className={`div-projects-page ${itsDark && "bg-dark"}`}>
       <div className="div-projects">
         <ProjectCard
           cardTitle={"SustenTools E-commerce"}
@@ -11,7 +15,7 @@ function Projects() {
           cardImage2={require("../images/sus2.png")}
           cardImage3={require("../images/sus3.png")}
           cardText={
-            "Created and being developed independently, our e-commerce marketplace features only sustainable and eco-friendly products. Collaborated with the team on design ideas through meetings"
+            "Created and being developed independently, our e-commerce marketplace will features only sustainable and eco-friendly products. Collaborated with the team on design ideas through meetings."
           }
           tec1={"REACT"}
           tec2={"NODE.JS"}
@@ -26,7 +30,7 @@ function Projects() {
           cardImage2={require("../images/sup2.png")}
           cardImage3={require("../images/sup3.png")}
           cardText={
-            "Introducing the Supplier Management System, a CRUD project meticulously designed for Gesplan, a prominent company based in Joinville,users can store and manage personal information about suppliers,with the option to mark favorites"
+            "Introducing the Supplier Management System, a CRUD project designed for Gesplan, a prominent company based in Joinville,users can store and manage personal information about suppliers,with the option to mark favorites."
           }
           tec1={"REACT"}
           tec2={"SQL"}
@@ -95,7 +99,7 @@ function Projects() {
           }
           tec1={"HTML"}
           tec2={"CSS"}
-          tec3={"JAVASCRPIT"}
+          tec3={"JAVASCRIPT"}
           tec4={"API"}
           tec5={"OOP"}
           projectName={"movieAPI"}

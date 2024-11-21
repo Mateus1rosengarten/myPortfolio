@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import "../components/card.css";
+import { useContext } from "react";
+import { contextBgColor } from "../contextBgColor";
 
 function ProjectCard({
   cardTitle,
@@ -22,10 +24,12 @@ function ProjectCard({
   gitLink,
   siteLink,
 }) {
+
+  const {itsDark} = useContext(contextBgColor);
   return (
     <>
       <div className="custom-card">
-        <Card className="the-card">
+        <Card className={`${!itsDark ? "the-card" : "the-card-no-shadow"}`}>
           <Card.Link className="the-card-link" href={gitLink}></Card.Link>
 
           <ImgCarousel

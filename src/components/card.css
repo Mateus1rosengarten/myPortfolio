@@ -37,8 +37,18 @@
   min-height: 90vh;
   margin-left: 15%;
   margin-bottom: 10%;
-
   box-shadow: 15px 20px 20px #c0c0c0 !important;
+}
+
+.the-card-no-shadow{
+  max-width: 70%;
+  min-width: 350px !important;
+  box-sizing: border-box;
+  min-height: 90vh;
+  margin-left: 15%;
+  margin-bottom: 10%;
+  box-shadow: 0px 1px 1px #c0c0c0 !important;
+
 }
 
 .the-card:hover,
@@ -114,9 +124,6 @@
     margin-left: -8vw;
   }
 
-  .img-custom {
-    max-height: 45vh;
-  }
 }
 
 @media only screen and (min-height: 1000px) {

@@ -16,6 +16,7 @@
 }
 
 .my-pic {
+  cursor: pointer;
   border-radius: 50%;
   width: 100%;
   width: 300px;
@@ -136,6 +137,10 @@
   .h1-second-text {
     font-size: 1.9rem;
     margin-right: 10vw;
+  }
+
+  .btn-custom {
+    width: 21vw !important;
   }
 }
 @media (min-width: 1500px) {
