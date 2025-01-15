@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Container } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
@@ -12,18 +12,30 @@ import { contextBgColor } from "../contextBgColor";
 
 function NavBar() {
 
+  const [isHome,setIsHome] = useState(true);
   const {itsDark,setItsDark} = useContext(contextBgColor);
+
+  const handleProjectsPageActive = () => {
+    setIsHome(false)
+  }
+
+  const handleHomePageActive = () => {
+    setIsHome(true)
+  }
   return (
     <>
       <Navbar bg={!itsDark ? "dark" : "white"} data-bs-theme="dark" className="nav-bar">
         <Container className="container-navbar">
           <Nav className="navlinks-div">
-            <NavLink to={"/"} className={`nav-link ${!itsDark ? "text-light" : "text-dark"}  navbar-link`}>
+            <NavLink to={"/"}
+            onClick={() => handleHomePageActive()}
+             className={`nav-link ${!itsDark ? "text-light" : "text-dark"} ${isHome ? "navbar-link-active" : "navbar-link" }`}>
               Home
             </NavLink>
             <NavLink
               to={"/projects"}
-              className={`nav-link ${!itsDark ? "text-light" : "text-dark"}  navbar-link`}
+              onClick={() => handleProjectsPageActive()}
+              className={`nav-link ${!itsDark ? "text-light" : "text-dark"}  ${!isHome ? "navbar-link-active" : "navbar-link" }`}
             >
               Projects
             </NavLink>
