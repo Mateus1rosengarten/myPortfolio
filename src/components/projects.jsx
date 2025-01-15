@@ -9,7 +9,7 @@ function Projects() {
   return (
     <div className={`div-projects-page ${itsDark && "bg-dark"}`}>
       <div className="div-projects">
-        <ProjectCard
+        {/* <ProjectCard
           cardTitle={"SustenTools E-commerce"}
           cardImage={require("../images/sus1.png")}
           cardImage2={require("../images/sus2.png")}
@@ -22,6 +22,29 @@ function Projects() {
           tec3={"EXPRESS"}
           tec4={"MONGODB"}
           projectName={"E-commerce"}
+        /> */}
+
+        <ProjectCard
+        cardTitle={"Guto Therapist Page"}
+        cardImage={require("../images/guto1.png")}
+        cardImage2={require("../images/guto2.png")}
+        cardImage3={require("../images/guto3.png")}
+        cardText={
+          "Developed a landing page for a client specializing in therapy services, supporting individuals with complex neurodivergencies and their families with accessible resources and personalized care."
+        }
+        tec1={"NextJS"}
+        tec2={"TYPESCRIPT"}
+        tec3={"STYLED-COMPONENTS"}
+        gitLink={
+          "https://github.com/Mateus1rosengarten/gutoMaia"
+        }
+        siteLink={
+          "https://www.gutomaia.org"
+        }
+        imgLoading={"eager"}
+
+        
+        
         />
 
         <ProjectCard
@@ -39,6 +62,7 @@ function Projects() {
           gitLink={
             "https://github.com/Mateus1rosengarten/GesplanListaFornecedores/tree/master"
           }
+          imgLoading={"eager"}
         />
         <ProjectCard
           cardTitle={"ThankFul Way"}
@@ -55,6 +79,7 @@ function Projects() {
           projectName={"microblog"}
           gitLink="https://github.com/Mateus1rosengarten/MicroBloggingAPP"
           siteLink="https://microblogging-app-3f743.firebaseapp.com/"
+          imgLoading={"lazy"}
         />
         <ProjectCard
           cardTitle={"Stock Searcher"}
@@ -69,6 +94,7 @@ function Projects() {
           tec3={"JAVASCRIPT"}
           tec4={"OOP"}
           gitLink={"https://github.com/Mateus1rosengarten/StockExchangeAPI"}
+          imgLoading={"lazy"}
         />
 
         <ProjectCard
@@ -87,6 +113,7 @@ function Projects() {
           tec6={"CSS"}
           projectName={"AdoCão"}
           gitLink={"https://github.com/Mateus1rosengarten/petAddoptionAPP"}
+          imgLoading={"lazy"}
         />
 
         <ProjectCard
@@ -104,6 +131,7 @@ function Projects() {
           tec5={"OOP"}
           projectName={"movieAPI"}
           gitLink={"https://github.com/Mateus1rosengarten/movieAPI/tree/master"}
+          imgLoading={"lazy"}
         />
       </div>
     </div>

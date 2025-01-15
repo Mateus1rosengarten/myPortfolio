@@ -36,13 +36,14 @@ function MyInfo() {
             className="mt-3 btn-custom"
             variant={`${itsDark ? "light" : "dark"}`}
           >
-            <span className={`${!itsDark ? "text-white" : "text-dark"}`}>
+            <span className={`${!itsDark ? "text-white" : "text-dark"} text-button`}>
             MY CV
             </span>
           </Button>
           <Button className="mt-3 btn-custom"  variant={`${itsDark ? "light" : "dark"}`}>
             <a
        style={{ textDecoration: "none", color: !itsDark ? "white" : "black" }}
+       className="text-button"
        href="mailto:matrosen.developer@gmail.com"
             >
               HIRE ME

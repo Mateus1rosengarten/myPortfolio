@@ -23,6 +23,7 @@ function ProjectCard({
   tec8,
   gitLink,
   siteLink,
+  imgLoading
 }) {
 
   const {itsDark} = useContext(contextBgColor);
@@ -37,6 +38,7 @@ function ProjectCard({
             img2={cardImage2}
             img3={cardImage3}
             imgCustom={"img-custom"}
+            imgLoading={imgLoading}
           />
 
           <Card.Body>
@@ -74,7 +76,7 @@ function ProjectCard({
                 <li>{tec1}</li>
                 <li>{tec2}</li>
                 <li>{tec3}</li>
-                <li>{tec4}</li>
+                {tec4 && <li>{tec4}</li>}
                 {tec5 && <li>{tec5}</li>}
                 {tec6 && <li>{tec6}</li>}
                 {tec7 && <li>{tec7}</li>}
