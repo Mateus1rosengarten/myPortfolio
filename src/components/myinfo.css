@@ -14,7 +14,10 @@
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
 }
-
+.my-name-pic{
+  position: relative;
+  display: inline-block;
+}
 .my-pic {
   cursor: pointer;
   border-radius: 50%;
@@ -25,11 +28,44 @@
   transform: scale(0.9);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  z-index: 9;
 }
 
 .my-pic:hover {
-  -webkit-transform: scale(1);
-  transform: scale(1);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.95);
+}
+
+.my-sunglasses {
+  width: 10.5%;
+  height: auto;
+  position: absolute;
+  z-index: 999;
+  left: 49.8%;
+  top: 34%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.my-sunglasses.visible {
+  opacity: 1;
+  animation: appear 2s ease-in-out forwards;
+}
+
+.my-sunglasses.hidden {
+  opacity: 0;
+}
+
+@keyframes appear {
+  from {
+    top: 0;
+    left: 50%;
+
+  }
+
+  to{
+    left: 49.8%;
+  top: 34%;
+  }
 }
 
 .div-my-skills {
@@ -91,6 +127,23 @@
     width: 280px;
     height: 280px;
   }
+  .my-sunglasses {
+    width: 11.5%;
+    top: 28%;
+    left: 49.6%;
+  }
+  @keyframes appear {
+    from {
+      top: 0;
+      left: 50%;
+  
+    }
+  
+    to{
+      top: 28%;
+    left: 49.6%;
+    }
+  }
 }
 
 @media only screen and (max-width: 350px) {
@@ -131,6 +184,25 @@
     height: 200px;
   }
 
+  .my-sunglasses {
+    width: 17.5%;
+    top: 28.5%;
+    left: 49.5%;
+  }
+
+  @keyframes appear {
+    from {
+      top: 0;
+      left: 50%;
+  
+    }
+  
+    to{
+      left: 49.5%;
+      top: 28.5%;
+    }
+  }
+
   .h1-text {
     font-size: 1.3rem;
     margin-bottom: 70px;
@@ -157,6 +229,25 @@
     width: 350px;
     height: 350px;
   }
+
+  .my-sunglasses {
+    width: 12%;
+    top: 35%;
+    left: 49.7%;
+  }
+
+  @keyframes appear {
+    from {
+      top: 0;
+      left: 50%;
+  
+    }
+  
+    to{
+      top: 35%;
+      left: 49.7%;
+    }
+  }
 }
 
 @media (min-width: 1700px) {
@@ -166,6 +257,25 @@
   .my-pic {
     width: 400px;
     height: 400px;
+  }
+
+  .my-sunglasses {
+    width: 13.5%;
+    top: 35.7%;
+    left: 49.5%;
+  }
+
+  @keyframes appear {
+    from {
+      top: 0;
+      left: 50%;
+  
+    }
+  
+    to{
+      top: 35.7%;
+    left: 49.5%;
+    }
   }
 }
 

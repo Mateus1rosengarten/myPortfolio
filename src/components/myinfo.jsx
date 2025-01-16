@@ -1,6 +1,7 @@
 import { Button } from "react-bootstrap";
 import { SocialIcon } from "react-social-icons";
 import me from "../images/me.jpg";
+import sunglass from "../images/sunglass.png"
 import "../components/myinfo.css";
 import { useContext } from "react";
 import { contextBgColor } from "../contextBgColor";
@@ -19,9 +20,10 @@ function MyInfo() {
     <div className={`my-infos text-center ${itsDark && 'bg-dark'} min-vh-100`}>
       <div
         className="my-name-pic mb-5 bg-image hover-zoom"
-        style={{ top: "12vh", left: "28vw" }}
+      
       >
-        <img className="my-pic" src={me} alt="mateus=pic" />
+        <img className="my-pic" src={me} alt="mateus-pic" />
+        <img className={`my-sunglasses ${itsDark ? "visible" : "hidden"}`} src={sunglass} alt="my-sunglasses" />
         <h1 className={`h1-text mt-2 ${itsDark && 'text-white'}`}>Mateus Rosengarten Mauricio</h1>
       </div>
       <div className="div-my-skills">

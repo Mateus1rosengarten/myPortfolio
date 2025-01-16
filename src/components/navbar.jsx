@@ -26,7 +26,7 @@ function NavBar() {
     <>
       <Navbar bg={!itsDark ? "dark" : "white"} data-bs-theme="dark" className="nav-bar">
         <Container className="container-navbar">
-          <Nav className="navlinks-div">
+          <Nav className="container-navbar">
             <NavLink to={"/"}
             onClick={() => handleHomePageActive()}
              className={`nav-link ${!itsDark ? "text-light" : "text-dark"} ${isHome ? "navbar-link-active" : "navbar-link" }`}>

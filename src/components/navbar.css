@@ -39,6 +39,16 @@
     margin-right: 3vw;
     font-family: "Montserrat", sans-serif;
   }
+  .navbar-link-active {
+  font-size: 0.9em !important;
+  text-decoration: underline !important;
+  text-underline-offset:3px;
 
-  
+  }
+
+  .navlinks-div{
+    display: flex !important;
+
+
+  }
 }
