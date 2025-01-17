@@ -3,12 +3,14 @@ import { SocialIcon } from "react-social-icons";
 import me from "../images/me.jpg";
 import sunglass from "../images/sunglass.png"
 import "../components/myinfo.css";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { contextBgColor } from "../contextBgColor";
 
 function MyInfo() {
 
-  const {itsDark} = useContext(contextBgColor);
+  const {itsDark,createAnimation} = useContext(contextBgColor);
+
+
 
   const handleOpeningCV = () => {
     const googleDriveLink =
@@ -23,7 +25,11 @@ function MyInfo() {
       
       >
         <img className="my-pic" src={me} alt="mateus-pic" />
-        <img className={`my-sunglasses ${itsDark ? "visible" : "hidden"}`} src={sunglass} alt="my-sunglasses" />
+        <img className={`my-sunglasses ${
+          itsDark ? createAnimation ? "animation" : "visible" : "hidden"}`} 
+        src={sunglass}
+        loading="eager"
+        alt="my-sunglasses" />
         <h1 className={`h1-text mt-2 ${itsDark && 'text-white'}`}>Mateus Rosengarten Mauricio</h1>
       </div>
       <div className="div-my-skills">
@@ -63,7 +69,7 @@ function MyInfo() {
           className="social-icons"
           style={{ marginLeft: "2vh", marginRight: "2vh"}}
           fgColor={itsDark ? "black" : "white"} 
-          bgColor={itsDark ? "white" : "black"} // Set background color
+          bgColor={itsDark ? "white" : "black"}
 
 
           url="https://github.com/Mateus1rosengarten"

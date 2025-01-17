@@ -36,7 +36,7 @@
   transform: scale(0.95);
 }
 
-.my-sunglasses {
+.my-sunglasses{
   width: 10.5%;
   height: auto;
   position: absolute;
@@ -46,13 +46,18 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
-.my-sunglasses.visible {
+.my-sunglasses.animation {
   opacity: 1;
   animation: appear 2s ease-in-out forwards;
+
+}
+
+.my-sunglasses.visible {
+  opacity: 1;
 }
 
 .my-sunglasses.hidden {
-  opacity: 0;
+  opacity: 0
 }
 
 @keyframes appear {
@@ -67,6 +72,11 @@
   top: 34%;
   }
 }
+
+
+
+
+
 
 .div-my-skills {
   display: flex;

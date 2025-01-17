@@ -1,9 +1,9 @@
-import { useContext, useState } from "react";
+import { useContext, useState,} from "react";
 import { Container } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
 import Form from 'react-bootstrap/Form'
-import { NavLink } from "react-router-dom";
+import { NavLink , useLocation} from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon,faSun } from "@fortawesome/free-solid-svg-icons";
 
@@ -11,9 +11,11 @@ import "../components/navbar.css";
 import { contextBgColor } from "../contextBgColor";
 
 function NavBar() {
+  const location = useLocation();
+  const homePage = location.pathname === '/';
+  const [isHome,setIsHome] = useState(homePage);
+  const {itsDark,setItsDark,setCreateAnimation} = useContext(contextBgColor);
 
-  const [isHome,setIsHome] = useState(true);
-  const {itsDark,setItsDark} = useContext(contextBgColor);
 
   const handleProjectsPageActive = () => {
     setIsHome(false)
@@ -22,6 +24,14 @@ function NavBar() {
   const handleHomePageActive = () => {
     setIsHome(true)
   }
+
+  const handleToggleDarkMode = () => {
+    setItsDark(!itsDark);
+    setCreateAnimation(true);
+  }
+
+ 
+
   return (
     <>
       <Navbar bg={!itsDark ? "dark" : "white"} data-bs-theme="dark" className="nav-bar">
@@ -44,8 +54,9 @@ function NavBar() {
           <Form>
       <Form.Check 
         type="switch"
-        onChange={() => setItsDark(!itsDark)}
+        onChange={() => handleToggleDarkMode()}
         className="toggle"
+        checked={itsDark}
       />
       <FontAwesomeIcon icon={itsDark ? faMoon : faSun} color={!itsDark ? "white" : "black"}/>
     </Form>

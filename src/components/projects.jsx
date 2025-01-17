@@ -1,11 +1,16 @@
 import ProjectCard from "./card";
 import "../components/projects.css";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { contextBgColor } from "../contextBgColor";
 
 function Projects() {
 
-  const {itsDark} = useContext(contextBgColor);
+  const {itsDark,createAnimation,setCreateAnimation} = useContext(contextBgColor);
+
+  useEffect(() => {
+    setCreateAnimation(false);
+
+  },[])
   return (
     <div className={`div-projects-page ${itsDark && "bg-dark"}`}>
       <div className="div-projects">
