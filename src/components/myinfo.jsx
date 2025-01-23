@@ -3,7 +3,7 @@ import { SocialIcon } from "react-social-icons";
 import me from "../images/me.jpg";
 import sunglass from "../images/sunglass.png"
 import "../components/myinfo.css";
-import { useContext, useEffect, useState } from "react";
+import { useContext} from "react";
 import { contextBgColor } from "../contextBgColor";
 
 function MyInfo() {

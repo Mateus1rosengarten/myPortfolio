@@ -5,7 +5,7 @@ import { contextBgColor } from "../contextBgColor";
 
 function Projects() {
 
-  const {itsDark,createAnimation,setCreateAnimation} = useContext(contextBgColor);
+  const {itsDark,setCreateAnimation} = useContext(contextBgColor);
 
   useEffect(() => {
     setCreateAnimation(false);

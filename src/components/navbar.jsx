@@ -8,14 +8,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon,faSun,faBars } from "@fortawesome/free-solid-svg-icons";
 import "../components/navbar.css";
 import { contextBgColor } from "../contextBgColor";
-import ContextSideBar, { contextSideBar } from "../contextSideBar";
+import { contextSideBar } from "../contextSideBar";
 
 function NavBar() {
   const location = useLocation();
   const homePage = location.pathname === '/';
   const [isHome,setIsHome] = useState(homePage);
   const {itsDark,setItsDark,setCreateAnimation} = useContext(contextBgColor);
-  const {isSideBar,setIsSideBar} = useContext(contextSideBar);
+  const {setIsSideBar} = useContext(contextSideBar);
 
 
   const handleProjectsPageActive = () => {

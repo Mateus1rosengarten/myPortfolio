@@ -6,8 +6,8 @@ import { contextBgColor } from "../contextBgColor";
 import { useNavigate } from "react-router-dom";
 
 const SideBar = () => {
-    const {isSideBar,setIsSideBar} = useContext(contextSideBar)
-    const {itsDark, setItsDark} = useContext(contextBgColor)
+    const {setIsSideBar} = useContext(contextSideBar)
+    const {itsDark} = useContext(contextBgColor)
     const navigate = useNavigate();
 
     const handleCloseSideBar = () => {
@@ -16,8 +16,6 @@ const SideBar = () => {
 
     const handleNavigate = (path) => {
         navigate(path);
-        console.log('path')
-
         setTimeout(() => {
                 handleCloseSideBar();
         },100);

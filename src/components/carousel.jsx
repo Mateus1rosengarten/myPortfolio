@@ -5,13 +5,13 @@ function ImgCarousel({ img1, img2, img3, imgCustom,imgLoading }) {
   return (
     <Carousel>
       <CarouselItem>
-        <img className={`${imgCustom} w-100`} src={img1} loading={imgLoading} />
+        <img className={`${imgCustom} w-100`} src={img1} loading={imgLoading} alt="project-image" />
       </CarouselItem>
       <CarouselItem>
-        <img className={`${imgCustom} w-100`} src={img2} />
+        <img className={`${imgCustom} w-100`} src={img2}  alt="project-image"  />
       </CarouselItem>
       <CarouselItem>
-        <img className={`${imgCustom} w-100`} src={img3} />
+        <img className={`${imgCustom} w-100`} src={img3}  alt="project-image"  />
       </CarouselItem>
     </Carousel>
   );
