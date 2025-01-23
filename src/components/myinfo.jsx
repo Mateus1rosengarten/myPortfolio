@@ -35,20 +35,20 @@ function MyInfo() {
       <div className="div-my-skills">
         <h1 className={`ms-5 h1-second-text ${itsDark && 'text-white'}`}>Full Stack Developer</h1>
         <h6 className={`my-skills ${itsDark && 'text-white'}`}>
-          #html #css #javascript #typescript #react #nextJS #node.js #express
+          #html #css #javascript #typescript #react #nextJS #node.js #express #RestAPI
           #mongoDB #PostgreSQL #firebase #bootstrap #tailwind #git/github
         </h6>
         <div className="div-buttons">
           <Button
             onClick={handleOpeningCV}
-            className="mt-3 btn-custom"
+            className="mt-3 border border-primary btn-custom"
             variant={`${itsDark ? "light" : "dark"}`}
           >
             <span className={`${!itsDark ? "text-white" : "text-dark"} text-button`}>
             MY CV
             </span>
           </Button>
-          <Button className="mt-3 btn-custom"  variant={`${itsDark ? "light" : "dark"}`}>
+          <Button className="mt-3 border border-primary btn-custom"  variant={`${itsDark ? "light" : "dark"}`}>
             <a
        style={{ textDecoration: "none", color: !itsDark ? "white" : "black" }}
        className="text-button"

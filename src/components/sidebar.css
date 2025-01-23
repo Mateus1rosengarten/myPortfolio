@@ -1,0 +1,8 @@
+.custom-sidebar li {
+    font-family:"Montserrat", sans-serif;
+    font-size: 1.7rem;
+    margin-top: 5vh;
+    color: black;
+    cursor: pointer;
+
+}

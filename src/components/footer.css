@@ -21,5 +21,7 @@ footer{
 @media (max-width: 835px) {
   footer{
     position: relative;
+    font-size: 0.8rem;
   }
+  
  }

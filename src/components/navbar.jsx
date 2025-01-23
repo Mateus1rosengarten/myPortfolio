@@ -1,20 +1,21 @@
 import { useContext, useState,} from "react";
-import { Container } from "react-bootstrap";
+import { Button, Container} from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
 import Form from 'react-bootstrap/Form'
 import { NavLink , useLocation} from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon,faSun } from "@fortawesome/free-solid-svg-icons";
-
+import { faMoon,faSun,faBars } from "@fortawesome/free-solid-svg-icons";
 import "../components/navbar.css";
 import { contextBgColor } from "../contextBgColor";
+import ContextSideBar, { contextSideBar } from "../contextSideBar";
 
 function NavBar() {
   const location = useLocation();
   const homePage = location.pathname === '/';
   const [isHome,setIsHome] = useState(homePage);
   const {itsDark,setItsDark,setCreateAnimation} = useContext(contextBgColor);
+  const {isSideBar,setIsSideBar} = useContext(contextSideBar);
 
 
   const handleProjectsPageActive = () => {
@@ -23,6 +24,10 @@ function NavBar() {
 
   const handleHomePageActive = () => {
     setIsHome(true)
+  }
+
+  const handleSideBar = () => {
+    setIsSideBar(true)
   }
 
   const handleToggleDarkMode = () => {
@@ -51,14 +56,18 @@ function NavBar() {
             </NavLink>
           
           </Nav>
-          <Form>
+         <Button className="sidebar-toggle" style={{backgroundColor: itsDark ? "black" : "white"}}
+         onClick={() => handleSideBar()} >
+        <FontAwesomeIcon icon={faBars} color={!itsDark ? "black" : "white"} />
+        </Button>        
+          <Form className="toggle-color">
       <Form.Check 
         type="switch"
         onChange={() => handleToggleDarkMode()}
         className="toggle"
         checked={itsDark}
       />
-      <FontAwesomeIcon icon={itsDark ? faMoon : faSun} color={!itsDark ? "white" : "black"}/>
+      <FontAwesomeIcon className="icon-custom" icon={itsDark ? faMoon : faSun} color={!itsDark ? "white" : "black"}/>
     </Form>
         </Container>
       </Navbar>

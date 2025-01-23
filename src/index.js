@@ -7,15 +7,18 @@ import "bootstrap/dist/js/bootstrap.bundle.min"
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import ContextBgColor from './contextBgColor';
+import ContextSideBar from './contextSideBar';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
   <BrowserRouter> 
+  <ContextSideBar>
   <ContextBgColor>
     <App />
     </ContextBgColor>
+    </ContextSideBar>
     </BrowserRouter>
   // </React.StrictMode>
 );

@@ -29,7 +29,7 @@
   width: 60%;
 }
 
-li {
+.ul-technologies li {
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   display: inline-block !important;
@@ -40,7 +40,7 @@ li {
   transition: all 0.2s ease-in-out !important;
 }
 
-li:hover {
+.ul-technologies li:hover {
   background-color:#fafafa;
   -webkit-transform: scale(1);
   transform: scale(1.05);

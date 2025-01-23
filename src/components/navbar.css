@@ -28,9 +28,19 @@
   margin-left: 2vw !important;
 }
 
+.toggle-color{
+position: absolute;
+right: 3vw;
+top: 1vh;
+
+}
 
 .toggle{
   cursor: pointer;
+}
+
+.sidebar-toggle{
+  display: none !important;
 }
 
 @media (max-width: 835px) {
@@ -38,6 +48,7 @@
     font-size: 0.9em !important;
     margin-right: 3vw;
     font-family: "Montserrat", sans-serif;
+   
   }
   .navbar-link-active {
   font-size: 0.9em !important;
@@ -46,9 +57,25 @@
 
   }
 
+  .sidebar-toggle {
+    display:  block !important;
+  }
+  
+  .navbar-nav {
+    display: none !important;
+  }
+  
+
   .navlinks-div{
     display: flex !important;
 
+  }
 
+  .toggle-color{
+    top: 0.5vh;
+  }
+
+  .icon-custom{
+    height: 1.8vh;
   }
 }

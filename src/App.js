@@ -5,16 +5,28 @@ import MyInfo from "./components/myinfo";
 import { Route, Routes } from "react-router-dom";
 import Projects from "./components/projects";
 import "./App.css";
+import { useContext } from "react";
+import { contextSideBar } from "./contextSideBar";
+import SideBar from "./components/sidebar";
 
 function App() {
+
+  const {isSideBar} = useContext(contextSideBar);
+
   return (
     <>
-      <NavBar />
+    { isSideBar ? (
+      <SideBar/>
+    ) : (
+      <>
+       <NavBar />
       <Routes>
         <Route path="/" element={<MyInfo />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
       <Footer />
+      </> )}
+
     </>
   );
 }
