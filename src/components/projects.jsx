@@ -9,11 +9,6 @@ function Projects() {
 
   useEffect(() => {
     setCreateAnimation(false);
-
-  },[])
-
-  useEffect(() => {
-    setCreateAnimation(false);
   }, [setCreateAnimation])
 
   return (
