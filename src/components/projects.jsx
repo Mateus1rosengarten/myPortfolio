@@ -10,7 +10,11 @@ function Projects() {
   useEffect(() => {
     setCreateAnimation(false);
 
-  },[itsDark])
+  },[])
+
+  useEffect(() => {
+    setCreateAnimation(false);
+  }, [setCreateAnimation])
 
   return (
     <div className={`div-projects-page ${itsDark && "bg-dark"}`}>
