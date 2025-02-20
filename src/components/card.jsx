@@ -1,17 +1,18 @@
-import { Card } from "react-bootstrap";
-import ImgCarousel from "./carousel";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-import "../components/card.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext } from "react";
+import { Card } from "react-bootstrap";
+import "../components/card.css";
 import { contextBgColor } from "../contextBgColor";
+import ImgCarousel from "./carousel";
 
 function ProjectCard({
   cardTitle,
   cardImage,
   cardImage2,
   cardImage3,
+  cardImage4,
   cardText,
   tec1,
   tec2,
@@ -37,6 +38,7 @@ function ProjectCard({
             img1={cardImage}
             img2={cardImage2}
             img3={cardImage3}
+            img4={cardImage4}
             imgCustom={"img-custom"}
             imgLoading={imgLoading}
           />

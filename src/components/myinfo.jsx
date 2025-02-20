@@ -1,10 +1,10 @@
+import { useContext } from "react";
 import { Button } from "react-bootstrap";
 import { SocialIcon } from "react-social-icons";
-import me from "../images/me.jpg";
-import sunglass from "../images/sunglass.png"
 import "../components/myinfo.css";
-import { useContext} from "react";
 import { contextBgColor } from "../contextBgColor";
+import me from "../images/me.jpg";
+import sunglass from "../images/sunglass.png";
 
 function MyInfo() {
 
@@ -36,7 +36,7 @@ function MyInfo() {
         <h1 className={`ms-5 h1-second-text ${itsDark && 'text-white'}`}>Full Stack Developer</h1>
         <h6 className={`my-skills ${itsDark && 'text-white'}`}>
           #html #css #javascript #typescript #react #nextJS #node.js #express #RestAPI
-          #mongoDB #PostgreSQL #firebase #bootstrap #tailwind #git/github
+          #mongoDB #PostgreSQL #firebase #bootstrap #tailwind #MUI #StyledComponents #git/github
         </h6>
         <div className="div-buttons">
           <Button
