@@ -15,6 +15,44 @@ function Projects() {
     <div className={`div-projects-page ${itsDark && "bg-dark"}`}>
       <div className="div-projects">
 
+      <ProjectCard
+      cardTitle={"SmarkBasket"}
+      cardImage={require("../images/smart1.png")}
+      cardImage2={require("../images/smart2.png")}
+      cardImage3={require("../images/smart3.png")}
+      cardImage4={require("../images/smart4.png")}
+       cardText={
+    "SmartBasket is a grocery shopping app currently in development for an Israeli company. It searches for the cheapest products across different supermarkets before selling to the customer." }
+      tec1={"REACT"}
+      tec2={"TYPESCRIPT"}
+      tec3={"TAILWIND"}
+      tec4={"NODE.JS"}
+      tec5={"EXPRESS"}
+      tec6={"MONGODB"}
+
+      >
+
+         <ProjectCard
+          cardTitle={"SustenTools E-commerce"}
+          cardImage={require("../images/sus1.png")}
+          cardImage2={require("../images/sus2.png")}
+          cardImage3={require("../images/sus3.png")}
+          cardText={
+            "Created and being developed independently, the e-commerce marketplace will features only sustainable and eco-friendly products. Collaborated with the team on design ideas through meetings."
+          }
+          tec1={"REACT"}
+          tec2={"NODE.JS"}
+          tec3={"EXPRESS"}
+          tec4={"MONGODB"}
+          
+          projectName={"E-commerce"}
+        />
+    
+ 
+
+
+      </ProjectCard>
+
         <ProjectCard
         cardTitle={"MKT Embalagem website"} 
         cardImage={require("../images/mkt1.png")}
@@ -23,9 +61,11 @@ function Projects() {
         cardImage4={require("../images/mkt4.png")}
         cardText={"MKT Embalagem specializes in high-quality can printing for major brands like Ambev, Pepsico, and Johnson & Johnson in Brazil. The website, now in its final stage development, showcases the services, expertise, and commitment to quality and innovation."}
         tec1={"NextJS"}
-        tec2={"Typescript"}
-        tec3={"Tailwind"}
+        tec2={"TYPESCRIPT"}
+        tec3={"TAILWIND"}
+        
         gitLink={"https://github.com/Mateus1rosengarten/MktEmbalagem"}
+        imgLoading={"eager"}
 
         />
 
@@ -35,19 +75,20 @@ function Projects() {
         cardImage={require("../images/payment1.png")}
         cardImage2={require("../images/payment2.png")}
         cardImage3={require("../images/payment3.png")}
-        cardText={"Payout Simulation App is a full-stack web application that allows users to simulate payment transactions. It provides a simple and intuitive interface to create, edit, and view payments while incorporating a fail/success simulation to mimic real-world payout scenarios."}
+        cardText={"Payout Simulation App is a full-stack web application that allows users to simulate payment transactions. Created for a Polish company to simulate payments before real application. It provides a simple and intuitive interface to create, edit, and view payments while incorporating a fail/success simulation to mimic real-world payout scenarios."}
         tec1={"NextJS"}
-        tec2={"Typescript"}
+        tec2={"TYPESCRIPT"}
         tec3={"MUI"}
         tec4={"PostgreSQL"}
         gitLink={"https://github.com/Mateus1rosengarten/PayoutStructure"}
+        imgLoading={"eager"}
         />
         <ProjectCard
         cardTitle={"Menu Restaurant Optimizer"}
-        cardImage={require("../images/menu1.png")}
-        cardImage2={require("../images/menu2.png")}
-        cardImage3={require("../images/menu3.png")}
-        cardText={"My project is an in-development mobile and tablet app for all-you-can-eat restaurants, optimizing pizza and food service. Customers can select favorite flavors, give feedback, order drinks, and request the waiter/bill easily"}
+        cardImage={require("../images/pizza1.png")}
+        cardImage2={require("../images/pizza2.png")}
+        cardImage3={require("../images/pizza3.png")}
+        cardText={"My project is an in-development mobile and tablet app for all-you-can-eat restaurants, optimizing pizza and food service. Customers can select favorite flavors, give feedback, order drinks, and request the waiter/bill easily. My goal is to sell as a service for Pizza Restaurantes in Brazil"}
         tec1={"REACT"}
         tec2={"TYPESCRIPT"}
         tec3={"NODE.JS"}
@@ -55,6 +96,7 @@ function Projects() {
         tec5={"PostgreSQL"}
         tec6={"MUI"}
         gitLink={"https://github.com/Mateus1rosengarten/AllYouCanEat-Manager"}
+        imgLoading={"lazy"}
 
 
         
@@ -93,7 +135,7 @@ function Projects() {
         siteLink={
           "https://www.gutomaia.org"
         }
-        imgLoading={"eager"}
+        imgLoading={"lazy"}
 
         
         
@@ -114,7 +156,7 @@ function Projects() {
           gitLink={
             "https://github.com/Mateus1rosengarten/GesplanListaFornecedores/tree/master"
           }
-          imgLoading={"eager"}
+          imgLoading={"lazy"}
         />
         <ProjectCard
           cardTitle={"ThankFul Way"}
