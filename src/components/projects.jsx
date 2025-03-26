@@ -16,7 +16,7 @@ function Projects() {
       <div className="div-projects">
 
       <ProjectCard
-      cardTitle={"SmarkBasket"}
+      cardTitle={"SmartBasket"}
       cardImage={require("../images/smart1.png")}
       cardImage2={require("../images/smart2.png")}
       cardImage3={require("../images/smart3.png")}
