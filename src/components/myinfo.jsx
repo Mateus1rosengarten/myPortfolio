@@ -35,8 +35,8 @@ function MyInfo() {
       <div className="div-my-skills">
         <h1 className={`ms-5 h1-second-text ${itsDark && 'text-white'}`}>Full Stack Developer</h1>
         <h6 className={`my-skills ${itsDark && 'text-white'}`}>
-          #html #css #javascript #typescript #react #nextJS #node.js #express #RestAPI
-          #mongoDB #PostgreSQL #firebase #bootstrap #tailwind #MUI #StyledComponents #git/github
+          #html  #css #javascript #typescript #react #redux/toolkit #nextJS #node.js #express #RestAPI
+          #mongoDB #PostgreSQL #firebase  #webDesign #figma #bootstrap #tailwind #MUI #StyledComponents #git/github
         </h6>
         <div className="div-buttons">
           <Button
