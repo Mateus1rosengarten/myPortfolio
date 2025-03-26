@@ -29,6 +29,7 @@ function Projects() {
       tec4={"NODE.JS"}
       tec5={"EXPRESS"}
       tec6={"MONGODB"}
+      imgLoading={"eager"}
 
       >
  
@@ -64,7 +65,7 @@ function Projects() {
         tec3={"MUI"}
         tec4={"PostgreSQL"}
         gitLink={"https://github.com/Mateus1rosengarten/PayoutStructure"}
-        imgLoading={"eager"}
+        imgLoading={"lazy"}
         />
 
 <ProjectCard
@@ -81,9 +82,9 @@ function Projects() {
         gitLink={
           "https://github.com/Mateus1rosengarten/gutoMaia"
         }
-        siteLink={
-          "https://www.gutomaia.org"
-        }
+        // siteLink={
+        //   "https://www.gutomaia.org"
+        // }
         imgLoading={"lazy"}
 
         
@@ -103,6 +104,7 @@ function Projects() {
           tec3={"EXPRESS"}
           tec4={"MONGODB"}
           projectName={"E-commerce"}
+          imgLoading={"lazy"}
         />
 
 <ProjectCard
