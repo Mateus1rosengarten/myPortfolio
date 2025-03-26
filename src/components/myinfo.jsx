@@ -21,7 +21,7 @@ function MyInfo() {
   return (
     <div className={`my-infos text-center ${itsDark && 'bg-dark'} min-vh-100`}>
       <div
-        className="my-name-pic mb-5 bg-image hover-zoom"
+        className="my-name-pic bg-image hover-zoom"
       
       >
         <img className="my-pic" src={me} alt="mateus-pic" />

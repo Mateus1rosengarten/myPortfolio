@@ -17,6 +17,7 @@
 .my-name-pic{
   position: relative;
   display: inline-block;
+  margin-bottom: 3rem;
 }
 .my-pic {
   cursor: pointer;
@@ -211,7 +212,13 @@ margin-top:3.2vh;
   }
 
   .div-contact-me{
-    margin-top: 9vh;
+    margin-top: 5vh;
+  }
+
+  .my-name-pic{
+    margin-bottom: 0 !important;
+    position: relative;
+    display: inline-block;
   }
 
   .my-infos {
@@ -255,6 +262,7 @@ margin-top:3.2vh;
 
   .my-skills{
     font-size: 0.9rem;
+    width: 70%;
   }
 
   .btn-custom {
