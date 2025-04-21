@@ -22,7 +22,7 @@ function Projects() {
       cardImage3={require("../images/smart3.png")}
       cardImage4={require("../images/smart4.png")}
        cardText={
-    "SmartBasket is a grocery shopping app currently in development for an Israeli company. It searches for the cheapest products across different supermarkets before selling to the customer." }
+    "SmartBasket is a grocery shopping app currently in development for an Israeli company. It searches for the cheapest products across different supermarkets.I took part in the development as a team member." }
       tec1={"REACT"}
       tec2={"TYPESCRIPT"}
       tec3={"TAILWIND"}
