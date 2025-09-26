@@ -11,7 +11,7 @@ function MyInfo() {
 
   const handleOpeningCV = () => {
     const googleDriveLink =
-      "https://docs.google.com/document/d/1py4nb4vXJ78LS4XZ1nELXzAPILiiDI-JrElO4HIdWiM";
+      "https://drive.google.com/drive/u/0/folders/1VY7VFaGHs6ZdmrGvfAEkpOVt1HvDpMWK";
     window.open(googleDriveLink, "_blank");
   };
 
