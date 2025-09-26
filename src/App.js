@@ -7,7 +7,6 @@ import "./App.css";
 import { useContext } from "react";
 import { contextSideBar } from "./context/contextSideBar";
 import SideBar from "./components/sidebar";
-import ChatIcon from "./components/chatIcon";
 
 function App() {
   const { isSideBar } = useContext(contextSideBar);
@@ -23,7 +22,7 @@ function App() {
             <Route path="/" element={<MyInfo />} />
             <Route path="/projects" element={<Projects />} />
           </Routes>
-          {/* <ChatIcon /> */}
+
           <Footer />
         </>
       )}
