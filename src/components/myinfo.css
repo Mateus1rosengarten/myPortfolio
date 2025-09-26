@@ -1,35 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
-.my-infos {
-  margin-top: 0;
-  padding-top: 3rem;
-}
-.h1-text {
+.hero-title {
   font-family: "Montserrat", sans-serif;
   font-size: 3.5rem;
 }
 
-.h1-second-text {
+.hero-subtitle {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
 }
-.my-name-pic{
+
+.container-images {
   position: relative;
   display: inline-block;
-  margin-bottom: 3rem;
 }
-.my-pic {
-  cursor: pointer;
-  border-radius: 50%;
-  width: 100%;
+
+.profile-pic {
   width: 300px;
   height: 300px;
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  z-index: 9;
 }
 
 .my-pic:hover {
@@ -37,85 +30,47 @@
   transform: scale(0.95);
 }
 
-.my-sunglasses{
-  width: 10.5%;
-  height: auto;
+.profile-sunglasses {
   position: absolute;
-  z-index: 999;
-  left: 49.8%;
-  top: 34%;
-  transform: translateX(-50%) translateY(-50%);
+  width: 26%;
+  left: 49%;
+  top: 43%;
+  transform: translate(-50%, -50%);
 }
 
-.my-sunglasses.animation {
+.profile-sunglasses.animation {
   opacity: 1;
   animation: appear 2s ease-in-out forwards;
-
 }
 
-.my-sunglasses.visible {
+.profile-sunglasses.visible {
   opacity: 1;
 }
 
-.my-sunglasses.hidden {
-  opacity: 0
+.profile-sunglasses.hidden {
+  opacity: 0;
 }
 
-@keyframes appear {
-  from {
-    top: 0;
-    left: 50%;
-
-  }
-
-  to{
-    left: 49.8%;
-  top: 34%;
-  }
+.btn-custom-light {
+  color: #343a40 !important;
+  background-color: white !important;
 }
 
-
-
-
-
-
-.div-my-skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+.btn-custom-dark {
+  color: white !important;
+  background-color: #212529 !important;
 }
 
-.my-skills {
-  width: 50%;
-  font-style: italic;
-}
-
-.div-buttons {
-  display: flex;
-  justify-content: space-evenly;
-  width: 30%;
-}
-
-.btn-custom {
-  box-sizing: border-box;
-  color: white;
-  padding: 0.5em;
-  min-width: 10vw !important;
+.btn-custom-light,
+.btn-custom-dark {
+  min-width: 0px !important;
+  padding: 12px 25px !important;
+  font-size: 1.2rem !important;
   min-height: 5vh !important;
-  line-height: 2vh;
-  text-align: center;
   border-radius: 20px !important;
-  
-}
-
-.div-contact-me {
-  display: flex;
-  justify-content: center;
-  margin-top: 5vh;
-  padding-top: 8vh;
-  width: 100%;
-  height: 24vh;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .social-icons {
@@ -128,6 +83,81 @@
   -moz-animation-name: bounce;
 }
 
+@media (max-width: 842px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.8rem;
+    margin-right: 15vw;
+  }
+
+  .profile-pic {
+    width: 280px;
+    height: 280px;
+  }
+
+  .social-icons {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.9rem;
+    margin-right: 15vw;
+  }
+  .profile-pic {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 663px) {
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+    margin-bottom: 70px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.4rem;
+    margin-right: 10vw;
+  }
+
+  .btn-custom-light,
+  .btn-custom-dark {
+    font-size: 1rem !important;
+  }
+
+  .container-social-icons {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1500px) {
+  .profile-pic {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .profile-pic {
+    width: 350px;
+    height: 350px;
+  }
+}
+
 @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -137,197 +167,14 @@
   }
 }
 
-@media (min-width: 663px )  and (max-width: 842px) {
-
-  .my-sunglasses {
-    width: 14%;
-    left: 49.6%;
-margin-top:3.2vh;
- }
-
-}
-
-@media (max-width: 842px) {
-  
-  .my-pic {
-    width: 280px;
-    height: 280px;
-  }
-  
-
-  .h1-second-text {
-    font-size: 1.8rem;
-    margin-right: 15vw;
+@keyframes appear {
+  from {
+    top: 0;
+    left: 50%;
   }
 
-  .h1-text {
-    font-size: 2.2rem;
-    
-  }
-
-  .social-icons {
-    width: 40px !important;
-    height: 40px !important;
-  }
-
-
-  
-  @keyframes appear {
-    from {
-      top: 0;
-      left: 50%;
-  
-    }
-  
-    to{
-      top: 28%;
-    left: 49.6%;
-    }
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .div-buttons {
-    width: 60%;
-  }
- 
-  .my-pic {
-    width: 220px;
-    height: 220px;
-  }
-
-  .h1-text {
-    font-size: 2rem;
-  }
-
-  .h1-second-text {
-    font-size: 1.9rem;
-    margin-right: 15vw;
-  }
-}
-
-@media only screen and (min-width: 350px) and (max-width: 663px) {
-  .div-buttons {
-    width: 60%;
-  }
-
-  .div-contact-me{
-    margin-top: 8vh;
-  }
-
-  .my-name-pic{
-    margin-bottom: 0 !important;
-    position: relative;
-    display: inline-block;
-  }
-
-  .my-infos {
-    padding-top: 3rem;
-   
-  }
-  .my-pic {
-    width: 200px;
-    height: 200px;
-  }
-  
-
-  .my-sunglasses {
-    width: 17.5%;
-    top: 28.5%;
-    left: 49.5%;
-  }
-
-  @keyframes appear {
-    from {
-      top: 0;
-      left: 50%;
-  
-    }
-  
-    to{
-      left: 49.5%;
-      top: 28.5%;
-    }
-  }
-
-  .h1-text {
-    font-size: 1.3rem;
-    margin-bottom: 70px;
-  }
-
-  .h1-second-text {
-    font-size: 1.3rem;
-    margin-right: 10vw;
-  }
-
-  .my-skills{
-    font-size: 0.9rem;
-    width: 60%;
-  }
-
-  .btn-custom {
-    width: 25vw !important;
-  }
-  .text-button{
-    font-size: 0.8rem;
-  }
-}
-@media (min-width: 1500px) {
-  .my-pic {
-    width: 320px;
-    height: 320px;
-  }
-
-  .my-sunglasses {
-    width: 11%;
-    top: 34.5%;
-    left: 49.7%;
-  }
-
-  
-  @keyframes appear {
-    from {
-      top: 0;
-      left: 50%;
-  
-    }
-  
-    to{
-      top: 35%;
-      left: 49.7%;
-    }
-  }
-}
-
-@media (min-width: 1700px) {
-  
-  .my-pic {
-    width: 350px;
-    height: 350px;
-  }
-
-  .my-sunglasses {
-    width: 12%;
-    top: 35%;
-    left: 49.5%;
-  }
-
-  @keyframes appear {
-    from {
-      top: 0;
-      left: 50%;
-  
-    }
-  
-    to{
-      top: 35.7%;
-    left: 49.5%;
-    }
-  }
-}
-
-@media only screen and (max-height: 500px) {
-  .div-contact-me {
-    height: 50vh;
+  to {
+    left: 49%;
+    top: 43%;
   }
 }

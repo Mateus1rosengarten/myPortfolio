@@ -1,27 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+.footer,
+.footer-black {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+}
+
 .footer-text {
   font-family: "Montserrat", sans-serif;
 }
 
-.my-footer:hover {
-  background-color: #424649 !important ;
-}
-
-.my-footer ,.footer-black{
-  position: fixed;
-  bottom: 0;
-}
-
-footer{
-  position: fixed;
-  bottom: 0;
-}
-
 @media (max-width: 835px) {
-  footer{
+  footer {
     position: relative;
     font-size: 0.8rem;
   }
-  
- }
+}

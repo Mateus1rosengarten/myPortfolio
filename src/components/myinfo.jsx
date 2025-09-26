@@ -1,77 +1,87 @@
 import { useContext } from "react";
 import { Button } from "react-bootstrap";
 import { SocialIcon } from "react-social-icons";
-import "../components/myinfo.css";
-import { contextBgColor } from "../contextBgColor";
+import { contextDarkMode } from "../context/contextDarkMode";
 import me from "../images/me.jpg";
 import sunglass from "../images/sunglass.png";
+import "../components/myinfo.css";
 
 function MyInfo() {
-
-  const {itsDark,createAnimation} = useContext(contextBgColor);
-
-
+  const { itsDark, createAnimation } = useContext(contextDarkMode);
 
   const handleOpeningCV = () => {
     const googleDriveLink =
-      "https://docs.google.com/document/d/1py4nb4vXJ78LS4XZ1nELXzAPILiiDI-JrElO4HIdWiM"; 
+      "https://docs.google.com/document/d/1py4nb4vXJ78LS4XZ1nELXzAPILiiDI-JrElO4HIdWiM";
     window.open(googleDriveLink, "_blank");
   };
 
   return (
-    <div className={`my-infos text-center ${itsDark && 'bg-dark'} min-vh-100`}>
-      <div
-        className="my-name-pic bg-image hover-zoom"
-      
-      >
-        <img className="my-pic" src={me} alt="mateus-pic" />
-        <img className={`my-sunglasses ${
-          itsDark ? createAnimation ? "animation" : "visible" : "hidden"}`} 
-        src={sunglass}
-        loading="eager"
-        alt="my-sunglasses" />
-        <h1 className={`h1-text mt-2 ${itsDark && 'text-white'}`}>Mateus Rosengarten Mauricio</h1>
+    <div className={`py-5 text-center ${itsDark && "bg-dark"}`}>
+      <div className="mb-5">
+        <div className="container-images">
+          <img
+            className="profile-pic rounded-circle z-3"
+            src={me}
+            alt="Foto de perfil de Mateus Rosengarten Mauricio"
+          />
+          <img
+            className={`profile-sunglasses ${
+              itsDark ? (createAnimation ? "animation" : "visible") : "hidden"
+            }`}
+            src={sunglass}
+            loading="eager"
+            alt="Óculos escuros animados sobrepostos à foto"
+          />
+        </div>
+        <h1 className={`hero-title ${itsDark && "text-white"}`}>
+          Mateus Rosengarten Mauricio
+        </h1>
       </div>
-      <div className="div-my-skills">
-        <h1 className={`ms-5 h1-second-text ${itsDark && 'text-white'}`}>Full Stack Developer</h1>
-        <h6 className={`my-skills ${itsDark && 'text-white'}`}>
-          #html  #css #javascript #typescript #react #redux/toolkit #nextJS #node.js #express #RestAPI
-          #mongoDB #PostgreSQL #firebase  #webDesign #figma #bootstrap #tailwind #MUI #StyledComponents #git/github
-        </h6>
-        <div className="div-buttons">
+      <div className="d-flex flex-column align-items-center">
+        <h2 className={`ms-5 hero-subtitle ${itsDark && "text-white"}`}>
+          Full Stack Developer
+        </h2>
+        <h3
+          className={`w-50 fs-6 fst-italic ${
+            itsDark ? "text-white-50" : "text-muted"
+          }`}
+        >
+          #html #css #javascript #typescript #react #redux/toolkit #nextJS
+          #node.js #express #RestAPI #mongoDB #PostgreSQL #firebase #webDesign
+          #figma #bootstrap #tailwind #MUI #StyledComponents #git/github
+        </h3>
+        <div className="d-flex gap-4">
           <Button
+            variant="none"
             onClick={handleOpeningCV}
-            className="mt-3 border border-primary btn-custom"
-            variant={`${itsDark ? "light" : "dark"}`}
+            className={`mt-3 border ${
+              itsDark ? "btn-custom-light" : "btn-custom-dark"
+            }`}
           >
-            <span className={`${!itsDark ? "text-white" : "text-dark"} text-button`}>
             MY CV
-            </span>
           </Button>
-          <Button className="mt-3 border border-primary btn-custom"  variant={`${itsDark ? "light" : "dark"}`}>
-            <a
-       style={{ textDecoration: "none", color: !itsDark ? "white" : "black" }}
-       className="text-button"
-       href="mailto:matrosen.developer@gmail.com"
-            >
-              HIRE ME
-            </a>
+          <Button
+            variant="none"
+            as="a"
+            href="mailto:matrosen.developer@gmail.com"
+            className={`mt-3 border ${
+              itsDark ? "btn-custom-light" : "btn-custom-dark"
+            }`}
+          >
+            HIRE ME
           </Button>
         </div>
       </div>
 
-      <div className="div-contact-me">
+      <div className="d-flex justify-content-center p-5 gap-4 container-social-icons">
         <SocialIcon
           className="social-icons"
           url="https://www.linkedin.com/in/mateus-rosengarten-mauricio/"
         />
         <SocialIcon
           className="social-icons"
-          style={{ marginLeft: "2vh", marginRight: "2vh"}}
-          fgColor={itsDark ? "black" : "white"} 
+          fgColor={itsDark ? "black" : "white"}
           bgColor={itsDark ? "white" : "black"}
-
-
           url="https://github.com/Mateus1rosengarten"
         />
         <SocialIcon

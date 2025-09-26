@@ -3,92 +3,62 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext } from "react";
 import { Card } from "react-bootstrap";
-import "../components/card.css";
-import { contextBgColor } from "../contextBgColor";
 import ImgCarousel from "./carousel";
+import "../components/card.css";
+import { contextDarkMode } from "../context/contextDarkMode";
 
 function ProjectCard({
-  cardTitle,
-  cardImage,
-  cardImage2,
-  cardImage3,
-  cardImage4,
-  cardText,
-  tec1,
-  tec2,
-  tec3,
-  tec4,
-  tec5,
-  tec6,
-  tec7,
-  tec8,
+  title,
+  images = [],
+  text,
+  techs = [],
   gitLink,
   siteLink,
-  imgLoading
+  imgLoading,
 }) {
-
-  const {itsDark} = useContext(contextBgColor);
+  const { itsDark } = useContext(contextDarkMode);
   return (
-    <>
-      <div className="custom-card">
-        <Card className={`${!itsDark ? "the-card" : "the-card-no-shadow"}`}>
-          <Card.Link className="the-card-link" href={gitLink}></Card.Link>
-
-          <ImgCarousel
-            img1={cardImage}
-            img2={cardImage2}
-            img3={cardImage3}
-            img4={cardImage4}
-            imgCustom={"img-custom"}
-            imgLoading={imgLoading}
-          />
-
-          <Card.Body>
-            <Card.Title className="text-center mt-2 mb-5 card-title">
-              <Card.Link className="the-card-link">
-                {cardTitle}
-                {gitLink && (
-                  <Card.Link href={gitLink}>
-                    <FontAwesomeIcon
-                      icon={faGithub}
-                      className="github-icon"
-                      href={gitLink}
-                    />
-                  </Card.Link>
-                )}
-                {siteLink && (
-                  <Card.Link href={siteLink}>
-                    <FontAwesomeIcon
-                      icon={faExternalLinkAlt}
-                      size="sm"
-                      className="site-icon"
-                    />
-                  </Card.Link>
-                )}
+    <Card className={`${!itsDark ? "card" : "card-black-mode"}`}>
+      <ImgCarousel
+        images={images}
+        imgCustom={"img-custom"}
+        imgLoading={imgLoading}
+      />
+      <Card.Body>
+        <Card.Title className="text-center mt-2 mb-5 text-decoration-underline">
+          <Card.Link className="card-link text-decoration-none text-black fw-bold">
+            {title}
+            {gitLink && (
+              <Card.Link href={gitLink}>
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  className="github-icon"
+                  href={gitLink}
+                />
               </Card.Link>
-            </Card.Title>
+            )}
+            {siteLink && (
+              <Card.Link href={siteLink}>
+                <FontAwesomeIcon
+                  icon={faExternalLinkAlt}
+                  size="sm"
+                  className="site-icon"
+                />
+              </Card.Link>
+            )}
+          </Card.Link>
+        </Card.Title>
 
-            <Card.Text
-              style={{ fontFamily: "Montserrat" }}
-              className="text-center"
-            >
-              {" "}
-              {cardText}
-              <ul className="ul-technologies">
-                <li>{tec1}</li>
-                <li>{tec2}</li>
-                <li>{tec3}</li>
-                {tec4 && <li>{tec4}</li>}
-                {tec5 && <li>{tec5}</li>}
-                {tec6 && <li>{tec6}</li>}
-                {tec7 && <li>{tec7}</li>}
-                {tec8 && <li>{tec8}</li>}
-              </ul>
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </div>
-    </>
+        <Card.Text style={{ fontFamily: "Montserrat" }} className="text-center">
+          {text}
+          <ul className="ul-techs pt-3 list-unstyled">
+            {techs.map((tech, index) => (
+              <li className="fst-italic m-2 px-2 py-1 shadow">{tech}</li>
+            ))}
+          </ul>
+        </Card.Text>
+      </Card.Body>
+    </Card>
   );
 }
 

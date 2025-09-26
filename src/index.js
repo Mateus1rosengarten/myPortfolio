@@ -1,25 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min"
-import { BrowserRouter } from 'react-router-dom';
-import './index.css';
-import ContextBgColor from './contextBgColor';
-import ContextSideBar from './contextSideBar';
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import { BrowserRouter } from "react-router-dom";
+import "./index.css";
 
+import ContextSideBar from "./context/contextSideBar";
+import ContextDarkMode from "./context/contextDarkMode";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
-  <BrowserRouter> 
-  <ContextSideBar>
-  <ContextBgColor>
-    <App />
-    </ContextBgColor>
+  <BrowserRouter>
+    <ContextSideBar>
+      <ContextDarkMode>
+        <App />
+      </ContextDarkMode>
     </ContextSideBar>
-    </BrowserRouter>
+  </BrowserRouter>
   // </React.StrictMode>
 );
 
