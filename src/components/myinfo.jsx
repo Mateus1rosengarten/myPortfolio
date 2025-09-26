@@ -39,7 +39,7 @@ function MyInfo() {
       </div>
       <div className="d-flex flex-column align-items-center">
         <h2 className={`ms-5 hero-subtitle ${itsDark && "text-white"}`}>
-          Full Stack Developer
+          Front End Developer
         </h2>
         <h3
           className={`w-50 fs-6 fst-italic ${
