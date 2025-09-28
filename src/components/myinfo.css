@@ -23,6 +23,8 @@
   transform: scale(0.9);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  object-position: center -30px;
+  object-fit: cover;
 }
 
 .my-pic:hover {
@@ -32,7 +34,7 @@
 
 .profile-sunglasses {
   position: absolute;
-  width: 26%;
+  width: 30%;
   left: 49%;
   top: 43%;
   transform: translate(-50%, -50%);
@@ -71,6 +73,12 @@
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
+  transition: transform 0.4s ease-in-out;
+}
+
+.btn-custom-light:hover,
+.btn-custom-dark:hover {
+  transform: scale(1.05);
 }
 
 .social-icons {
@@ -123,6 +131,10 @@
   .profile-pic {
     width: 200px;
     height: 200px;
+  }
+
+  .profile-sunglasses {
+    top: 40% !important;
   }
 
   .hero-title {

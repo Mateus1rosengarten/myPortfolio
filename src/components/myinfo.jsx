@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Button } from "react-bootstrap";
 import { SocialIcon } from "react-social-icons";
 import { contextDarkMode } from "../context/contextDarkMode";
-import me from "../images/me.jpg";
+import me from "../images/mypic.png";
 import sunglass from "../images/sunglass.png";
 import "../components/myinfo.css";
 
@@ -75,16 +75,22 @@ function MyInfo() {
 
       <div className="d-flex justify-content-center p-5 gap-4 container-social-icons">
         <SocialIcon
+          target="_blank"
+          rel="noopener noreferrer"
           className="social-icons"
           url="https://www.linkedin.com/in/mateus-rosengarten-mauricio/"
         />
         <SocialIcon
+          target="_blank"
+          rel="noopener noreferrer"
           className="social-icons"
           fgColor={itsDark ? "black" : "white"}
           bgColor={itsDark ? "white" : "black"}
           url="https://github.com/Mateus1rosengarten"
         />
         <SocialIcon
+          target="_blank"
+          rel="noopener noreferrer"
           className="social-icons"
           url="https://wa.me/9720534715942"
         />

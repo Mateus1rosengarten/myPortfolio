@@ -29,20 +29,15 @@ function ProjectCard({
           <Card.Link className="card-link text-decoration-none text-black fw-bold">
             {title}
             {gitLink && (
-              <Card.Link href={gitLink}>
+              <Card.Link
+                href={gitLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon
                   icon={faGithub}
                   className="github-icon"
                   href={gitLink}
-                />
-              </Card.Link>
-            )}
-            {siteLink && (
-              <Card.Link href={siteLink}>
-                <FontAwesomeIcon
-                  icon={faExternalLinkAlt}
-                  size="sm"
-                  className="site-icon"
                 />
               </Card.Link>
             )}

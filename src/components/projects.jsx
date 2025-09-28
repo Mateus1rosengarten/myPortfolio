@@ -20,7 +20,6 @@ function Projects() {
           text={project.text}
           techs={project.techs}
           gitLink={project.gitLink}
-          siteLink={project.siteLink}
           imgLoading={project.imgLoading}
         />
       ))}
