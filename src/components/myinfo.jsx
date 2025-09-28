@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Button } from "react-bootstrap";
 import { SocialIcon } from "react-social-icons";
 import { contextDarkMode } from "../context/contextDarkMode";
-import me from "../images/mypic.png";
+import me from "../images/mypic-dark.png";
 import sunglass from "../images/sunglass.png";
 import "../components/myinfo.css";
 
