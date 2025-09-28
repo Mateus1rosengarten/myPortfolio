@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Button } from "react-bootstrap";
 import { SocialIcon } from "react-social-icons";
 import { contextDarkMode } from "../context/contextDarkMode";
-import me from "../images/mypic-dark.png";
+import myPicture from "../images/mypic-dark.png";
 import sunglass from "../images/sunglass.png";
 import "../components/myinfo.css";
 
@@ -21,7 +21,7 @@ function MyInfo() {
         <div className="container-images">
           <img
             className="profile-pic rounded-circle z-3"
-            src={me}
+            src={myPicture}
             alt="Foto de perfil de Mateus Rosengarten Mauricio"
           />
           <img
