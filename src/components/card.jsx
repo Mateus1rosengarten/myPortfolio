@@ -1,5 +1,4 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext } from "react";
 import { Card } from "react-bootstrap";
@@ -13,7 +12,6 @@ function ProjectCard({
   text,
   techs = [],
   gitLink,
-  siteLink,
   imgLoading,
 }) {
   const { itsDark } = useContext(contextDarkMode);
