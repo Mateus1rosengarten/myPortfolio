@@ -33,10 +33,9 @@
 
 .profile-sunglasses {
   position: absolute;
-  top: 40%;
+  bottom: 50%;
   width: 30%;
   left: 49%;
-
   transform: translate(-50%, -50%);
 }
 
@@ -54,13 +53,14 @@
 }
 
 .btn-custom-light {
-  color: #343a40 !important;
-  background-color: white !important;
+  color: white !important;
+  background-color: #0d6efd !important;
 }
 
 .btn-custom-dark {
   color: white !important;
-  background-color: #212529 !important;
+  background-color: #0d6efd !important;
+  border: none !important;
 }
 
 .btn-custom-light,

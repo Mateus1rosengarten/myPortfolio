@@ -1,0 +1,15 @@
+export const techs = [
+  "SHOW ALL",
+  "REACT",
+  "JAVASCRIPT",
+  "TYPESCRIPT",
+  "NextJS",
+  "TAILWIND",
+  "MUI",
+  "NodeJS",
+  "EXPRESS",
+  "MongoDB",
+  "PostgreSQL",
+  "FIREBASE",
+  "STYLED-COMPONENTS",
+];

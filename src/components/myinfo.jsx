@@ -46,15 +46,15 @@ function MyInfo() {
             itsDark ? "text-white-50" : "text-muted"
           }`}
         >
-          #html #css #javascript #typescript #react #redux/toolkit #nextJS
-          #node.js #express #RestAPI #mongoDB #PostgreSQL #firebase #webDesign
+          #html #css #javascript #typescript #react #redux/toolkit #NextJS
+          #node.js #express #RestAPI #MongoDB #PostgreSQL #firebase #webDesign
           #figma #bootstrap #tailwind #MUI #StyledComponents #git/github
         </h3>
         <div className="d-flex gap-4">
           <Button
             variant="none"
             onClick={handleOpeningCV}
-            className={`mt-3 border ${
+            className={`mt-3  ${
               itsDark ? "btn-custom-light" : "btn-custom-dark"
             }`}
           >
@@ -64,7 +64,7 @@ function MyInfo() {
             variant="none"
             as="a"
             href="mailto:matrosen.developer@gmail.com"
-            className={`mt-3 border ${
+            className={`mt-3  ${
               itsDark ? "btn-custom-light" : "btn-custom-dark"
             }`}
           >

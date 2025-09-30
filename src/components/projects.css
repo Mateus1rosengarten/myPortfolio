@@ -6,6 +6,18 @@
   row-gap: 5rem;
 }
 
+.no-projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 70vh;
+}
+
+.no-results-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
 @media only screen and (max-width: 835px) {
   .projects-container {
     display: grid;
