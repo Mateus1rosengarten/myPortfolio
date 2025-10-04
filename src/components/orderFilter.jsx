@@ -1,3 +1,5 @@
+import "./orderFilter.css";
+
 const options = [
   "Mais Recentes",
   "Mais Antigos",
@@ -9,8 +11,9 @@ const options = [
 
 const OrderFilter = ({ order, handleOrderChange }) => {
   return (
-    <div className="d-flex justify-content-end pe-5 me-3">
+    <div className="d-flex justify-content-end margin-right">
       <select
+        name="select-order-filter"
         className="p-2"
         value={order}
         onChange={(e) => handleOrderChange(e.target.value)}

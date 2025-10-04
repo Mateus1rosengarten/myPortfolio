@@ -1,0 +1,33 @@
+.margin-right {
+  margin-right: 1.2rem;
+}
+
+@media (min-width: 576px) {
+  .margin-right {
+    margin-right: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .margin-right {
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .margin-right {
+    margin-right: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .margin-right {
+    margin-right: 3.4rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .margin-right {
+    margin-right: 3.7rem;
+  }
+}

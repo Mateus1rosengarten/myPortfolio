@@ -3,11 +3,15 @@ import "../components/techFilter.css";
 import { contextDarkMode } from "../context/contextDarkMode";
 import { techs } from "../data/techsFiltersArray";
 
-const TechFilter = ({ selectedTech, setSelectedTech, handleTechClick }) => {
+const TechFilter = ({ selectedTech, handleTechClick }) => {
   const { itsDark } = useContext(contextDarkMode);
 
   return (
-    <ul className={`${!itsDark ? "select-techs" : "select-techs-dark"}`}>
+    <ul
+      className={`align-self-center ${
+        !itsDark ? "select-techs" : "select-techs-dark"
+      }`}
+    >
       {techs.map((tech) => (
         <li
           key={tech}
@@ -17,7 +21,7 @@ const TechFilter = ({ selectedTech, setSelectedTech, handleTechClick }) => {
               ? "li-tech-selected"
               : "li-tech"
           }`}
-          style={{ transition: "0.3s", cursor: "pointer" }}
+          style={{ transition: "0.1s", cursor: "pointer" }}
           onClick={() => handleTechClick(tech)}
         >
           {tech}

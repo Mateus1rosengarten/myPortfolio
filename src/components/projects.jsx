@@ -58,8 +58,7 @@ function Projects() {
 
   return (
     <div className={`pt-2 mx-1 ${itsDark ? "bg-dark" : ""}`}>
-      {/* Filtros */}
-      <div className="d-flex flex-column justify-content-between">
+      <div className="d-flex flex-column">
         <TechFilter
           selectedTech={selectedTech}
           handleTechClick={handleTechClick}
@@ -70,7 +69,6 @@ function Projects() {
         />
       </div>
 
-      {/* Projetos filtrados */}
       {FilterProjects.length === 0 ? (
         <div className="text-center no-projects-container">
           <p
