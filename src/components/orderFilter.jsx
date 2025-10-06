@@ -1,12 +1,12 @@
 import "./orderFilter.css";
 
 const options = [
-  "Mais Recentes",
-  "Mais Antigos",
-  "Maior Aprendizado",
-  "Maior Desafio",
-  "Projetos para Clientes",
-  "Projetos Academicos",
+  "Most Recent",
+  "Oldest",
+  "Greatest Learning",
+  "Biggest Challenge",
+  "Client Projects",
+  "Academic Projects",
 ];
 
 const OrderFilter = ({ order, handleOrderChange }) => {
