@@ -14,7 +14,7 @@ const projects = [
     ProjectKind: "Costumer",
     creationOrder: 8,
     challangeOrder: 7,
-    apprenticeshipOrded: 7,
+    apprenticeshipOrder: 7,
   },
   {
     title: "MKT Embalagem website",
@@ -31,7 +31,7 @@ const projects = [
     ProjectKind: "Costumer",
     creationOrder: 5,
     challangeOrder: 6,
-    apprenticeshipOrded: 6,
+    apprenticeshipOrder: 6,
   },
   {
     title: "Sustentools E-commerce",
@@ -46,7 +46,7 @@ const projects = [
     imgLoading: "lazy",
     creationOrder: 3,
     challangeOrder: 3,
-    apprenticeshipOrded: 2,
+    apprenticeshipOrder: 2,
   },
   {
     title: "Payment Simulation CRUD",
@@ -62,7 +62,7 @@ const projects = [
     ProjectKind: "Academic",
     creationOrder: 6,
     challangeOrder: 4,
-    apprenticeshipOrded: 5,
+    apprenticeshipOrder: 5,
   },
   {
     title: "Guto Therapist Page",
@@ -78,7 +78,7 @@ const projects = [
     ProjectKind: "Costumer",
     creationOrder: 4,
     challangeOrder: 8,
-    apprenticeshipOrded: 8,
+    apprenticeshipOrder: 8,
   },
   {
     title: "Menu Restaurant Optimizer",
@@ -94,7 +94,7 @@ const projects = [
     ProjectKind: "Costumer",
     creationOrder: 7,
     challangeOrder: 2,
-    apprenticeshipOrded: 3,
+    apprenticeshipOrder: 3,
   },
 
   {
@@ -129,7 +129,7 @@ const projects = [
     ProjectKind: "Academic",
     creationOrder: 1,
     challangeOrder: 1,
-    apprenticeshipOrded: 1,
+    apprenticeshipOrder: 1,
   },
 ];
 
