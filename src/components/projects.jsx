@@ -6,15 +6,21 @@ import projects from "../data/projectsArray";
 import TechFilter from "./techFilter";
 import OrderFilter from "./orderFilter";
 import { Button } from "react-bootstrap";
+import CardModal from "./modalCard";
 
 function Projects() {
   const { itsDark, setCreateAnimation } = useContext(contextDarkMode);
   const [selectedTech, setSelectedTech] = useState([]);
-  const [selectedOrder, setSelectedOrder] = useState("Mais Recentes");
+  const [selectedOrder, setSelectedOrder] = useState("Most Recent");
+  const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
     setCreateAnimation(false);
   }, [setCreateAnimation]);
+
+  const openModal = (project) => setSelectedProject(project);
+
+  const closeModal = () => setSelectedProject(null);
 
   const handleTechClick = (tech) => {
     if (tech === "SHOW ALL") {
@@ -33,9 +39,9 @@ function Projects() {
         : selectedTech.some((tech) => project.techs.includes(tech))
     )
     .filter((project) => {
-      if (selectedOrder === "Projetos para Clientes") {
+      if (selectedOrder === "Client Projects") {
         return project.ProjectKind === "Costumer";
-      } else if (selectedOrder === "Projetos Academicos") {
+      } else if (selectedOrder === "Academic Projects") {
         return project.ProjectKind === "Academic";
       } else {
         return true;
@@ -43,14 +49,14 @@ function Projects() {
     })
     .sort((a, b) => {
       switch (selectedOrder) {
-        case "Mais Recentes":
+        case "Most Recent":
           return b.creationOrder - a.creationOrder;
-        case "Mais Antigos":
+        case "Oldest":
           return a.creationOrder - b.creationOrder;
-        case "Maior Desafio":
+        case "Biggest Challenge":
           return a.challangeOrder - b.challangeOrder;
-        case "Maior Aprendizado":
-          return a.apprenticeshipOrder - b.apprenticeshipOrder; // corrigido typo
+        case "Greatest Learning":
+          return a.apprenticeshipOrder - b.apprenticeshipOrder;
         default:
           return 0;
       }
@@ -103,10 +109,16 @@ function Projects() {
               techs={project.techs}
               gitLink={project.gitLink}
               imgLoading={project.imgLoading}
+              openModal={() => openModal(project)}
             />
           ))}
         </div>
       )}
+      <CardModal
+        show={!!selectedProject}
+        handleClose={closeModal}
+        project={selectedProject}
+      />
     </div>
   );
 }

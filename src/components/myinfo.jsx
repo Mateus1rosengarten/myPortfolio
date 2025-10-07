@@ -47,7 +47,7 @@ function MyInfo() {
           }`}
         >
           #html #css #javascript #typescript #react #redux/toolkit #NextJS
-          #node.js #express #RestAPI #MongoDB #PostgreSQL #firebase #webDesign
+          #NodeJS #express #RestAPI #MongoDB #PostgreSQL #firebase #webDesign
           #figma #bootstrap #tailwind #MUI #StyledComponents #git/github
         </h3>
         <div className="d-flex gap-4">

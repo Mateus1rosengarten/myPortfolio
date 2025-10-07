@@ -7,7 +7,7 @@ function ImgCarousel({ images = [], imgCustom, imgLoading }) {
       {images.map((img, index) => (
         <CarouselItem>
           <img
-            className={`${imgCustom} w-100`}
+            className={`${imgCustom} w-100 rounded`}
             src={img}
             alt={`Slide${index + 1}`}
             loading={index === 0 ? imgLoading : "lazy"}
