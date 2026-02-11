@@ -1,12 +1,12 @@
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
-import MyInfo from "./components/myinfo";
+import MyInfo from "./views/myinfo";
 import { Route, Routes } from "react-router-dom";
-import Projects from "./components/projects";
-import "./App.css";
+import Projects from "./views/projects";
 import { useContext } from "react";
 import { contextSideBar } from "./context/contextSideBar";
 import SideBar from "./components/sidebar";
+import "./App.css";
 
 function App() {
   const { isSideBar } = useContext(contextSideBar);

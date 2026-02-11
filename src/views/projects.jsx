@@ -1,12 +1,12 @@
 import { useContext, useEffect, useState } from "react";
-import "../components/projects.css";
+import "../views/projects.css";
 import { contextDarkMode } from "../context/contextDarkMode";
 import projects from "../data/projectsArray";
-import TechFilter from "./techFilter";
-import OrderFilter from "./orderFilter";
+import TechFilter from "../components/techFilter";
+import OrderFilter from "../components/orderFilter";
 import { Button } from "react-bootstrap";
-import CardModal from "./modalCard";
-import ProjectCard from "./card";
+import CardModal from "../components/modalCard";
+import ProjectCard from "../components/card";
 
 function Projects() {
   const { itsDark, setCreateAnimation } = useContext(contextDarkMode);

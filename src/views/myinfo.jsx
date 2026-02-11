@@ -4,7 +4,7 @@ import { SocialIcon } from "react-social-icons";
 import { contextDarkMode } from "../context/contextDarkMode";
 import myPicture from "../images/mypic-dark.png";
 import sunglass from "../images/sunglass.png";
-import "../components/myinfo.css";
+import "../views/myinfo.css";
 
 function MyInfo() {
   const { itsDark, createAnimation } = useContext(contextDarkMode);

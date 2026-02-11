@@ -17,7 +17,6 @@ const projects = [
     creationOrder: 8,
     challangeOrder: 7,
     apprenticeshipOrder: 7,
-    visualizar: 1,
   },
   {
     title: "MKT Embalagem website",
@@ -36,7 +35,6 @@ const projects = [
     creationOrder: 5,
     challangeOrder: 6,
     apprenticeshipOrder: 6,
-    visualizar: 2,
   },
   {
     title: "Sustentools E-commerce",
@@ -53,11 +51,15 @@ const projects = [
     creationOrder: 3,
     challangeOrder: 3,
     apprenticeshipOrder: 2,
-    visualizar: 4,
   },
   {
     title: "Payment Simulation CRUD",
     image: require("../images/payment-crud-2.png"),
+    carousel: [
+      require("../images/payment-crud-1.png"),
+      require("../images/payment-crud-2.png"),
+      require("../images/payment-crud-3.png"),
+    ],
     text: "The Payout Simulation App was developed as part of a developer bootcamp challenge and concluded with a code review by experienced developers. It allows users to view, create, edit, and delete simulated payment transactions with fail/success scenarios. MUI was chosen for its wide range of components, consistency across the UI, and to deepen my familiarity with the library, while the overall stack selection was part of the challenge.",
     techs: ["NextJS", "TYPESCRIPT", "MUI", "PostgreSQL"],
     gitLink: "https://github.com/Mateus1rosengarten/PayoutStructure",
@@ -66,7 +68,6 @@ const projects = [
     creationOrder: 6,
     challangeOrder: 4,
     apprenticeshipOrder: 5,
-    visualizar: 6,
   },
   {
     title: "Guto Therapist Page",
@@ -85,7 +86,6 @@ const projects = [
     creationOrder: 4,
     challangeOrder: 8,
     apprenticeshipOrder: 8,
-    visualizar: 5,
   },
   {
     title: "Menu Restaurant Optimizer",
@@ -103,7 +103,6 @@ const projects = [
     creationOrder: 7,
     challangeOrder: 2,
     apprenticeshipOrder: 3,
-    visualizar: 7,
   },
 
   {
@@ -123,7 +122,6 @@ const projects = [
     creationOrder: 2,
     challangeOrder: 5,
     apprenticeshipOrded: 4,
-    visualizar: 3,
   },
   {
     title: "Student Course Projects",
@@ -142,7 +140,6 @@ const projects = [
     creationOrder: 1,
     challangeOrder: 1,
     apprenticeshipOrder: 1,
-    visualizar: 8,
   },
 ];
 
