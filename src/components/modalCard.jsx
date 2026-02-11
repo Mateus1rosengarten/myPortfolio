@@ -1,8 +1,8 @@
-import { Card, Carousel, Modal } from "react-bootstrap";
+import { Card, Modal } from "react-bootstrap";
 import "./card.css";
-import CardContent from "./cardContent";
+import ProjectCard from "./card";
 
-const CardModal = ({ show, handleClose, project, images, imgLoading }) => {
+const CardModal = ({ show, handleClose, project }) => {
   if (!project) return null;
   return (
     <Modal
@@ -12,19 +12,16 @@ const CardModal = ({ show, handleClose, project, images, imgLoading }) => {
       dialogClassName="card-modal-dialog"
       contentClassName="card-modal-content"
     >
-      <Card className="modal-card">
-        <Carousel>
-          <Carousel.Item></Carousel.Item>
-        </Carousel>
-        <CardContent
-          title={project.title}
-          text={project.text}
-          techs={project.techs}
-          gitLink={project.gitLink}
-          images={project.images}
-          imgLoading={project.imgLoading}
-        />
-      </Card>
+      <ProjectCard
+        title={project.title}
+        text={project.text}
+        techs={project.techs}
+        gitLink={project.gitLink}
+        images={project.carousel}
+        imgLoading={project.imgLoading}
+        isModal={true}
+        onCloseModal={handleClose}
+      />
     </Modal>
   );
 };

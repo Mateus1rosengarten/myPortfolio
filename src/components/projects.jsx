@@ -1,18 +1,19 @@
 import { useContext, useEffect, useState } from "react";
 import "../components/projects.css";
 import { contextDarkMode } from "../context/contextDarkMode";
-import ProjectCard from "./card";
 import projects from "../data/projectsArray";
 import TechFilter from "./techFilter";
 import OrderFilter from "./orderFilter";
 import { Button } from "react-bootstrap";
 import CardModal from "./modalCard";
+import ProjectCard from "./card";
 
 function Projects() {
   const { itsDark, setCreateAnimation } = useContext(contextDarkMode);
   const [selectedTech, setSelectedTech] = useState([]);
   const [selectedOrder, setSelectedOrder] = useState("Most Recent");
   const [selectedProject, setSelectedProject] = useState(null);
+  const [nextPage, setNextPage] = useState(false);
 
   useEffect(() => {
     setCreateAnimation(false);
@@ -104,7 +105,7 @@ function Projects() {
             <ProjectCard
               key={project.title}
               title={project.title}
-              images={project.images}
+              image={project.image}
               text={project.text}
               techs={project.techs}
               gitLink={project.gitLink}
@@ -118,6 +119,8 @@ function Projects() {
         show={!!selectedProject}
         handleClose={closeModal}
         project={selectedProject}
+        nextPage={nextPage}
+        handleNextPage={setNextPage}
       />
     </div>
   );

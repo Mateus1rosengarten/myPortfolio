@@ -13,13 +13,11 @@
 
 .modal-card {
   max-width: 100% !important;
-  max-height: 80% !important;
   box-shadow: none !important;
 }
-.card-modal-dialog {
-  max-width: 900px; /* aumenta o modal */
+.carousel-height {
+  height: 400px;
 }
-
 .card-modal-content {
   background: none !important;
   border: none !important;
@@ -35,6 +33,12 @@
 .card-link {
   font-size: 150%;
   font-family: "Montserrat", sans-serif;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 4rem !important;
+  height: 4rem !important;
 }
 
 .github-icon {

@@ -1,13 +1,15 @@
 const projects = [
   {
-    title: "Rosentech Digital Agency",
-    images: [
-      require("../images/rosentech-lading-page-1.png"),
-      require("../images/rosentech-lading-page-2.png"),
-      require("../images/rosentech-lading-page-3.png"),
-      require("../images/rosentech-lading-page-4.png"),
+    title: "M2 Marketplace Agency",
+    image: require("../images/m2-1.png"),
+    carousel: [
+      require("../images/m2-1.png"),
+      require("../images/m2-2.png"),
+      require("../images/m2-3.png"),
     ],
     text: "I developed a digital agency landing page in collaboration with a web designer, highlighting services, plans, and Contact/FAQs. Built with my preferred stack: React, Tailwind, TypeScript and NodeJS, valued for simplicity, efficiency, and industry-wide use. I improved my skills in handling more complex animations and integrating dynamic UI elements.",
+    secondText:
+      "In this project, I got better at turning detailed design prototypes into clean, responsive code and learned how to add more advanced animations to make the UI feel smoother. I also improved my React component structure and overall workflow with TypeScript and Tailwind.",
     techs: ["REACT", "TYPESCRIPT", "TAILWIND", "NodeJS"],
     gitLink: "https://github.com/Mateus1rosengarten/RosenTechDigital",
     imgLoading: "eager",
@@ -15,10 +17,12 @@ const projects = [
     creationOrder: 8,
     challangeOrder: 7,
     apprenticeshipOrder: 7,
+    visualizar: 1,
   },
   {
     title: "MKT Embalagem website",
-    images: [
+    image: require("../images/mkt-lading-page-1.png"),
+    carousel: [
       require("../images/mkt-lading-page-1.png"),
       require("../images/mkt-lading-page-2.png"),
       require("../images/mkt-lading-page-3.png"),
@@ -32,10 +36,12 @@ const projects = [
     creationOrder: 5,
     challangeOrder: 6,
     apprenticeshipOrder: 6,
+    visualizar: 2,
   },
   {
     title: "Sustentools E-commerce",
-    images: [
+    image: require("../images/e-commerce-3.png"),
+    carousel: [
       require("../images/e-commerce-1.png"),
       require("../images/e-commerce-2.png"),
       require("../images/e-commerce-3.png"),
@@ -47,14 +53,11 @@ const projects = [
     creationOrder: 3,
     challangeOrder: 3,
     apprenticeshipOrder: 2,
+    visualizar: 4,
   },
   {
     title: "Payment Simulation CRUD",
-    images: [
-      require("../images/payment-crud-1.png"),
-      require("../images/payment-crud-2.png"),
-      require("../images/payment-crud-3.png"),
-    ],
+    image: require("../images/payment-crud-2.png"),
     text: "The Payout Simulation App was developed as part of a developer bootcamp challenge and concluded with a code review by experienced developers. It allows users to view, create, edit, and delete simulated payment transactions with fail/success scenarios. MUI was chosen for its wide range of components, consistency across the UI, and to deepen my familiarity with the library, while the overall stack selection was part of the challenge.",
     techs: ["NextJS", "TYPESCRIPT", "MUI", "PostgreSQL"],
     gitLink: "https://github.com/Mateus1rosengarten/PayoutStructure",
@@ -63,14 +66,17 @@ const projects = [
     creationOrder: 6,
     challangeOrder: 4,
     apprenticeshipOrder: 5,
+    visualizar: 6,
   },
   {
     title: "Guto Therapist Page",
-    images: [
+    image: require("../images/therapist-land-page-1.png"),
+    carousel: [
       require("../images/therapist-land-page-1.png"),
       require("../images/therapist-land-page-2.png"),
       require("../images/therapist-land-page-3.png"),
     ],
+
     text: "Developed a landing page for a client specializing in therapy services, supporting individuals with complex neurodivergencies and their families with accessible resources and personalized care.This was my first freelance experience, where I used styled-components to explore component-based styling and also learned how to deploy a live site with a custom domain.",
     techs: ["NextJS", "TYPESCRIPT", "STYLED-COMPONENTS"],
     gitLink: "https://github.com/Mateus1rosengarten/gutoMaia",
@@ -79,10 +85,12 @@ const projects = [
     creationOrder: 4,
     challangeOrder: 8,
     apprenticeshipOrder: 8,
+    visualizar: 5,
   },
   {
     title: "Menu Restaurant Optimizer",
-    images: [
+    image: require("../images/menu-restaurant-1.png"),
+    carousel: [
       require("../images/menu-restaurant-1.png"),
       require("../images/menu-restaurant-2.png"),
       require("../images/menu-restaurant-3.png"),
@@ -95,11 +103,13 @@ const projects = [
     creationOrder: 7,
     challangeOrder: 2,
     apprenticeshipOrder: 3,
+    visualizar: 7,
   },
 
   {
-    title: "Suppliers Management System",
-    images: [
+    title: "Suppliers Management",
+    image: require("../images/supplier-crud-3.png"),
+    carousel: [
       require("../images/supplier-crud-1.png"),
       require("../images/supplier-crud-2.png"),
       require("../images/supplier-crud-3.png"),
@@ -113,13 +123,15 @@ const projects = [
     creationOrder: 2,
     challangeOrder: 5,
     apprenticeshipOrded: 4,
+    visualizar: 3,
   },
   {
     title: "Student Course Projects",
-    images: [
+    image: require("../images/thankful-way.png"),
+    carousel: [
       require("../images/thankful-way.png"),
-      require("../images/pet-adoption.png"),
       require("../images/stock-search.png"),
+      require("../images/pet-adoption.png"),
       require("../images/movie-search.png"),
     ],
     text: "These projects are a selected showcase of the many applications I completed during the Full Stack course (online and in-person, Tel Aviv 2022–2023). The course exposed students to real-world scenarios and diverse technology stacks while guiding us to follow industry best practices. Through these projects, I built functional web applications with interactive interfaces, responsive layouts, and features demonstrating practical proficiency in JavaScript, React, NodeJS, Express, and database management.",
@@ -130,6 +142,7 @@ const projects = [
     creationOrder: 1,
     challangeOrder: 1,
     apprenticeshipOrder: 1,
+    visualizar: 8,
   },
 ];
 
