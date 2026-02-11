@@ -1,8 +1,7 @@
 import { Card } from "react-bootstrap";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faClose, faCloseBu } from "@fortawesome/free-solid-svg-icons";
+import { faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import ImgCarousel from "./carousel";
 import { useContext } from "react";
 import { contextDarkMode } from "../context/contextDarkMode";

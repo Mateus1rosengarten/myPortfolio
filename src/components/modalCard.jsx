@@ -1,4 +1,4 @@
-import { Card, Modal } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import "./card.css";
 import ProjectCard from "./card";
 
