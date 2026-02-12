@@ -1,5 +1,4 @@
 import { Modal } from "react-bootstrap";
-import "./card.css";
 import ProjectCard from "./card";
 
 const CardModal = ({ show, handleClose, project }) => {
@@ -16,11 +15,11 @@ const CardModal = ({ show, handleClose, project }) => {
         title={project.title}
         text={project.text}
         techs={project.techs}
-        gitLink={project.gitLink}
+        github={project.github}
         images={project.carousel}
         imgLoading={project.imgLoading}
         isModal={true}
-        onCloseModal={handleClose}
+        closeModal={handleClose}
       />
     </Modal>
   );

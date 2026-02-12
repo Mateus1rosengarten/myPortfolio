@@ -99,20 +99,26 @@ function Projects() {
         </div>
       ) : (
         <div
-          className={`projects-container mb-5 py-5 ${itsDark ? "bg-dark" : ""}`}
+          className={`container mx-auto mb-5 py-5 p-xl-5 px-xxl-0  ${
+            itsDark ? "bg-dark" : ""
+          }`}
         >
-          {FilterProjects.map((project) => (
-            <ProjectCard
-              key={project.title}
-              title={project.title}
-              image={project.image}
-              text={project.text}
-              techs={project.techs}
-              gitLink={project.gitLink}
-              imgLoading={project.imgLoading}
-              openModal={() => openModal(project)}
-            />
-          ))}
+          <div className="row gx-xl-1 gy-5 py-5 justify-content-between">
+            {FilterProjects.map((project) => (
+              <div className="col-12 col-sm-10 col-md-6 col-lg-5">
+                <ProjectCard
+                  key={project.title}
+                  title={project.title}
+                  image={project.image}
+                  text={project.text}
+                  techs={project.techs}
+                  github={project.github}
+                  imgLoading={project.imgLoading}
+                  openModal={() => openModal(project)}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       )}
       <CardModal

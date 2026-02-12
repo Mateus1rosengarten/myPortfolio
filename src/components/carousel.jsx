@@ -1,5 +1,4 @@
 import { Carousel, CarouselItem } from "react-bootstrap";
-import "../components/card.css";
 
 function ImgCarousel({ images = [], imgCustom, imgLoading }) {
   return (
