@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext } from "react";
 import { contextDarkMode } from "../context/contextDarkMode";
 import myPicture from "../images/mypic-dark.png";
 import sunglass from "../images/sunglass.png";

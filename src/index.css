@@ -17,6 +17,12 @@ code {
   --font-secondary: "Inter", sans-serif;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+}
+
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   width: 4rem !important;
