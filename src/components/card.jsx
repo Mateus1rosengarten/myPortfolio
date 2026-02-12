@@ -3,8 +3,6 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ImgCarousel from "./carousel";
-import { useContext } from "react";
-import { contextDarkMode } from "../context/contextDarkMode";
 
 const ProjectCard = ({
   image,
@@ -18,8 +16,6 @@ const ProjectCard = ({
   openModal,
   closeModal,
 }) => {
-  const { itsDark } = useContext(contextDarkMode);
-
   return (
     <Card
       className="shadow-lg cursor-pointer w-100 h-100"
