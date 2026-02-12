@@ -1,14 +1,13 @@
-import { useContext } from "react";
-import { Button } from "react-bootstrap";
-import { SocialIcon } from "react-social-icons";
+import { useContext, useEffect, useRef, useState } from "react";
 import { contextDarkMode } from "../context/contextDarkMode";
 import myPicture from "../images/mypic-dark.png";
 import sunglass from "../images/sunglass.png";
 import "../views/myinfo.css";
 import AppButton from "../components/button";
+import SocialMediaIcon from "../components/socialIcon";
 
 function MyInfo() {
-  const { itsDark, createAnimation } = useContext(contextDarkMode);
+  const { itsDark } = useContext(contextDarkMode);
 
   const handleOpeningCV = () => {
     const googleDriveLink =
@@ -17,29 +16,27 @@ function MyInfo() {
   };
 
   return (
-    <div className={`py-5 text-center ${itsDark && "bg-dark"}`}>
-      <div className="mb-5">
-        <div className="container-images">
+    <section className={`py-5 text-center ${itsDark && "bg-dark"}`}>
+      <div className="container">
+        <div className="position-relative d-inline-block">
           <img
-            className="profile-pic rounded-circle z-3"
+            className="rounded-circle img-fluid"
+            style={{ maxWidth: "275px" }}
             src={myPicture}
             alt="Foto de perfil de Mateus Rosengarten Mauricio"
           />
           <img
-            className={`profile-sunglasses ${
-              itsDark ? (createAnimation ? "animation" : "visible") : "hidden"
-            }`}
             src={sunglass}
-            loading="eager"
-            alt="Óculos escuros animados sobrepostos à foto"
+            alt="Óculos"
+            className={`sunglasses ${itsDark ? "drop" : "rise"}`}
           />
         </div>
-        <h1 className={`hero-title ${itsDark && "text-white"}`}>
+        <h1 className={`font-primary fs-1  ${itsDark && "text-white"}`}>
           Mateus Rosengarten Mauricio
         </h1>
       </div>
       <div className="d-flex flex-column align-items-center">
-        <h2 className={`ms-5 hero-subtitle ${itsDark && "text-white"}`}>
+        <h2 className={`font-primary fs-2 ${itsDark && "text-white"}`}>
           Front End Developer
         </h2>
         <h3
@@ -61,29 +58,21 @@ function MyInfo() {
         </div>
       </div>
 
-      <div className="d-flex justify-content-center p-5 gap-4 container-social-icons">
-        <SocialIcon
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-icons"
-          url="https://www.linkedin.com/in/mateus-rosengarten-mauricio/"
+      <div className="d-flex justify-content-center p-5 gap-4">
+        <SocialMediaIcon
+          url={"https://www.linkedin.com/in/mateus-rosengarten-mauricio/"}
+          itsDark={itsDark}
         />
-        <SocialIcon
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-icons"
-          fgColor={itsDark ? "black" : "white"}
-          bgColor={itsDark ? "white" : "black"}
-          url="https://github.com/Mateus1rosengarten"
+        <SocialMediaIcon
+          url={"https://github.com/Mateus1rosengarten"}
+          itsDark={itsDark}
         />
-        <SocialIcon
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-icons"
-          url="https://wa.me/9720534715942"
+        <SocialMediaIcon
+          url={"https://wa.me/9720534715942"}
+          itsDark={itsDark}
         />
       </div>
-    </div>
+    </section>
   );
 }
 

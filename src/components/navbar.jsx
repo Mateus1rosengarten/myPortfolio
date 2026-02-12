@@ -3,13 +3,12 @@ import { Button, Container } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
-import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun, faBars } from "@fortawesome/free-solid-svg-icons";
-import "../components/navbar.css";
 import { contextDarkMode } from "../context/contextDarkMode";
 import { contextSideBar } from "../context/contextSideBar";
 import NavLinkItem from "./navLink";
+import "../components/navbar.css";
 
 function NavBar() {
   const { itsDark, setItsDark, setCreateAnimation } =

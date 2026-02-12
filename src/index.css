@@ -22,7 +22,9 @@ code {
   width: 4rem !important;
   height: 4rem !important;
 }
-
+.bg-alt {
+  background: linear-gradient(135deg, #ff7a18, #ffb347);
+}
 .color-brand {
   color: #ff7a18;
 }
@@ -41,4 +43,24 @@ code {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.icon-motion {
+  animation: rotation 0.5s linear;
+}
+
+.icon-motion:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+.btn-motion {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-motion:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  background-color: #f97316;
 }
