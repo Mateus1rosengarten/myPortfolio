@@ -23,6 +23,14 @@ code {
   height: 4rem !important;
 }
 
+.color-brand {
+  color: #ff7a18;
+}
+
+.bg-color-brand {
+  background-color: #ff7a18;
+}
+
 .font-primary {
   font-family: var(--font-primary);
 }

@@ -37,7 +37,7 @@ const ProjectCard = ({
       )}
       <Card.Body className="d-flex flex-column gap-2 gap-sm-3 position-relative">
         <Card.Title className="text-center text-decoration-underline">
-          <Card.Link className="card-link fw-bold fs-3 font-primary">
+          <Card.Link className="card-link fw-bold fs-3 color-brand">
             {title}
             {github && (
               <Card.Link

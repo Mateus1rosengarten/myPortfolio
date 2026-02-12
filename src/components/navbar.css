@@ -1,36 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-.navbar-link,
-.navbar-link-active {
-  font-size: 1.4em !important;
-  font-family: "Montserrat", sans-serif;
-}
-
-.navbar-link-active {
-  text-decoration: underline !important;
-  text-underline-offset: 5px;
-}
-
-.navbar-link:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.05);
-}
-
-.container {
-  margin-left: 2vw !important;
-}
-
-.toggle {
-  position: absolute;
-  right: 3vw;
-  top: 1vh;
-  cursor: pointer;
-}
-
-.sidebar-toggle {
-  display: none !important;
-}
-
 @media (max-width: 835px) {
   .navbar-link {
     font-size: 0.9em !important;

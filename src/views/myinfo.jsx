@@ -5,6 +5,7 @@ import { contextDarkMode } from "../context/contextDarkMode";
 import myPicture from "../images/mypic-dark.png";
 import sunglass from "../images/sunglass.png";
 import "../views/myinfo.css";
+import AppButton from "../components/button";
 
 function MyInfo() {
   const { itsDark, createAnimation } = useContext(contextDarkMode);
@@ -50,26 +51,13 @@ function MyInfo() {
           #NodeJS #express #RestAPI #MongoDB #PostgreSQL #firebase #webDesign
           #figma #bootstrap #tailwind #MUI #StyledComponents #git/github
         </h3>
-        <div className="d-flex gap-4">
-          <Button
-            variant="none"
-            onClick={handleOpeningCV}
-            className={`mt-3  ${
-              itsDark ? "btn-custom-light" : "btn-custom-dark"
-            }`}
-          >
-            MY CV
-          </Button>
-          <Button
-            variant="none"
-            as="a"
-            href="mailto:matrosen.developer@gmail.com"
-            className={`mt-3  ${
-              itsDark ? "btn-custom-light" : "btn-custom-dark"
-            }`}
-          >
-            HIRE ME
-          </Button>
+        <div className="d-flex gap-4 justify-content-center">
+          <AppButton children={"MY CV"} onClick={handleOpeningCV} />
+
+          <AppButton
+            children={"WRITE ME"}
+            href={"mailto:matrosen.developer@gmail.com"}
+          />
         </div>
       </div>
 

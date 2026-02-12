@@ -14,7 +14,7 @@ const OrderFilter = ({ order, handleOrderChange }) => {
     <div className="d-flex justify-content-end margin-right">
       <select
         name="select-order-filter"
-        className="p-2 border border-primary rounded"
+        className="p-2 border rounded"
         value={order}
         onChange={(e) => handleOrderChange(e.target.value)}
       >

@@ -18,7 +18,7 @@ const TechFilter = ({ selectedTech, handleTechClick }) => {
           className={`fst-italic m-2 px-2 py-1 shadow ${
             selectedTech.includes(tech) ||
             (tech === "SHOW ALL" && selectedTech.length === 0)
-              ? "li-tech-selected"
+              ? "bg-color-brand"
               : "li-tech"
           }`}
           style={{ transition: "0.1s", cursor: "pointer" }}

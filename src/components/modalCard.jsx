@@ -18,8 +18,8 @@ const CardModal = ({ show, handleClose, project }) => {
         github={project.github}
         images={project.carousel}
         imgLoading={project.imgLoading}
-        isModal={true}
         closeModal={handleClose}
+        isModal={true}
       />
     </Modal>
   );

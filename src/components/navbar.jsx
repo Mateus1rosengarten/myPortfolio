@@ -9,6 +9,7 @@ import { faMoon, faSun, faBars } from "@fortawesome/free-solid-svg-icons";
 import "../components/navbar.css";
 import { contextDarkMode } from "../context/contextDarkMode";
 import { contextSideBar } from "../context/contextSideBar";
+import NavLinkItem from "./navLink";
 
 function NavBar() {
   const { itsDark, setItsDark, setCreateAnimation } =
@@ -24,32 +25,20 @@ function NavBar() {
     setCreateAnimation(true);
   };
 
-  const getNavLinkClass = (isActive) => {
-    return `nav-link ${!itsDark ? "text-light" : "text-dark"} ${
-      isActive ? "navbar-link-active" : "navbar-link"
-    }`;
-  };
-
   return (
     <>
-      <Navbar bg={!itsDark ? "dark" : "white"} data-bs-theme="dark">
+      <Navbar
+        className="py-3"
+        bg={itsDark ? "white" : "dark"}
+        data-bs-theme="dark"
+      >
         <Container>
-          <Nav className="gap-4">
-            <NavLink
-              to="/"
-              className={({ isActive }) => getNavLinkClass(isActive)}
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to="/projects"
-              className={({ isActive }) => getNavLinkClass(isActive)}
-            >
-              Projects
-            </NavLink>
+          <Nav className="gap-5">
+            <NavLinkItem to="/">Home</NavLinkItem>
+            <NavLinkItem to="/projects">Projects</NavLinkItem>
           </Nav>
           <Button
-            className="sidebar-toggle"
+            className="d-lg-none ms-2"
             style={{ backgroundColor: itsDark ? "black" : "white" }}
             variant="none"
             onClick={() => handleSideBar()}
@@ -59,7 +48,7 @@ function NavBar() {
               color={!itsDark ? "black" : "white"}
             />
           </Button>
-          <Form className="toggle">
+          <Form className="cursor-pointer">
             <Form.Check
               type="switch"
               onChange={() => handleToggleDarkMode()}
