@@ -50,6 +50,15 @@ body,
 .cursor-pointer {
   cursor: pointer;
 }
+.card-motion {
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-motion:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
 
 .icon-motion {
   animation: rotation 0.5s linear;

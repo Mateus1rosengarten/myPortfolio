@@ -17,10 +17,10 @@ function MyInfo() {
 
   return (
     <section className={`py-5 text-center ${itsDark && "bg-dark"}`}>
-      <div className="container">
+      <div className="container mb-5">
         <div className="position-relative d-inline-block">
           <img
-            className="rounded-circle img-fluid"
+            className="rounded-circle img-fluid w-sm-50 w-80"
             style={{ maxWidth: "275px" }}
             src={myPicture}
             alt="Foto de perfil de Mateus Rosengarten Mauricio"
@@ -31,16 +31,20 @@ function MyInfo() {
             className={`sunglasses ${itsDark ? "drop" : "rise"}`}
           />
         </div>
-        <h1 className={`font-primary fs-1  ${itsDark && "text-white"}`}>
-          Mateus Rosengarten Mauricio
+        <h1 className={`font-primary fs-2  ${itsDark && "text-white"}`}>
+          Mateus Rosengarten
         </h1>
       </div>
       <div className="d-flex flex-column align-items-center">
-        <h2 className={`font-primary fs-2 ${itsDark && "text-white"}`}>
+        <h2
+          className={`font-primary fs-1 text-bold fw-bold ${
+            itsDark && "text-white"
+          }`}
+        >
           Front End Developer
         </h2>
         <h3
-          className={`w-50 fs-6 fst-italic ${
+          className={`w-75 sm:w-50 fs-6 fst-italic ${
             itsDark ? "text-white-50" : "text-muted"
           }`}
         >

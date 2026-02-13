@@ -1,6 +1,13 @@
 import { Card } from "react-bootstrap";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faClose } from "@fortawesome/free-solid-svg-icons";
+import {
+  faClose,
+  faUpRightAndDownLeftFromCenter,
+  faExpand,
+  faUpRightFromSquare,
+  faEye,
+  faPlus,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ImgCarousel from "./carousel";
 
@@ -18,7 +25,7 @@ const ProjectCard = ({
 }) => {
   return (
     <Card
-      className="shadow-lg cursor-pointer w-100 h-100"
+      className="shadow-lg cursor-pointer w-100 h-100 card-motion"
       onClick={openModal}
       key={title}
     >
@@ -50,13 +57,11 @@ const ProjectCard = ({
             )}
           </Card.Link>
 
-          {isModal && (
-            <FontAwesomeIcon
-              icon={faClose}
-              className="position-absolute top-0 end-0 mt-1 mt-md-2 me-1 me-md-3 cursor-pointer text-danger fs-2 fs-md-3"
-              onClick={closeModal}
-            />
-          )}
+          <FontAwesomeIcon
+            icon={isModal ? faClose : faPlus}
+            className="position-absolute top-0 end-0 mt-1 mt-md-2 me-1 me-md-3 cursor-pointer text-warning fs-2 fs-md-3"
+            onClick={closeModal}
+          />
         </Card.Title>
         <Card.Text className="px-1 px-sm-2 px-lg-3 text-left">{text}</Card.Text>
         <ul className="d-flex flex-wrap mx-auto font-primary list-unstyled ps-lg-4">

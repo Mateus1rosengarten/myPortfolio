@@ -37,8 +37,7 @@ function NavBar() {
             <NavLinkItem to="/projects">Projects</NavLinkItem>
           </Nav>
           <Button
-            className="d-lg-none ms-2"
-            style={{ backgroundColor: itsDark ? "black" : "white" }}
+            className={`d-lg-none ms-2 bg-color-brand`}
             variant="none"
             onClick={() => handleSideBar()}
           >
@@ -54,9 +53,8 @@ function NavBar() {
               checked={itsDark}
             />
             <FontAwesomeIcon
-              className="icon-custom"
+              className="icon-custom color-brand"
               icon={itsDark ? faMoon : faSun}
-              color={!itsDark ? "white" : "black"}
             />
           </Form>
         </Container>
