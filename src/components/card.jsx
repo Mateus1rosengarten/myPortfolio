@@ -1,6 +1,9 @@
 import { Card } from "react-bootstrap";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faClose, faPlus } from "@fortawesome/free-solid-svg-icons";
+import {
+  faClose,
+  faUpRightFromSquare,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ImgCarousel from "./carousel";
 
@@ -49,17 +52,24 @@ const ProjectCard = ({
               </Card.Link>
             )}
           </Card.Link>
-
-          <FontAwesomeIcon
-            icon={isModal ? faClose : faPlus}
-            className="position-absolute top-0 end-0 mt-1 mt-md-2 me-1 me-md-3 cursor-pointer text-warning fs-2 fs-md-3"
-            onClick={closeModal}
-          />
+          {isModal ? (
+            <FontAwesomeIcon
+              icon={faClose}
+              className="position-absolute top-0 mt-2 end-0 me-1 me-md-3 cursor-pointer text-warning fs-3 fs-md-3"
+              onClick={closeModal}
+            />
+          ) : (
+            <FontAwesomeIcon
+              icon={faUpRightFromSquare}
+              className="position-absolute bottom-0 mb-3 end-0 me-1 me-md-4 cursor-pointer color-brand fs-3 fs-md-3"
+              onClick={openModal}
+            />
+          )}
         </Card.Title>
         <Card.Text className="px-1 px-sm-2 px-lg-3 text-left">{text}</Card.Text>
         <ul className="d-flex flex-wrap mx-auto font-primary list-unstyled ps-lg-4">
           {techs.map((tech, index) => (
-            <li className="fst-italic mx-3 my-1 m-sm-2 px-3 py-2 shadow-lg">
+            <li className="fst-italic mx-3 my-1 m-sm-2 px-3 py-2 shadow-lg rounded">
               {tech}
             </li>
           ))}

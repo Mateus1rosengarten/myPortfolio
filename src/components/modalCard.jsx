@@ -7,7 +7,7 @@ const CardModal = ({ show, handleClose, project }) => {
     <Modal
       show={show}
       onHide={handleClose}
-      size="lg"
+      size="md"
       dialogClassName="card-modal-dialog"
       contentClassName="card-modal-content"
     >

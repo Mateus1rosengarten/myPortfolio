@@ -23,11 +23,6 @@ body,
   height: 100%;
 }
 
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  width: 4rem !important;
-  height: 4rem !important;
-}
 .bg-alt {
   background: linear-gradient(135deg, #ff7a18, #ffb347);
 }

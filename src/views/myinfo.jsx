@@ -32,7 +32,7 @@ function MyInfo() {
           />
         </div>
         <h1 className={`font-primary fs-2  ${itsDark && "text-white"}`}>
-          Mateus Rosengarten
+          I'm Mateus Rosengarten
         </h1>
       </div>
       <div className="d-flex flex-column align-items-center">
