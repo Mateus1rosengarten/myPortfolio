@@ -1,13 +1,6 @@
 import { Card } from "react-bootstrap";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import {
-  faClose,
-  faUpRightAndDownLeftFromCenter,
-  faExpand,
-  faUpRightFromSquare,
-  faEye,
-  faPlus,
-} from "@fortawesome/free-solid-svg-icons";
+import { faClose, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ImgCarousel from "./carousel";
 
