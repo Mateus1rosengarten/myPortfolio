@@ -8,20 +8,19 @@ const TechFilter = ({ selectedTech, handleTechClick }) => {
 
   return (
     <ul
-      className={`align-self-center ${
-        !itsDark ? "select-techs" : "select-techs-dark"
+      className={`d-flex gap-2 mt-4 px-4 p-3 rounded-pill border mx-auto overflow-auto list-unstyled tech-filter-container ${
+        itsDark ? "dark" : ""
       }`}
     >
       {techs.map((tech) => (
         <li
           key={tech}
-          className={`fst-italic m-2 px-2 py-1 shadow rounded ${
+          className={`position-relative px-2 tech-pill ${
             selectedTech.includes(tech) ||
             (tech === "SHOW ALL" && selectedTech.length === 0)
-              ? "bg-alt"
-              : "li-tech"
+              ? "active"
+              : ""
           }`}
-          style={{ transition: "0.1s", cursor: "pointer" }}
           onClick={() => handleTechClick(tech)}
         >
           {tech}
