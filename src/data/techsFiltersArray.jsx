@@ -13,3 +13,36 @@ export const techs = [
   "FIREBASE",
   "STYLED-COMPONENTS",
 ];
+
+export const icons = [
+  // Frontend
+  { name: "HTML", icon: "devicon-html5-plain colored" },
+  { name: "CSS", icon: "devicon-css3-plain colored " },
+  { name: "JavaScript", icon: "devicon-javascript-plain colored " },
+  { name: "TypeScript", icon: "devicon-typescript-plain colored" },
+  { name: "React", icon: "devicon-react-original colored" },
+  { name: "Redux Toolkit", icon: "devicon-redux-original colored " },
+  { name: "Next.js", icon: "devicon-nextjs-line-wordmark colored" },
+  { name: "Bootstrap", icon: "devicon-bootstrap-plain colored " },
+  { name: "Tailwind", icon: "devicon-tailwindcss-plain colored " },
+  { name: "Material UI", icon: "devicon-materialui-plain colored " },
+  {
+    name: "Styled Components",
+    icon: "devicon-styledcomponents-plain colored ",
+  },
+
+  // Backend
+  { name: "Node.js", icon: "devicon-nodejs-plain colored " },
+  { name: "Express", icon: "devicon-express-original colored" },
+  { name: "REST API", icon: "devicon-fastapi-plain colored " }, // alternativa visual
+
+  // Database
+  { name: "MongoDB", icon: "devicon-mongodb-plain colored " },
+  { name: "PostgreSQL", icon: "devicon-postgresql-plain colored " },
+  { name: "Firebase", icon: "devicon-firebase-plain colored " },
+
+  // Tools
+  { name: "Git", icon: "devicon-git-plain colored " },
+  { name: "GitHub", icon: "devicon-github-original" },
+  { name: "Figma", icon: "devicon-figma-plain colored " },
+];

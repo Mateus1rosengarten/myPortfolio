@@ -5,6 +5,7 @@ import sunglass from "../images/sunglass.png";
 import "../views/myinfo.css";
 import AppButton from "../components/button";
 import SocialMediaIcon from "../components/socialIcon";
+import TechStack from "../components/techStack";
 
 function MyInfo() {
   const { itsDark } = useContext(contextDarkMode);
@@ -43,15 +44,6 @@ function MyInfo() {
         >
           Front End Developer
         </h2>
-        <h3
-          className={`w-75 sm:w-50 fs-6 fst-italic ${
-            itsDark ? "text-white-50" : "text-muted"
-          }`}
-        >
-          #html #css #javascript #typescript #react #redux/toolkit #NextJS
-          #NodeJS #express #RestAPI #MongoDB #PostgreSQL #firebase #webDesign
-          #figma #bootstrap #tailwind #MUI #StyledComponents #git/github
-        </h3>
         <div className="d-flex gap-4 justify-content-center">
           <AppButton children={"MY CV"} onClick={handleOpeningCV} />
 
@@ -60,6 +52,16 @@ function MyInfo() {
             href={"mailto:matrosen.developer@gmail.com"}
           />
         </div>
+        {/* <h3
+          className={`w-75 sm:w-50 fs-6 fst-italic ${
+            itsDark ? "text-white-50" : "text-muted"
+          }`}
+        >
+          #html #css #javascript #typescript #react #redux/toolkit #NextJS
+          #NodeJS #express #RestAPI #MongoDB #PostgreSQL #firebase #webDesign
+          #figma #bootstrap #tailwind #MUI #StyledComponents #git/github
+        </h3> */}
+        <TechStack></TechStack>
       </div>
 
       <div className="d-flex justify-content-center p-5 gap-4">

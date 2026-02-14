@@ -6,6 +6,7 @@ import Projects from "./views/projects";
 import { useContext } from "react";
 import { contextSideBar } from "./context/contextSideBar";
 import SideBar from "./components/sidebar";
+import "devicon/devicon.min.css";
 import "./App.css";
 
 function App() {

@@ -10,7 +10,7 @@ const projects = [
     text: "Developed a responsive landing page using React, TypeScript and Tailwind, translating detailed design prototypes into scalable components. Implemented complex UI animations and dynamic sections, improving performance and component organization.",
     secondText:
       "In this project, I got better at turning detailed design prototypes into clean, responsive code and learned how to add more advanced animations to make the UI feel smoother. I also improved my React component structure and overall workflow with TypeScript and Tailwind.",
-    techs: ["REACT", "TYPESCRIPT", "TAILWIND", "NodeJS"],
+    techs: ["REACT", "TYPESCRIPT", "TAILWIND"],
     github: "https://github.com/Mateus1rosengarten/RosenTechDigital",
     imgLoading: "eager",
     ProjectKind: "Costumer",
@@ -27,7 +27,7 @@ const projects = [
       require("../images/mkt-lading-page-3.png"),
       require("../images/mkt-lading-page-4.png"),
     ],
-    text: "Built a production-ready website with Next.js focusing on SEO and performance optimization. Integrated dynamic map features and automated email workflows while improving server-side rendering and project structure.Waiting for pictures from the company",
+    text: "Built a production-ready website with Next.js focusing on SEO and performance optimization. Integrated dynamic map features and automated email workflows while improving server-side rendering and project structure.Waiting for pictures from the company.",
     techs: ["NextJS", "TYPESCRIPT", "TAILWIND"],
     github: "https://github.com/Mateus1rosengarten/MktEmbalagem",
     imgLoading: "eager",
@@ -44,7 +44,7 @@ const projects = [
       require("../images/e-commerce-2.png"),
       require("../images/e-commerce-3.png"),
     ],
-    text: "Implemented full frontend from Figma designs and developed authentication and advanced product filtering. Worked on backend integration with Node.js and MongoDB, gaining practical experience in full-stack architecture and team collaboration. Although the project is currently on hold due to changes in Brazil taxation policies that affected international product sourcing",
+    text: "Implemented full frontend from Figma designs and developed authentication and advanced product filtering. Worked on backend integration with Node.js and MongoDB, gaining practical experience in full-stack architecture and team collaboration. Although the project is currently on hold due to changes in Brazil taxation policies that affected international product sourcing.",
     techs: ["REACT", "NodeJS", "EXPRESS", "MongoDB"],
     ProjectKind: "Costumer",
     imgLoading: "lazy",
@@ -88,14 +88,14 @@ const projects = [
     apprenticeshipOrder: 8,
   },
   {
-    title: "Menu Restaurant Optimizer",
+    title: "Menu Restaurant",
     image: require("../images/menu-restaurant-1.png"),
     carousel: [
       require("../images/menu-restaurant-1.png"),
       require("../images/menu-restaurant-2.png"),
       require("../images/menu-restaurant-3.png"),
     ],
-    text: "Menu Restaurant Optimizer is my own SaaS project, Designed and developed a SaaS platform enabling digital ordering and operational tracking. Built REST APIs with Express and PostgreSQL, focusing on data modeling, scalability and real-world business logic implementation..",
+    text: "Menu Restaurant Optimizer is my own SaaS project, Designed and developed a SaaS platform enabling digital ordering and operational tracking. Built REST APIs with Express and PostgreSQL, focusing on data modeling, scalability and real-world business logic implementation.",
     techs: ["REACT", "TYPESCRIPT", "NodeJS", "EXPRESS", "PostgreSQL", "MUI"],
     github: "https://github.com/Mateus1rosengarten/AllYouCanEat-Manager",
     imgLoading: "lazy",
@@ -106,14 +106,14 @@ const projects = [
   },
 
   {
-    title: "SmartBastket Web App",
+    title: "SmartBastket",
     image: require("../images/smart-1.png"),
     carousel: [
       require("../images/smart-1.png"),
       require("../images/smart-2.png"),
       require("../images/smart-3.png"),
     ],
-    text: "Contributed to frontend architecture evolution using React, TypeScript and Tailwind. Participated in defining structural improvements and enhancing interface scalability within a collaborative development team.",
+    text: "Contributed to the evolution of the frontend architecture using React, TypeScript, and Tailwind CSS. Collaborated on structural improvements and refactored legacy patterns introduced by previous developers within a team-based development environment.",
     techs: ["REACT", "TAILWIND", "TYPESCRIPT", "RADIX UI"],
     github:
       "https://github.com/Mateus1rosengarten/GesplanListaFornecedores/tree/master",
