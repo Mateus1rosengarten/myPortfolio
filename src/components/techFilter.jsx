@@ -8,14 +8,14 @@ const TechFilter = ({ selectedTech, handleTechClick }) => {
 
   return (
     <ul
-      className={`d-flex gap-2 mt-4 px-4 p-3 rounded-pill border mx-auto overflow-auto list-unstyled tech-filter-container ${
+      className={`d-flex flex-lg-nowrap flex-wrap justify-content-center align-items-center gap-2 mt-4 px-3 mx-auto list-unstyled ${
         itsDark ? "dark" : ""
       }`}
     >
       {techs.map((tech) => (
         <li
           key={tech}
-          className={`position-relative px-2 tech-pill ${
+          className={`tech-pill ${
             selectedTech.includes(tech) ||
             (tech === "SHOW ALL" && selectedTech.length === 0)
               ? "active"

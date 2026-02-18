@@ -1,55 +1,19 @@
-.tech-filter-container {
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
-  border: 1px solid #eaeaea;
-  width: fit-content;
-}
-
 .tech-pill {
-  font-size: 14px;
-  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.85rem;
   cursor: pointer;
-  color: #6c757d;
-  transition: all 0.3s ease;
-}
-
-.tech-pill::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0px;
-  width: 0%;
-  height: 2px;
-  background: #ff6b00;
-  transition: width 0.3s ease;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .tech-pill:hover {
-  color: #000;
+  transform: translateY(-2px);
 }
 
 .tech-pill.active {
+  background-color: #ff7a18;
   color: #000;
-  transform: scale(1.1);
-}
-
-.tech-pill.active::after {
-  width: 100%;
-}
-
-.tech-filter-container.dark {
-  background: rgba(30, 30, 30, 0.6);
-  border: 1px solid #333;
-}
-
-.tech-filter-container.dark .tech-pill {
-  color: #aaa;
-}
-
-.tech-filter-container.dark .tech-pill:hover {
-  color: white;
-}
-
-.tech-filter-container.dark .tech-pill.active {
-  color: white;
+  border: none;
 }
