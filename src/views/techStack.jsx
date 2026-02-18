@@ -4,7 +4,10 @@ import TechCard from "../components/techCard";
 
 const TechStack = () => {
   return (
-    <section className="w-full py-5 px-sm-4 ps-sm-5 bg-surface text-main">
+    <section
+      id="techs"
+      className="w-full py-5 px-sm-4 ps-sm-5 bg-surface text-main"
+    >
       <h2 className="fw-bold mb-5 font-primary border-start border-4 mt-4 ms-4 ps-2 ps-sm-4 border-brand mb-5">
         Technologies I'm Confortable to Work
       </h2>

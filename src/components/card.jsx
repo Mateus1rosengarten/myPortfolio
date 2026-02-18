@@ -31,9 +31,9 @@ const ProjectCard = ({ images, title, github, text, techs, loading }) => {
           </Card.Link>
         </Card.Title>
         <Card.Text className="px-1 px-sm-2 px-lg-3 text-left">{text}</Card.Text>
-        <ul className="d-flex flex-wrap mx-auto font-primary list-unstyled ps-lg-4">
+        <ul className="d-flex flex-wrap justify-content-center font-primary gap-3 list-unstyled ps-lg-4">
           {techs.map((tech, index) => (
-            <li className="fst-italic mx-auto my-2 my-sm-1 m-sm-2 px-3 py-2 shadow-lg tech-card rounded">
+            <li className="fst-italic my-2 px-3 py-2 shadow-lg tech-card rounded">
               {tech}
             </li>
           ))}

@@ -8,7 +8,7 @@ const TechFilter = ({ selectedTech, handleTechClick }) => {
 
   return (
     <>
-      <div className="d-md-none mt-4 mb-5 px-3">
+      <div className="d-sm-none mt-4 mb-5 px-3">
         <div className="d-flex gap-4 overflow-auto pb-2">
           {techs.map((tech) => (
             <div
@@ -30,11 +30,7 @@ const TechFilter = ({ selectedTech, handleTechClick }) => {
         </div>
       </div>
 
-      <ul
-        className={`d-none d-md-flex sm-block d-flex flex-wrap justify-content-center align-items-center gap-2 mt-4 px-3 mx-auto list-unstyled ${
-          itsDark ? "dark" : ""
-        }`}
-      >
+      <ul className="d-none d-sm-flex sm-block d-flex flex-wrap justify-content-center align-items-center gap-2 gap-sm-0 mt-4 px-3 mx-auto list-unstyled">
         {techs.map((tech) => (
           <li
             key={tech}

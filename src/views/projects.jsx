@@ -57,7 +57,7 @@ function Projects() {
     });
 
   return (
-    <section className="bg-main text-main py-5">
+    <section id="projects" className="bg-main text-main py-5">
       <div className="px-sm-3">
         <h2 className="fw-bold mb-4 font-primary border-start border-4 mt-4 ms-4 ps-2 ps-sm-4 border-brand">
           Some of my Projects
