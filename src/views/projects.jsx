@@ -5,7 +5,7 @@ import projects from "../data/projectsArray";
 import TechFilter from "../components/techFilter";
 import OrderFilter from "../components/orderFilter";
 import { Button } from "react-bootstrap";
-import CardModal from "../components/modalCard";
+
 import ProjectCard from "../components/card";
 
 function Projects() {
@@ -18,10 +18,6 @@ function Projects() {
   useEffect(() => {
     setCreateAnimation(false);
   }, [setCreateAnimation]);
-
-  const openModal = (project) => setSelectedProject(project);
-
-  const closeModal = () => setSelectedProject(null);
 
   const handleTechClick = (tech) => {
     if (tech === "SHOW ALL") {
@@ -109,25 +105,17 @@ function Projects() {
                 <ProjectCard
                   key={project.title}
                   title={project.title}
-                  image={project.image}
+                  images={project.carousel}
                   text={project.text}
                   techs={project.techs}
                   github={project.github}
-                  imgLoading={project.imgLoading}
-                  openModal={() => openModal(project)}
+                  loading={project.loading}
                 />
               </div>
             ))}
           </div>
         </div>
       )}
-      <CardModal
-        show={!!selectedProject}
-        handleClose={closeModal}
-        project={selectedProject}
-        nextPage={nextPage}
-        handleNextPage={setNextPage}
-      />
     </div>
   );
 }
