@@ -1,17 +1,18 @@
-import { NavLink } from "react-router-dom";
-
 function NavLinkItem({ to, children }) {
+  const handleScroll = () => {
+    const section = document.getElementById(to);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <NavLink
-      to={to}
-      className={({ isActive }) =>
-        ` fs-5 font-primary fs-6 text-decoration-none text-brand 
-        ${isActive && "fw-semibold text-decoration-underline"}
-        `
-      }
+    <span
+      onClick={handleScroll}
+      className="fs-5 font-primary text-decoration-none text-brand cursor-pointer"
     >
       {children}
-    </NavLink>
+    </span>
   );
 }
 

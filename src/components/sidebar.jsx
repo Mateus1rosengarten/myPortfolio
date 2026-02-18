@@ -8,12 +8,12 @@ const SideBar = () => {
   const { setIsSideBar } = useContext(contextSideBar);
   const navigate = useNavigate();
 
-  const handleNavigate = (path, sectionId = null) => {
+  const handleNavigate = (path, to = null) => {
     navigate(path);
 
-    if (sectionId) {
+    if (to) {
       setTimeout(() => {
-        const section = document.getElementById(sectionId);
+        const section = document.getElementById(to);
         if (section) {
           section.scrollIntoView({ behavior: "smooth" });
         }

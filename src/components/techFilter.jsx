@@ -17,7 +17,7 @@ const TechFilter = ({ selectedTech, handleTechClick }) => {
               className={`px-3 py-2 rounded-pill small text-nowrap ${
                 selectedTech.includes(tech) ||
                 (tech === "SHOW ALL" && selectedTech.length === 0)
-                  ? "bg-brand text-dark"
+                  ? "bg-brand"
                   : itsDark
                   ? "bg-dark text-white border border-secondary"
                   : "bg-light text-dark border"

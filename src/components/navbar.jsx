@@ -33,13 +33,13 @@ function NavBar() {
       >
         <Container>
           <Nav className="gap-5">
-            <NavLinkItem className="" to="/">
+            <NavLinkItem className="" to="/" end>
               Home
             </NavLinkItem>
-            <NavLinkItem to="/projects">About</NavLinkItem>
-            <NavLinkItem to="/projects">Techs</NavLinkItem>
-            <NavLinkItem to="/projects">Projects</NavLinkItem>
-            <NavLinkItem to="/projects">Contact</NavLinkItem>
+            <NavLinkItem to="about">About</NavLinkItem>
+            <NavLinkItem to="techs">Techs</NavLinkItem>
+            <NavLinkItem to="projects">Projects</NavLinkItem>
+            <NavLinkItem to="contact">Contact</NavLinkItem>
           </Nav>
           <Button
             className={`d-lg-none ms-2 bg-brand`}
