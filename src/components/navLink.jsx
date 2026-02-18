@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
 
-function NavLinkItem({ to, children, itsDark }) {
+function NavLinkItem({ to, children }) {
   return (
     <NavLink
       to={to}
       className={({ isActive }) =>
-        ` fs-4 font-primary fs-6 text-decoration-none color-brand
+        ` fs-5 font-primary fs-6 text-decoration-none text-brand 
         ${isActive && "fw-semibold text-decoration-underline"}
         `
       }

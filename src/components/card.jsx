@@ -13,7 +13,7 @@ const ProjectCard = ({ images, title, github, text, techs, loading }) => {
 
       <Card.Body className="d-flex flex-column gap-2 gap-sm-3 position-relative">
         <Card.Title className="text-center text-decoration-underline">
-          <Card.Link className="card-link fw-bold fs-3 color-brand">
+          <Card.Link className="card-link fw-bold fs-3 text-brand">
             {title}
             {github && (
               <Card.Link
@@ -33,7 +33,7 @@ const ProjectCard = ({ images, title, github, text, techs, loading }) => {
         <Card.Text className="px-1 px-sm-2 px-lg-3 text-left">{text}</Card.Text>
         <ul className="d-flex flex-wrap mx-auto font-primary list-unstyled ps-lg-4">
           {techs.map((tech, index) => (
-            <li className="fst-italic mx-3 my-1 m-sm-2 px-3 py-2 shadow-lg rounded">
+            <li className="fst-italic mx-auto my-2 my-sm-1 m-sm-2 px-3 py-2 shadow-lg tech-card rounded">
               {tech}
             </li>
           ))}

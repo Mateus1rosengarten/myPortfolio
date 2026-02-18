@@ -6,9 +6,8 @@ function SocialMediaIcon({ url, itsDark }) {
       url={url}
       target="_blank"
       rel="noopener noreferrer"
-      fgColor={itsDark ? "black" : "white"}
-      bgColor={itsDark ? "white" : "black"}
-      className="icon-motion"
+      className="color-brand"
+      bgColor="#ff7a00"
       style={{ height: 45, width: 45 }}
     />
   );

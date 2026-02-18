@@ -15,6 +15,17 @@ code {
 :root {
   --font-primary: "Montserrat", sans-serif;
   --font-secondary: "Inter", sans-serif;
+  --bg-primary: #ffffff;
+  --bg-surface: #f8f9fa;
+  --text-primary: #121212;
+  --text-secondary: #6c757d;
+}
+
+.dark {
+  --bg-primary: #232323;
+  --bg-surface: #272727;
+  --text-primary: #f1f1f1;
+  --text-secondary: #a1a1aa;
 }
 
 html,
@@ -23,15 +34,32 @@ body,
   height: 100%;
 }
 
-.bg-alt {
-  background: linear-gradient(135deg, #ff7a18, #ffb347);
+.bg-surface {
+  background-color: var(--bg-surface);
 }
-.color-brand {
+
+.bg-main {
+  background-color: var(--bg-primary);
+}
+
+.bg-brand {
+  background-color: #ff7a18;
+}
+
+.text-main {
+  color: var(--text-primary);
+}
+
+.text-surface {
+  color: var(--text-secondary);
+}
+
+.text-brand {
   color: #ff7a18;
 }
 
-.bg-color-brand {
-  background-color: #ff7a18;
+.border-brand {
+  border-color: #ff7a00 !important;
 }
 
 .font-primary {
@@ -76,13 +104,8 @@ body,
 }
 
 .tech-card {
-  background: #ffffff;
-  width: 180px;
-  border-radius: 16px;
-  text-align: center;
   transition: all 0.3s ease;
   position: relative;
-  overflow: hidden;
 }
 
 .tech-card::after {
@@ -97,7 +120,6 @@ body,
 }
 
 .tech-icon {
-  font-size: 30px;
   filter: grayscale(100%);
   transition: all 0.3s ease;
 }
@@ -112,7 +134,22 @@ body,
   transform: scale(1.1);
 }
 
-/* Linha cresce no hover */
 .tech-card:hover::after {
-  height: 6px;
+  height: 3px;
+}
+
+.profile-img {
+  max-width: 220px;
+}
+
+@media (min-width: 576px) {
+  .profile-img {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 992px) {
+  .profile-img {
+    max-width: 275px;
+  }
 }

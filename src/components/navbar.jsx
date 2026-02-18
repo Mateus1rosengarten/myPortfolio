@@ -33,11 +33,16 @@ function NavBar() {
       >
         <Container>
           <Nav className="gap-5">
-            <NavLinkItem to="/">Home</NavLinkItem>
+            <NavLinkItem className="" to="/">
+              Home
+            </NavLinkItem>
+            <NavLinkItem to="/projects">About</NavLinkItem>
+            <NavLinkItem to="/projects">Techs</NavLinkItem>
             <NavLinkItem to="/projects">Projects</NavLinkItem>
+            <NavLinkItem to="/projects">Contact</NavLinkItem>
           </Nav>
           <Button
-            className={`d-lg-none ms-2 bg-color-brand`}
+            className={`d-lg-none ms-2 bg-brand`}
             variant="none"
             onClick={() => handleSideBar()}
           >
@@ -53,7 +58,7 @@ function NavBar() {
               checked={itsDark}
             />
             <FontAwesomeIcon
-              className="icon-custom color-brand"
+              className="icon-custom text-brand"
               icon={itsDark ? faMoon : faSun}
             />
           </Form>
