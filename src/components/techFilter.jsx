@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import "../components/techFilter.css";
 import { contextDarkMode } from "../context/contextDarkMode";
 import { techs } from "../data/techsFiltersArray";
 

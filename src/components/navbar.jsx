@@ -8,7 +8,6 @@ import { faMoon, faSun, faBars } from "@fortawesome/free-solid-svg-icons";
 import { contextDarkMode } from "../context/contextDarkMode";
 import { contextSideBar } from "../context/contextSideBar";
 import NavLinkItem from "./navLink";
-import "../components/navbar.css";
 
 function NavBar() {
   const { itsDark, setItsDark, setCreateAnimation } =

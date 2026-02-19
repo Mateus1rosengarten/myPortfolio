@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { CloseButton, NavLink } from "react-bootstrap";
 import { contextSideBar } from "../context/contextSideBar";
-import "./sidebar.css";
 import { useNavigate } from "react-router-dom";
 
 const SideBar = () => {

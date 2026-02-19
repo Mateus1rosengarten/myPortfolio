@@ -1,5 +1,3 @@
-import "./orderFilter.css";
-
 const options = [
   "Most Recent",
   "Oldest",
@@ -11,7 +9,7 @@ const options = [
 
 const OrderFilter = ({ order, handleOrderChange }) => {
   return (
-    <div className="d-flex justify-content-end margin-right">
+    <div className="d-flex justify-content-end me-5">
       <select
         name="select-order-filter"
         className="p-2 border rounded"

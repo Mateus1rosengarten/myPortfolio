@@ -1,6 +1,6 @@
 import { SocialIcon } from "react-social-icons";
 
-function SocialMediaIcon({ url, itsDark }) {
+function SocialMediaIcon({ url }) {
   return (
     <SocialIcon
       url={url}

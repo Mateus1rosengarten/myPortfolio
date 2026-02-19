@@ -1,5 +1,4 @@
 import { useContext, useEffect, useState } from "react";
-import "../views/projects.css";
 import { contextDarkMode } from "../context/contextDarkMode";
 import projects from "../data/projectsArray";
 import TechFilter from "../components/techFilter";
@@ -8,7 +7,7 @@ import { Button } from "react-bootstrap";
 import ProjectCard from "../components/card";
 
 function Projects() {
-  const { itsDark, setCreateAnimation } = useContext(contextDarkMode);
+  const { setCreateAnimation } = useContext(contextDarkMode);
   const [selectedTech, setSelectedTech] = useState([]);
   const [selectedOrder, setSelectedOrder] = useState("Most Recent");
 
@@ -74,14 +73,12 @@ function Projects() {
         </div>
 
         {FilterProjects.length === 0 ? (
-          <div className="text-center no-projects-container">
-            <p className="no-results-text">
-              Nenhum projeto corresponde a combinação de filtros selecionados
+          <div className="p-5 d-flex justify-content-center align-items-center flex-column min-vh-75">
+            <p className="no-results-text fs-3 font-primary">
+              Nenhum projeto corresponde a combinação de filtros selecionados.
             </p>
             <Button
-              className={`mt-3 ${
-                itsDark ? "btn-custom-light" : "btn-custom-dark"
-              }`}
+              className="mt-3 bg-brand border-0 font-secondary"
               onClick={() => {
                 setSelectedTech([]);
                 setSelectedOrder("Mais Recentes");

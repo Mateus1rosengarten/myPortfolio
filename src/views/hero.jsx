@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { contextDarkMode } from "../context/contextDarkMode";
 import myPicture from "../images/mypic-dark.png";
 import sunglass from "../images/sunglass.png";
-import "../views/hero.css";
 import AppButton from "../components/button";
 
 function Hero() {
