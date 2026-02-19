@@ -11,7 +11,7 @@ const Contact = () => {
               Let’s Connect
             </h2>
 
-            <p className="text-surface fs-5 mb-4 font-secondary">
+            <p className="text-surface sm:fs-5 mb-4 font-secondary">
               I’m always open to discussing new projects, creative ideas, or
               opportunities to be part of your vision.
             </p>

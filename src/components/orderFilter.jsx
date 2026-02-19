@@ -9,7 +9,7 @@ const options = [
 
 const OrderFilter = ({ order, handleOrderChange }) => {
   return (
-    <div className="d-flex justify-content-end me-5">
+    <div className="d-flex justify-content-end me-3 sm:me-5">
       <select
         name="select-order-filter"
         className="p-2 border rounded"
