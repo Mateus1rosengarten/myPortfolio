@@ -16,8 +16,8 @@ function Footer() {
             !itsDark ? "text-light" : "text-dark"
           } p-3 font-primary`}
         >
-          &copy; {dateNow} Mateus Rosengarten Mauricio Portfolio; All rigth
-          reserverd.
+          &copy; {dateNow} Mateus Rosengarten Portfolio;<br></br> All rigths
+          reserved.
         </div>
       </MDBFooter>
     </>

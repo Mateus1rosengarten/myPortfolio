@@ -13,7 +13,7 @@ const Contact = () => {
 
             <p className="text-surface sm:fs-5 mb-4 font-secondary">
               I’m always open to discussing new projects, creative ideas, or
-              opportunities to be part of your vision.
+              opportunities.
             </p>
 
             <p className="fw-semibold fs-5 mb-2 font-primary">
