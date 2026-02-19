@@ -31,7 +31,7 @@ function NavBar() {
         data-bs-theme="dark"
       >
         <Container>
-          <Nav className="gap-5">
+          <Nav className="d-none sm:d-block gap-5">
             <NavLinkItem className="" to="/" end>
               Home
             </NavLinkItem>
