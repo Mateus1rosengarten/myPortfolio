@@ -47,8 +47,6 @@ function Hero() {
       </div>
       <div className="d-flex flex-column align-items-center">
         <h2
-          data-aos="zoom-in"
-          data-aos-delay="300"
           className={`font-primary fs-1 text-bold fw-bold ${
             itsDark && "text-white"
           }`}
