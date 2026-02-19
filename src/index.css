@@ -167,19 +167,23 @@ body,
 
 .sunglasses {
   position: absolute;
-  top: -200px;
   left: 49%;
   width: 35%;
   transform: translateX(-50%);
   pointer-events: none;
+  top: -250px;
 }
 
-.sunglasses.rise {
-  animation: riseGlasses 0.6s ease-in forwards;
+.sunglasses.dark-position {
+  top: 33%;
 }
 
-.sunglasses.drop {
+.sunglasses.animate-drop {
   animation: dropGlasses 0.8s ease-out forwards;
+}
+
+.sunglasses.animate-rise {
+  animation: riseGlasses 0.6s ease-in forwards;
 }
 
 @keyframes dropGlasses {

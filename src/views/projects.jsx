@@ -58,10 +58,18 @@ function Projects() {
   return (
     <section id="projects" className="bg-main text-main py-5">
       <div className="px-sm-3">
-        <h2 className="fw-bold mb-4 font-primary border-start border-4 mt-4 ms-4 ps-2 ps-sm-4 border-brand">
+        <h2
+          data-aos="fade-right"
+          data-aos-duration="800"
+          className="fw-bold mb-4 font-primary border-start border-4 mt-4 ms-4 ps-2 ps-sm-4 border-brand"
+        >
           Some of my Projects
         </h2>
-        <div className="d-flex flex-column">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="150"
+          className="d-flex flex-column"
+        >
           <TechFilter
             selectedTech={selectedTech}
             handleTechClick={handleTechClick}
@@ -90,8 +98,11 @@ function Projects() {
         ) : (
           <div className="container mx-auto py-sm-5 p-xl-5 px-xxl-0">
             <div className="row gx-xl-1 gy-5 py-5 justify-content-between">
-              {FilterProjects.map((project) => (
-                <div className="col-12 col-sm-10 col-md-6 col-lg-5">
+              {FilterProjects.map((project, index) => (
+                <div
+                  data-aos="fade-up"
+                  className="col-12 col-sm-10 col-md-6 col-lg-5"
+                >
                   <ProjectCard
                     key={project.title}
                     title={project.title}
