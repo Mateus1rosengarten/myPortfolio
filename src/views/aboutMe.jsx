@@ -65,11 +65,12 @@ const AboutMe = () => {
             <Col sm={12}>
               <Card className="h-100 border-0 shadow-sm border-sm-bottom border-end border-brand border-2 ">
                 <Card.Body>
-                  <h6 className="fw-bold mb-2 font-primary">User Experience</h6>
+                  <h6 className="fw-bold mb-2 font-primary">Background</h6>
                   <p className="text-muted small mb-0 font-secondary">
-                    Completed a full-stack development program with a mentored
-                    internship (Tel Aviv - Israel), gaining practical experience
-                    in real projects and professional workflows.
+                    Completed a hybrid full-stack development program (on-site
+                    and remote) in Tel Aviv, Israel, followed by a mentored
+                    internship at the end of the course, gaining hands-on
+                    experience in real projects and professional workflows.
                   </p>
                 </Card.Body>
               </Card>
