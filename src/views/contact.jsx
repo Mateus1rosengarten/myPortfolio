@@ -7,19 +7,11 @@ const Contact = () => {
       <Container>
         <Row className="justify-content-center text-center">
           <Col lg={8}>
-            <h2
-              data-aos="fade-left"
-              data-aos-delay="400"
-              className="fw-bold mb-3 font-primary text-brand"
-            >
+            <h2 className="fw-bold mb-3 font-primary text-brand">
               Let’s Connect
             </h2>
 
-            <p
-              data-aos="fade-right"
-              data-aos-delay="400"
-              className="text-surface fs-5 mb-4 font-secondary"
-            >
+            <p className="text-surface fs-5 mb-4 font-secondary">
               I’m always open to discussing new projects, creative ideas, or
               opportunities to be part of your vision.
             </p>

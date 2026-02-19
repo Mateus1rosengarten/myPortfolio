@@ -8,11 +8,7 @@ const AboutMe = () => {
     >
       <Row className="py-sm-3 mb-3 mb-sm-5 ms-sm-3">
         <Col lg={8}>
-          <h2
-            data-aos="fade-up"
-            data-aos-duration="800"
-            className="fw-bold mb-4 font-primary border-start border-4 ps-2 ps-sm-4 border-brand"
-          >
+          <h2 className="fw-bold mb-4 font-primary border-start border-4 ps-2 ps-sm-4 border-brand">
             About Mateus
           </h2>
 
@@ -24,7 +20,7 @@ const AboutMe = () => {
       </Row>
 
       <Row className="g-4 align-items-stretch font-secondary ms-sm-3">
-        <Col data-aos="fade-right" data-aos-duration="900" md={6}>
+        <Col md={6}>
           <p className="text-secondary">
             I’ve worked on real-world projects ranging from responsive landing
             pages to e-commerce interfaces, collaborating with designers and
@@ -37,9 +33,9 @@ const AboutMe = () => {
           </p>
         </Col>
 
-        <Col data-aos="fade-left" data-aos-duration="900" md={6}>
+        <Col md={6}>
           <Row className="g-3">
-            <Col sm={6} data-aos="fade-left" data-aos-delay="100">
+            <Col sm={6}>
               <Card className="h-100 border-0 shadow-sm border-end border-brand border-2">
                 <Card.Body>
                   <h6 className="fw-bold  mb-2 font-primary">
@@ -53,7 +49,7 @@ const AboutMe = () => {
               </Card>
             </Col>
 
-            <Col sm={6} data-aos="fade-left" data-aos-delay="250">
+            <Col sm={6}>
               <Card className="h-100 border-0 shadow-sm border-end border-brand  border-2">
                 <Card.Body>
                   <h6 className="fw-bold mb-2 font-primary">Preferred Stack</h6>
@@ -66,7 +62,7 @@ const AboutMe = () => {
               </Card>
             </Col>
 
-            <Col sm={12} data-aos="fade-left" data-aos-delay="400">
+            <Col sm={12}>
               <Card className="h-100 border-0 shadow-sm border-sm-bottom border-end border-brand border-2 ">
                 <Card.Body>
                   <h6 className="fw-bold mb-2 font-primary">Background</h6>
