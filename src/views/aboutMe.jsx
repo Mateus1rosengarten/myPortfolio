@@ -1,4 +1,5 @@
 import { Row, Col, Card } from "react-bootstrap";
+import InfoCard from "../components/infoCard";
 
 const AboutMe = () => {
   return (
@@ -13,19 +14,21 @@ const AboutMe = () => {
           </h2>
 
           <p className="text-secondary fs-5 font-secondary">
-            I am experienced in developing modern web applications using React,
+            I have experience in developing modern web applications using React,
             TypeScript, and component-based architecture.
           </p>
         </Col>
       </Row>
 
       <Row className="g-4 align-items-stretch font-secondary ms-sm-3">
-        <Col md={6} className="g-4">
+        <Col md={6} className="g-4 mt-sm-4">
           <p className="text-secondary">
-            I’ve worked on real-world projects ranging from responsive landing
-            pages,refactoring and improving existing codebases to create
-            e-commerce UI interfaces, collaborating with designers and
-            contributing to production-ready React applications.
+            I’ve worked on real-world projects from responsive landing
+            pages,refactoring and improving existing codebases and create
+            e-commerce UI interface, collaborating with designers and
+            contributing to production-ready applications.I also leverage modern
+            AI-assisted development tools to improve efficiency, accelerate
+            delivery, and enhance code quality and security.
           </p>
 
           <p className="text-secondary mt-sm-5">
@@ -41,44 +44,24 @@ const AboutMe = () => {
         <Col md={6}>
           <Row className="g-3">
             <Col sm={6}>
-              <Card className="h-100 border-0 shadow-sm border-end border-brand border-2">
-                <Card.Body>
-                  <h6 className="fw-bold  mb-2 font-primary">
-                    What You Can Expect
-                  </h6>
-                  <p className="text-muted small mb-0 font-secondary">
-                    Well-structured and reliable work, delivered with clear
-                    communication, strong work ethic, and attention to detail.
-                  </p>
-                </Card.Body>
-              </Card>
+              <InfoCard
+                title="What You Can Expect"
+                description="Well-structured and reliable work, delivered with clear communication, strong work ethic, and attention to detail."
+              />
             </Col>
 
             <Col sm={6}>
-              <Card className="h-100 border-0 shadow-sm border-end border-brand  border-2">
-                <Card.Body>
-                  <h6 className="fw-bold mb-2 font-primary">Preferred Stack</h6>
-                  <p className="text-muted small mb-0 font-secondary">
-                    React, TypeScript and Tailwind are my core technologies,
-                    while I’m also comfortable working with other tools
-                    ,including backend development.
-                  </p>
-                </Card.Body>
-              </Card>
+              <InfoCard
+                title="Preferred Stack"
+                description="React, TypeScript and Tailwind are my core technologies, while I’m also able to work with other tools, including backend development."
+              />
             </Col>
 
             <Col sm={12}>
-              <Card className="h-100 border-0 shadow-sm border-sm-bottom border-end border-brand border-2 ">
-                <Card.Body>
-                  <h6 className="fw-bold mb-2 font-primary">Background</h6>
-                  <p className="text-muted small mb-0 font-secondary">
-                    Completed a hybrid full-stack development program (on-site
-                    and remote) in Tel Aviv, Israel, followed by a mentored
-                    internship at the end of the course, gaining hands-on
-                    experience in real projects and professional workflows.
-                  </p>
-                </Card.Body>
-              </Card>
+              <InfoCard
+                title="Background"
+                description="Completed a hybrid full-stack development program (on-site and remote) in Tel Aviv, Israel (2022-2023), followed by a mentored React internship at the end of the course, gaining hands-on experience in real projects and professional workflows."
+              />
             </Col>
           </Row>
         </Col>

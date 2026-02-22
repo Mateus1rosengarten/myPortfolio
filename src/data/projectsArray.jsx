@@ -108,7 +108,7 @@ const projects = [
       require("../images/basket-2.png"),
       require("../images/basket-3.png"),
     ],
-    text: "Contributed to the evolution of the frontend architecture using React, TypeScript, and Tailwind and Radix UI component library. Collaborated on structural improvements and refactored legacy patterns introduced by previous developers, ensuring rigorous adherence to the design provided in Figma.",
+    text: "Contributed to the evolution of the frontend architecture using React, TypeScript, and Tailwind and Radix UI component library. Collaborated on structural improvements and refactored legacy patterns introduced by previous developers, ensuring organiztion and rigorous adherence to the design provided in Figma.",
     techs: ["REACT", "TAILWIND", "TYPESCRIPT", "RADIX UI"],
     github:
       "https://github.com/Mateus1rosengarten/GesplanListaFornecedores/tree/master",
