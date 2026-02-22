@@ -20,10 +20,6 @@ const Contact = () => {
               matrosen.developer@gmail.com
             </p>
 
-            <p className="text-surface mb-4 font-secondary">
-              WhatsApp: +972 0534715942
-            </p>
-
             <div className="d-flex justify-content-center gap-4 mt-3 mb-5">
               <SocialMediaIcon
                 url={"https://www.linkedin.com/in/mateus-rosengarten-mauricio/"}
