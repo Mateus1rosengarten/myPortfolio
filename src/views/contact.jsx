@@ -29,7 +29,9 @@ const Contact = () => {
                 url={"https://www.linkedin.com/in/mateus-rosengarten-mauricio/"}
               />
               <SocialMediaIcon url={"https://github.com/Mateus1rosengarten"} />
-              <SocialMediaIcon url={"https://wa.me/9720534715942"} />
+              <SocialMediaIcon
+                url={"https://api.whatsapp.com/send?phone=9720534715942"}
+              />
             </div>
           </Col>
         </Row>
