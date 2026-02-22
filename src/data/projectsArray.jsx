@@ -1,7 +1,6 @@
 const projects = [
   {
     title: "M2 Marketplace Agency",
-    image: require("../images/m2-1.png"),
     carousel: [
       require("../images/grupom2-1.png"),
       require("../images/grupom2-2.png"),
@@ -22,7 +21,6 @@ const projects = [
   },
   {
     title: "MKT Embalagem website",
-    image: require("../images/mkt-lading-page-1.png"),
     carousel: [
       require("../images/mkt-lading-page-1.png"),
       require("../images/mkt-lading-page-2.png"),
@@ -40,13 +38,12 @@ const projects = [
   },
   {
     title: "Sustentools E-commerce",
-    image: require("../images/e-commerce-3.png"),
     carousel: [
       require("../images/e-commerce-1.png"),
       require("../images/e-commerce-2.png"),
       require("../images/e-commerce-3.png"),
     ],
-    text: "Implemented full frontend from Figma designs and developed authentication and advanced product filtering. Worked on backend integration with Node.js and MongoDB, gaining practical experience in full-stack architecture and team collaboration. Although the project is currently on hold due to changes in Brazil taxation policies that affected international product sourcing.",
+    text: "Implemented full frontend from Figma designs and developed authentication and advanced product filtering. Worked on backend integration with Express and MongoDB, gaining practical experience in full-stack architecture and team collaboration. Although the project is currently on hold due to changes in Brazil taxation policies that affected international product sourcing.",
     techs: ["REACT", "NodeJS", "EXPRESS", "MongoDB"],
     ProjectKind: "Costumer",
     loading: "lazy",
@@ -56,13 +53,12 @@ const projects = [
   },
   {
     title: "Payment Simulation CRUD",
-    image: require("../images/payment-crud-2.png"),
     carousel: [
       require("../images/payment-crud-1.png"),
       require("../images/payment-crud-2.png"),
       require("../images/payment-crud-3.png"),
     ],
-    text: "As part of a developer bootcamp Built a full CRUD application with Next.js, TypeScript and PostgreSQL. Implemented transaction states, data validation and UI consistency using MUI, strengthening my experience with scalable frontend architecture and structured backend communication.",
+    text: "As part of a code challenge Built a full CRUD application with Next.js, TypeScript and PostgreSQL. Implemented transaction states, data validation and UI consistency using MUI, strengthening my experience with project folder architecture,components best practices and structured backend communication.",
     techs: ["NextJS", "TYPESCRIPT", "MUI", "PostgreSQL"],
     github: "https://github.com/Mateus1rosengarten/PayoutStructure",
     loading: "lazy",
@@ -73,7 +69,6 @@ const projects = [
   },
   {
     title: "Guto Therapist Page",
-    image: require("../images/therapist-land-page-1.png"),
     carousel: [
       require("../images/therapist-land-page-1.png"),
       require("../images/therapist-land-page-2.png"),
@@ -91,7 +86,6 @@ const projects = [
   },
   {
     title: "Menu Restaurant",
-    image: require("../images/menu-restaurant-1.png"),
     carousel: [
       require("../images/menu-restaurant-1.png"),
       require("../images/menu-restaurant-2.png"),
@@ -109,11 +103,10 @@ const projects = [
 
   {
     title: "SmartBastket",
-    image: require("../images/smart-1.png"),
     carousel: [
-      require("../images/smart-1.png"),
-      require("../images/smart-2.png"),
-      require("../images/smart-3.png"),
+      require("../images/basket-1.png"),
+      require("../images/basket-2.png"),
+      require("../images/basket-3.png"),
     ],
     text: "Contributed to the evolution of the frontend architecture using React, TypeScript, and Tailwind and Radix UI component library. Collaborated on structural improvements and refactored legacy patterns introduced by previous developers, ensuring rigorous adherence to the design provided in Figma.",
     techs: ["REACT", "TAILWIND", "TYPESCRIPT", "RADIX UI"],
@@ -134,7 +127,7 @@ const projects = [
       require("../images/pet-adoption.png"),
       require("../images/movie-search.png"),
     ],
-    text: "These projects are a selected showcase of the many applications I completed during the Full Stack course (online and in-person, Tel Aviv 2022–2023).Built multiple full-stack applications using Javascript, React, Node.js and Express, implementing authentication, database integration and dynamic UI features while following industry best practices.",
+    text: "These projects are a selected showcase of the many applications I completed during the Full Stack course (online and in-person, Tel Aviv 2022–2023).Built multiple full-stack applications using Javascript, React, Node.js and Express, creating dynamic UI features, implementing authentication, database integration while following industry best practices.",
     techs: ["REACT", "JAVASCRIPT", "EXPRESS", "FIREBASE", "NodeJS", "MongoDB"],
     github: "https://github.com/Mateus1rosengarten?tab=repositories",
     loading: "lazy",

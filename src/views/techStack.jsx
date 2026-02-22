@@ -13,7 +13,7 @@ const TechStack = () => {
         data-aos-duration="800"
         className="fw-bold mb-5 font-primary border-start border-4 mt-4 ms-4 ps-2 ps-sm-4 border-brand mb-5"
       >
-        Technologies I'm Confortable to Work
+        Tech Stack I'm Confortable to Work
       </h2>
       <Row className="gx-0 gy-sm-3 ms-4 ms-sm-0 mt-5 px-sm-5">
         {icons.map((tech, index) => (

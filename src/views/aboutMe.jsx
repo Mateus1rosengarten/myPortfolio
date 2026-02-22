@@ -20,16 +20,21 @@ const AboutMe = () => {
       </Row>
 
       <Row className="g-4 align-items-stretch font-secondary ms-sm-3">
-        <Col md={6}>
+        <Col md={6} className="g-4">
           <p className="text-secondary">
             I’ve worked on real-world projects ranging from responsive landing
-            pages to e-commerce interfaces, collaborating with designers and
+            pages,refactoring and improving existing codebases to create
+            e-commerce UI interfaces, collaborating with designers and
             contributing to production-ready React applications.
           </p>
 
-          <p className="text-secondary">
+          <p className="text-secondary mt-sm-5">
             My experience includes translating design systems into structured
-            components and improving existing codebases
+            components, improving existing codebases by fixing bugs and
+            refactoring poorly written code, and integrating front-end
+            applications with backend services (APIs, etc.). I prioritize
+            writing clean, maintainable code that supports long-term product
+            growth and smooth team collaboration.
           </p>
         </Col>
 

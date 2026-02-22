@@ -13,12 +13,12 @@ const TechFilter = ({ selectedTech, handleTechClick }) => {
             <div
               key={tech}
               onClick={() => handleTechClick(tech)}
-              className={`px-3 py-2 rounded-pill small text-nowrap ${
+              className={`px-3 py-2 rounded-pill small text-nowrap border-pill ${
                 selectedTech.includes(tech) ||
                 (tech === "SHOW ALL" && selectedTech.length === 0)
                   ? "bg-brand"
                   : itsDark
-                  ? "bg-dark text-white border border-secondary"
+                  ? "bg-dark text-white border"
                   : "bg-light text-dark border"
               }`}
               style={{ cursor: "pointer", flex: "0 0 auto" }}

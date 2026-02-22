@@ -147,6 +147,9 @@ body,
   background-color: #f97316;
 }
 
+.border-pill {
+  border-color: #f97316 !important;
+}
 /* PROFILE IMG */
 
 .profile-img {
@@ -212,4 +215,9 @@ body,
   100% {
     top: -250px;
   }
+}
+
+/* NAVBAR */
+.max-width-xl {
+  max-width: 1800px;
 }
