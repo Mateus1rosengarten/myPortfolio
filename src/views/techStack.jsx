@@ -13,7 +13,7 @@ const TechStack = () => {
         }
       />
 
-      <Row className="gx-0 gy-sm-3 mt-2 px-sm-4 justify-content-center">
+      <Row className="gx-0 gy-sm-3 mt-2 px-sm-4 fs-7 justify-content-center">
         {icons.map((tech, index) => (
           <Col
             key={tech.name}

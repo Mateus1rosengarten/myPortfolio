@@ -8,7 +8,7 @@ const SectionIntro = ({ title, text, colLg = 8 }) => {
           {title}
         </h2>
 
-        <p className="fs-5 font-secondary">{text}</p>
+        <p className="fs-5 text-surface font-secondary ">{text}</p>
       </Col>
     </Row>
   );

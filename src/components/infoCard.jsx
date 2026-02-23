@@ -7,7 +7,9 @@ const InfoCard = ({ title, description, className = "" }) => {
     >
       <Card.Body>
         <h6 className="fw-bold mb-2 font-primary">{title}</h6>
-        <p className="text-muted small mb-0 font-secondary">{description}</p>
+        <p className="text-secondary small mb-0 font-secondary">
+          {description}
+        </p>
       </Card.Body>
     </Card>
   );

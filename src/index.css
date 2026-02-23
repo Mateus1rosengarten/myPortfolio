@@ -228,6 +228,10 @@ body,
   max-width: 1800px;
 }
 
+.fs-7 {
+  font-size: 0.8rem;
+}
+
 .fs-custom {
   font-size: 1.1rem;
 }

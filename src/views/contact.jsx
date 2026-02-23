@@ -16,7 +16,7 @@ const Contact = () => {
               opportunities.
             </p>
 
-            <p className="fw-semibold fs-5 mb-2 font-primary">
+            <p className="fw-semibold fs-6 mb-2 font-primary">
               matrosen.developer@gmail.com
             </p>
 
