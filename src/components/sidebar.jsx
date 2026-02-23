@@ -33,7 +33,7 @@ const SideBar = () => {
         ×
       </button>
 
-      <ul className="d-flex flex-column align-items-center list-unstyled mt-5 gap-5 fs-1 font-primary">
+      <ul className="d-flex flex-column align-items-center list-unstyled mt-5 gap-4 fs-2 font-primary">
         <li>
           <NavLink
             className="text-decoration-none text-main"
