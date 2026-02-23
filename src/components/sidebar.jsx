@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { CloseButton, NavLink } from "react-bootstrap";
+import { Button, CloseButton, NavLink } from "react-bootstrap";
 import { contextSideBar } from "../context/contextSideBar";
 import { useNavigate } from "react-router-dom";
 
@@ -24,7 +24,14 @@ const SideBar = () => {
 
   return (
     <nav className="pt-5 min-vh-100 bg-main text-main">
-      <CloseButton className="ms-4" onClick={() => setIsSideBar(false)} />
+      <button
+        type="button"
+        className="btn ms-4 fs-1 text-brand"
+        onClick={() => setIsSideBar(false)}
+        aria-label="Close menu"
+      >
+        ×
+      </button>
 
       <ul className="d-flex flex-column align-items-center list-unstyled mt-5 gap-5 fs-1 font-primary">
         <li>
