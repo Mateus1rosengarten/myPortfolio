@@ -10,7 +10,7 @@ function AppButton({ children, onClick, href, className }) {
       onClick={onClick}
       as={href ? "a" : "button"}
       href={href}
-      className="mt-3 bg-brand text-white px-0 py-2 flex-fill font-secondary shadow text-nowrap btn-motion"
+      className="mt-3 bg-brand text-white px-0 py-2 flex-fill font-secondary shadow text-nowrap btn-motion fw-bold"
     >
       {children}
     </Button>
