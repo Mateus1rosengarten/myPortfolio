@@ -13,7 +13,7 @@ const TechFilter = ({ selectedTech, handleTechClick }) => {
             <div
               key={tech}
               onClick={() => handleTechClick(tech)}
-              className={`px-3 py-2 rounded-pill small text-nowrap border-pill ${
+              className={`px-3 py-2 rounded-pill small text-nowrap border-pill  ${
                 selectedTech.includes(tech) ||
                 (tech === "SHOW ALL" && selectedTech.length === 0)
                   ? "bg-brand"
@@ -34,7 +34,7 @@ const TechFilter = ({ selectedTech, handleTechClick }) => {
           <li
             key={tech}
             onClick={() => handleTechClick(tech)}
-            className={`px-3 py-1 rounded-pill small text-nowrap cursor-pointer transition ${
+            className={`px-3 py-1 rounded-pill small text-nowrap font-primary cursor-pointer transition ${
               selectedTech.includes(tech) ||
               (tech === "SHOW ALL" && selectedTech.length === 0)
                 ? "bg-brand text-dark border-0"

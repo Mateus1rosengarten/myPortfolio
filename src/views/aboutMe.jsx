@@ -20,7 +20,7 @@ const AboutMe = () => {
         </Col>
       </Row>
 
-      <Row className="g-4 align-items-stretch font-secondary ms-sm-3">
+      <Row className="g-4 align-items-stretch text-secondary ms-sm-3">
         <Col md={6} className="g-4 mt-sm-4">
           <p className="text-secondary">
             I’ve worked on real-world projects from responsive landing

@@ -12,7 +12,7 @@ const ProjectCard = ({ images, title, github, text, techs, loading }) => {
       <ImgCarousel images={images} loading={loading} />
 
       <Card.Body className="d-flex flex-column gap-2 gap-sm-3 position-relative">
-        <Card.Title className="text-center text-decoration-underline">
+        <Card.Title className="text-center text-decoration-underline font-primary">
           <Card.Link className="card-link fw-bold fs-3 text-brand">
             {title}
             {github && (
@@ -30,7 +30,9 @@ const ProjectCard = ({ images, title, github, text, techs, loading }) => {
             )}
           </Card.Link>
         </Card.Title>
-        <Card.Text className="px-1 px-sm-2 px-lg-3 text-left">{text}</Card.Text>
+        <Card.Text className="px-1 px-sm-2 px-lg-3 text-left font-secondary">
+          {text}
+        </Card.Text>
         <ul className="d-flex flex-wrap justify-content-center font-primary gap-3 list-unstyled ps-lg-4">
           {techs.map((tech, index) => (
             <li className="fst-italic my-2 px-3 py-2 shadow-lg tech-card rounded">
