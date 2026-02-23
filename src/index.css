@@ -221,3 +221,7 @@ body,
 .max-width-xl {
   max-width: 1800px;
 }
+
+.fs-custom {
+  font-size: 1.1rem;
+}

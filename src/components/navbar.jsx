@@ -31,7 +31,7 @@ function NavBar() {
         data-bs-theme="dark"
       >
         <Container className="max-width-xl d-flex justify-content-between align-items-center">
-          <Nav className="d-none d-sm-flex gap-5">
+          <Nav className="d-none d-sm-flex gap-4">
             <NavLinkItem className="" to="/" end>
               Home
             </NavLinkItem>

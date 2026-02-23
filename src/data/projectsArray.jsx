@@ -2,13 +2,14 @@ const projects = [
   {
     title: "M2 Marketplace Agency",
     carousel: [
-      require("../images/grupom2-1.png"),
-      require("../images/grupom2-2.png"),
-      require("../images/grupom2-3.png"),
-      require("../images/grupom2-4.png"),
-      require("../images/grupom2-5.png"),
+      require("../images/m2-1.png"),
+      require("../images/m2-2.png"),
+      require("../images/m2-3.png"),
+      require("../images/m2-4.png"),
+      require("../images/m2-5.png"),
+      require("../images/m2-6.png"),
     ],
-    text: "Developed a responsive landing page using React, TypeScript and Tailwind, translating detailed design prototypes into react components. Implemented complex UI animations with Framer Motion and built a validated contact form using EmailJS and Zod, improving performance and component organization.",
+    text: "Developed a responsive landing page using React, TypeScript and Tailwind, translating detailed design prototypes into react components. Implemented complex UI animations with Framer Motion,dark and light theme and built a validated contact form using EmailJS and Zod, improving performance and component organization.",
     secondText:
       "In this project, I got better at turning detailed design prototypes into clean, responsive code and learned how to add more advanced animations to make the UI feel smoother. I also improved my React component structure and overall workflow with TypeScript and Tailwind.",
     techs: ["REACT", "TYPESCRIPT", "TAILWIND"],

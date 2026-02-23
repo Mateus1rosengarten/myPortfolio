@@ -9,7 +9,7 @@ function NavLinkItem({ to, children }) {
   return (
     <span
       onClick={handleScroll}
-      className="fs-5 font-primary text-decoration-none text-brand cursor-pointer"
+      className="fs-custom me-2 font-primary text-decoration-none text-brand cursor-pointer"
     >
       {children}
     </span>
