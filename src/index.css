@@ -21,6 +21,7 @@ body {
   --bg-surface: #f8f9fa;
   --text-primary: #121212;
   --text-secondary: #6c757d;
+  --text-tertiary: #4b5563;
 }
 
 .dark {
@@ -28,6 +29,7 @@ body {
   --bg-surface: #272727;
   --text-primary: #f1f1f1;
   --text-secondary: #a1a1aa;
+  --text-tertiary: #a1a1aa;
 }
 
 html,
@@ -54,6 +56,10 @@ body,
 
 .text-surface {
   color: var(--text-secondary);
+}
+
+.text-alternate {
+  color: var(--text-tertiary);
 }
 
 .text-brand {

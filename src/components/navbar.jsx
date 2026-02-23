@@ -41,7 +41,7 @@ function NavBar() {
             <NavLinkItem to="contact">Contact</NavLinkItem>
           </Nav>
           <Button
-            className={`d-lg-none ms-2 bg-brand`}
+            className={`d-sm-none ms-2 bg-brand`}
             variant="none"
             onClick={() => handleSideBar()}
           >

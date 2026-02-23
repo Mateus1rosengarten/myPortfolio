@@ -1,24 +1,16 @@
 import { Row, Col } from "react-bootstrap";
 import InfoCard from "../components/infoCard";
+import SectionIntro from "../components/sectionIntro";
 
 const AboutMe = () => {
   return (
-    <section
-      id="about"
-      className="py-5 px-4 px-sm-5 bg-main bg-section text-main py-1"
-    >
-      <Row className="py-sm-3 mb-3 mb-sm-5 ms-sm-3">
-        <Col lg={8}>
-          <h2 className="fw-bold mb-4 font-primary border-start border-4 ps-2 ps-sm-4 border-brand">
-            About Mateus
-          </h2>
-
-          <p className="text-secondary fs-5 font-secondary">
-            I have experience in developing modern web applications using React,
-            TypeScript, and component-based architecture.
-          </p>
-        </Col>
-      </Row>
+    <section id="about" className="py-5 px-4 px-sm-5 bg-surface text-main">
+      <SectionIntro
+        title={"About Mateus"}
+        text={
+          "I have experience in developing modern web applications using React TypeScript, and component-based architecture"
+        }
+      />
 
       <Row className="g-4 align-items-stretch text-secondary ms-sm-3">
         <Col md={6} className="g-4 mt-sm-4">

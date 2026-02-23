@@ -15,7 +15,7 @@ function Hero() {
   };
 
   return (
-    <section className="py-5 text-center bg-surface text-main">
+    <section className="py-5 text-center bg-main text-main">
       <div className="container mb-5 pt-3">
         <div className="position-relative d-inline-block">
           <img

@@ -3,7 +3,7 @@ import SocialMediaIcon from "../components/socialIcon";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-5 bg-surface text-main">
+    <section id="contact" className="py-5 bg-main text-main">
       <Container>
         <Row className="justify-content-center text-center">
           <Col lg={8}>

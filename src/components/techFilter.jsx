@@ -29,7 +29,7 @@ const TechFilter = ({ selectedTech, handleTechClick }) => {
         </div>
       </div>
 
-      <ul className="d-none d-sm-flex sm-block d-flex flex-wrap justify-content-center align-items-center gap-2 gap-sm-0 mt-4 px-3 mx-auto list-unstyled">
+      <ul className="d-none d-sm-flex sm-block d-flex flex-wrap justify-content-evenly align-items-center gap-2 gap-sm-0 mt-1 mx-auto px-3 list-unstyled">
         {techs.map((tech) => (
           <li
             key={tech}
