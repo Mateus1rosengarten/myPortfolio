@@ -1,15 +1,15 @@
 import { Carousel, CarouselItem } from "react-bootstrap";
 
-function ImgCarousel({ images = [], className, loading }) {
+function ImgCarousel({ images = [], className }) {
   return (
     <Carousel>
       {images.map((img, index) => (
-        <CarouselItem>
+        <CarouselItem key={index}>
           <img
             className={`${className} w-100 rounded carousel-height`}
             src={img}
             alt={`Slide${index + 1}`}
-            loading={index === 0 ? loading : "lazy"}
+            loading="lazy"
           ></img>
         </CarouselItem>
       ))}

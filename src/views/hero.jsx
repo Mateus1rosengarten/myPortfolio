@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { contextDarkMode } from "../context/contextDarkMode";
-import myPicture from "../images/mypic-dark.png";
+import myPicture from "../images/mypic-dark.webp";
 import sunglass from "../images/sunglass.png";
 import AppButton from "../components/button";
 
@@ -23,6 +23,7 @@ function Hero() {
             data-aos-duration="900"
             data-aos-easing="ease-out-cubic"
             className="profile-img rounded-circle img-fluid"
+            loading="eager"
             src={myPicture}
             alt="Foto de perfil de Mateus Rosengarten Mauricio"
           />

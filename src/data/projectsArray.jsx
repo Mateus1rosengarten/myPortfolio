@@ -13,8 +13,9 @@ const projects = [
     secondText:
       "In this project, I got better at turning detailed design prototypes into clean, responsive code and learned how to add more advanced animations to make the UI feel smoother. I also improved my React component structure and overall workflow with TypeScript and Tailwind.",
     techs: ["REACT", "TYPESCRIPT", "TAILWIND"],
-    github: "https://github.com/Mateus1rosengarten/RosenTechDigital",
-    loading: "eager",
+    github: "https://github.com/Mateus1rosengarten/GrupoM2-MARKETPLACES",
+    website: "https://m2grupo.com.br/",
+
     ProjectKind: "Costumer",
     creationOrder: 8,
     challangeOrder: 7,
@@ -31,7 +32,7 @@ const projects = [
     text: "Built a production-ready website with Next.js focusing on SEO and performance optimization. Integrated dynamic map features and automated email workflows while improving server-side rendering and project structure. Waiting for real pictures from the company.",
     techs: ["NextJS", "TYPESCRIPT", "TAILWIND"],
     github: "https://github.com/Mateus1rosengarten/MktEmbalagem",
-    loading: "eager",
+
     ProjectKind: "Costumer",
     creationOrder: 5,
     challangeOrder: 6,
@@ -47,7 +48,7 @@ const projects = [
     text: "Implemented full frontend from Figma designs and developed authentication and advanced product filtering. Worked on backend integration with Express and MongoDB, gaining practical experience in full-stack architecture and team collaboration. Although the project is currently on hold due to changes in Brazil taxation policies that affected international product sourcing.",
     techs: ["REACT", "NodeJS", "EXPRESS", "MongoDB"],
     ProjectKind: "Costumer",
-    loading: "lazy",
+
     creationOrder: 3,
     challangeOrder: 3,
     apprenticeshipOrder: 2,
@@ -62,7 +63,7 @@ const projects = [
     text: "As part of a code challenge Built a full CRUD application with Next.js, TypeScript and PostgreSQL. Implemented transaction states, data validation and UI consistency using MUI, strengthening my experience with project folder architecture,components best practices and structured backend communication.",
     techs: ["NextJS", "TYPESCRIPT", "MUI", "PostgreSQL"],
     github: "https://github.com/Mateus1rosengarten/PayoutStructure",
-    loading: "lazy",
+
     ProjectKind: "Academic",
     creationOrder: 4,
     challangeOrder: 4,
@@ -79,7 +80,7 @@ const projects = [
     text: "Developed a landing page for a client specializing in therapy services, a responsive landing page using Next.js and Styled Components. Focused on reusable component structure and was my first-time deployment with custom domain configuration.",
     techs: ["NextJS", "TYPESCRIPT", "STYLED-COMPONENTS"],
     github: "https://github.com/Mateus1rosengarten/gutoMaia",
-    loading: "lazy",
+
     ProjectKind: "Costumer",
     creationOrder: 4,
     challangeOrder: 8,
@@ -95,7 +96,7 @@ const projects = [
     text: "Menu Restaurant Optimizer is my own fullstack SaaS project, designed and developed a SaaS platform enabling digital ordering and operational tracking. Built REST APIs with Express and PostgreSQL, and implemented state management with Redux.",
     techs: ["REACT", "TYPESCRIPT", "NodeJS", "EXPRESS", "PostgreSQL", "MUI"],
     github: "https://github.com/Mateus1rosengarten/AllYouCanEat-Manager",
-    loading: "lazy",
+
     ProjectKind: "Costumer",
     creationOrder: 6,
     challangeOrder: 2,
@@ -113,7 +114,7 @@ const projects = [
     techs: ["REACT", "TAILWIND", "TYPESCRIPT", "RADIX UI"],
     github:
       "https://github.com/Mateus1rosengarten/GesplanListaFornecedores/tree/master",
-    loading: "lazy",
+
     ProjectKind: "Costumer",
     creationOrder: 7,
     challangeOrder: 5,
@@ -131,7 +132,7 @@ const projects = [
     text: "These projects are a selected showcase of the many applications I completed during the Full Stack course (online and in-person, Tel Aviv 2022–2023).Built multiple full-stack applications using Javascript, React, Node.js and Express, creating dynamic UI features, implementing authentication, database integration while following industry best practices.",
     techs: ["REACT", "JAVASCRIPT", "EXPRESS", "FIREBASE", "NodeJS", "MongoDB"],
     github: "https://github.com/Mateus1rosengarten?tab=repositories",
-    loading: "lazy",
+
     ProjectKind: "Academic",
     creationOrder: 1,
     challangeOrder: 1,
