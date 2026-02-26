@@ -8,7 +8,7 @@ function SocialMediaIcon({ url }) {
       rel="noopener noreferrer"
       className="color-brand"
       bgColor="#ff7a00"
-      style={{ height: 45, width: 45 }}
+      style={{ height: 38, width: 38 }}
     />
   );
 }

@@ -11,7 +11,6 @@ function Projects() {
   const { setCreateAnimation } = useContext(contextDarkMode);
   const [selectedTech, setSelectedTech] = useState([]);
   const [selectedOrder, setSelectedOrder] = useState("Most Recent");
-  const [isExpanded, setIsExpanded] = useState(false);
 
   useEffect(() => {
     setCreateAnimation(false);
@@ -113,8 +112,6 @@ function Projects() {
                   github={project.github}
                   website={project.website}
                   loading={project.loading}
-                  isExpanded={isExpanded}
-                  setIsExpanded={setIsExpanded}
                 />
               </div>
             ))}

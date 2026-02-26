@@ -80,7 +80,7 @@ const projects = [
     text: "Developed a landing page for a client specializing in therapy services, a responsive landing page using Next.js and Styled Components. Focused on reusable component structure and was my first-time deployment with custom domain configuration.",
     techs: ["NextJS", "TYPESCRIPT", "STYLED-COMPONENTS"],
     github: "https://github.com/Mateus1rosengarten/gutoMaia",
-
+    website: "https://gutomaia.vercel.app/",
     ProjectKind: "Costumer",
     creationOrder: 4,
     challangeOrder: 8,

@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ImgCarousel from "./carousel";
 import { faChevronCircleUp } from "@fortawesome/free-solid-svg-icons";
 import { faChevronCircleDown } from "@fortawesome/free-solid-svg-icons/faChevronCircleDown";
+import { useState } from "react";
 
 const ProjectCard = ({
   images,
@@ -13,9 +14,9 @@ const ProjectCard = ({
   text,
   techs,
   loading,
-  isExpanded,
-  setIsExpanded,
 }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
     <Card
       className="shadow-lg cursor-pointer w-100 h-100 card-motion"
