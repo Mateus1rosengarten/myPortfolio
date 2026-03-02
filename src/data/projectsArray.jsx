@@ -24,12 +24,13 @@ const projects = [
   {
     title: "MKT Embalagem website",
     carousel: [
-      require("../images/mkt-lading-page-1.png"),
-      require("../images/mkt-lading-page-2.png"),
-      require("../images/mkt-lading-page-3.png"),
-      require("../images/mkt-lading-page-4.png"),
+      require("../images/mkt-1.png"),
+      require("../images/mkt-2.png"),
+      require("../images/mkt-3.png"),
+      require("../images/mkt-4.png"),
+      require("../images/mkt-5.png"),
     ],
-    text: "Built a production-ready website with Next.js focusing on SEO and performance optimization. Integrated dynamic map features and automated email workflows while improving server-side rendering and project structure. Waiting for real pictures from the company.",
+    text: "Built a landing page website with Next.js focusing on SEO and performance optimization. Integrated dynamic animations, map features and automated email workflows while improving server-side rendering and project structure.",
     techs: ["NextJS", "TYPESCRIPT", "TAILWIND"],
     github: "https://github.com/Mateus1rosengarten/MktEmbalagem",
 
