@@ -1,4 +1,5 @@
 const options = [
+  "Featured",
   "Most Recent",
   "Oldest",
   "Greatest Learning",

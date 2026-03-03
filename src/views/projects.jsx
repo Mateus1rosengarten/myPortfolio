@@ -10,7 +10,7 @@ import SectionIntro from "../components/sectionIntro";
 function Projects() {
   const { setCreateAnimation } = useContext(contextDarkMode);
   const [selectedTech, setSelectedTech] = useState([]);
-  const [selectedOrder, setSelectedOrder] = useState("Most Recent");
+  const [selectedOrder, setSelectedOrder] = useState("Featured");
 
   useEffect(() => {
     setCreateAnimation(false);
@@ -43,6 +43,8 @@ function Projects() {
     })
     .sort((a, b) => {
       switch (selectedOrder) {
+        case "Featured":
+          return a.featured - b.featured;
         case "Most Recent":
           return b.creationOrder - a.creationOrder;
         case "Oldest":
@@ -89,7 +91,7 @@ function Projects() {
             className="mt-3 bg-brand border-0 font-secondary"
             onClick={() => {
               setSelectedTech([]);
-              setSelectedOrder("Mais Recentes");
+              setSelectedOrder("Featured");
             }}
           >
             Mostrar todos os Projetos

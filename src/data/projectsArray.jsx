@@ -9,14 +9,13 @@ const projects = [
       require("../images/m2-5.png"),
       require("../images/m2-6.png"),
     ],
-    text: "Developed a responsive landing page using React, TypeScript and Tailwind, translating detailed design prototypes into react components. Implemented complex UI animations with Framer Motion,dark and light theme and built a validated contact form using EmailJS and Zod, improving performance and component organization.",
-    secondText:
-      "In this project, I got better at turning detailed design prototypes into clean, responsive code and learned how to add more advanced animations to make the UI feel smoother. I also improved my React component structure and overall workflow with TypeScript and Tailwind.",
+    text: "Developed a responsive landing page with React, TypeScript, and Tailwind, translating design prototypes into components. Implemented UI animations with tsparticles and Framer Motion, dark/light themes, and a validated contact form using EmailJS and Zod, focusing on clean architecture and readable code.",
     techs: ["REACT", "TYPESCRIPT", "TAILWIND"],
     github: "https://github.com/Mateus1rosengarten/GrupoM2-MARKETPLACES",
     website: "https://m2grupo.com.br/",
 
     ProjectKind: "Costumer",
+    featured: 1,
     creationOrder: 8,
     challangeOrder: 7,
     apprenticeshipOrder: 7,
@@ -30,11 +29,12 @@ const projects = [
       require("../images/mkt-4.png"),
       require("../images/mkt-5.png"),
     ],
-    text: "Built a landing page website with Next.js focusing on SEO and performance optimization. Integrated dynamic animations, map features and automated email workflows while improving server-side rendering and project structure.",
+    text: "Built a responsive Next.js page, implementing uncommon design patterns, carousel, interactive map, and validated front and back-end email workflows with NodeMailer. Focused on SEO optimization and preserving the client visual identity",
     techs: ["NextJS", "TYPESCRIPT", "TAILWIND"],
     github: "https://github.com/Mateus1rosengarten/MktEmbalagem",
 
     ProjectKind: "Costumer",
+    featured: 2,
     creationOrder: 5,
     challangeOrder: 6,
     apprenticeshipOrder: 6,
@@ -49,7 +49,7 @@ const projects = [
     text: "Implemented full frontend from Figma designs and developed authentication and advanced product filtering. Worked on backend integration with Express and MongoDB, gaining practical experience in full-stack architecture and team collaboration. Although the project is currently on hold due to changes in Brazil taxation policies that affected international product sourcing.",
     techs: ["REACT", "NodeJS", "EXPRESS", "MongoDB"],
     ProjectKind: "Costumer",
-
+    featured: 7,
     creationOrder: 3,
     challangeOrder: 3,
     apprenticeshipOrder: 2,
@@ -61,11 +61,12 @@ const projects = [
       require("../images/payment-crud-2.png"),
       require("../images/payment-crud-3.png"),
     ],
-    text: "As part of a code challenge Built a full CRUD application with Next.js, TypeScript and PostgreSQL. Implemented transaction states, data validation and UI consistency using MUI, strengthening my experience with project folder architecture,components best practices and structured backend communication.",
+    text: "Built a full CRUD application with Next.js, TypeScript, and PostgreSQL, creating database models, controllers, and organized queries. Implemented transaction states, data validation, UI consistency with MUI, and simulated payment success/failure, while reinforcing clean project architecture and component best practices",
     techs: ["NextJS", "TYPESCRIPT", "MUI", "PostgreSQL"],
     github: "https://github.com/Mateus1rosengarten/PayoutStructure",
 
     ProjectKind: "Academic",
+    featured: 5,
     creationOrder: 4,
     challangeOrder: 4,
     apprenticeshipOrder: 5,
@@ -78,11 +79,12 @@ const projects = [
       require("../images/therapist-land-page-3.png"),
     ],
 
-    text: "Developed a landing page for a client specializing in therapy services, a responsive landing page using Next.js and Styled Components. Focused on reusable component structure and was my first-time deployment with custom domain configuration.",
+    text: "Developed a simple user-friendly responsive landing page for a client providing neurodivergent therapy services using Next.js and Styled Components. Focused on building simple components with clear structure, ensuring clean design, and handled deployment with custom domain configuration.",
     techs: ["NextJS", "TYPESCRIPT", "STYLED-COMPONENTS"],
     github: "https://github.com/Mateus1rosengarten/gutoMaia",
     website: "https://gutomaia.vercel.app/",
     ProjectKind: "Costumer",
+    featured: 4,
     creationOrder: 4,
     challangeOrder: 8,
     apprenticeshipOrder: 8,
@@ -99,27 +101,29 @@ const projects = [
     github: "https://github.com/Mateus1rosengarten/AllYouCanEat-Manager",
 
     ProjectKind: "Costumer",
+    featured: 6,
     creationOrder: 6,
     challangeOrder: 2,
     apprenticeshipOrder: 3,
   },
 
   {
-    title: "SmartBastket",
+    title: "Smart Bastket",
     carousel: [
       require("../images/basket-1.png"),
       require("../images/basket-2.png"),
       require("../images/basket-3.png"),
     ],
-    text: "Contributed to the evolution of the frontend architecture using React, TypeScript, and Tailwind and Radix UI component library. Collaborated on structural improvements and refactored legacy patterns introduced by previous developers, ensuring organiztion and rigorous adherence to the design provided in Figma.",
+    text: "Contributed to the evolution of frontend architecture and code efficiency. Restructured code written by previous developers by organizing folder structure, eliminating duplicated and unnecessary code, and improving data integration and efficiency from the backend via Redux.",
     techs: ["REACT", "TAILWIND", "TYPESCRIPT", "RADIX UI"],
     github:
       "https://github.com/Mateus1rosengarten/GesplanListaFornecedores/tree/master",
 
     ProjectKind: "Costumer",
+    featured: 3,
     creationOrder: 7,
     challangeOrder: 5,
-    apprenticeshipOrded: 4,
+    apprenticeshipOrder: 4,
   },
   {
     title: "Student Course Projects",
@@ -135,6 +139,7 @@ const projects = [
     github: "https://github.com/Mateus1rosengarten?tab=repositories",
 
     ProjectKind: "Academic",
+    featured: 8,
     creationOrder: 1,
     challangeOrder: 1,
     apprenticeshipOrder: 1,
