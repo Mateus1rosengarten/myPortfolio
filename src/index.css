@@ -235,3 +235,26 @@ body,
 .fs-custom {
   font-size: 1.1rem;
 }
+
+.navlink-item {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 2px;
+  transition: color 0.3s ease;
+}
+
+.navlink-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ff7a18;
+  transition: width 0.3s ease;
+}
+
+.navlink-item:hover::after,
+.navlink-item.active::after {
+  width: 100%;
+}
