@@ -31,6 +31,7 @@ const projects = [
     ],
     text: "Built a responsive Next.js page, implementing uncommon design patterns, carousel, interactive map, and validated front and back-end email workflows with NodeMailer. Focused on SEO optimization and preserving the client visual identity",
     techs: ["NextJS", "TYPESCRIPT", "TAILWIND"],
+    website: "https://mkt-embalagem.vercel.app/",
     github: "https://github.com/Mateus1rosengarten/MktEmbalagem",
 
     ProjectKind: "Costumer",
