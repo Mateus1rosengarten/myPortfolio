@@ -13,7 +13,6 @@ const projects = [
     techs: ["REACT", "TYPESCRIPT", "TAILWIND"],
     github: "https://github.com/Mateus1rosengarten/GrupoM2-MARKETPLACES",
     website: "https://m2grupo.com.br/",
-
     ProjectKind: "Costumer",
     featured: 1,
     creationOrder: 8,
@@ -33,7 +32,6 @@ const projects = [
     techs: ["NextJS", "TYPESCRIPT", "TAILWIND"],
     website: "https://mkt-embalagem.vercel.app/",
     github: "https://github.com/Mateus1rosengarten/MktEmbalagem",
-
     ProjectKind: "Costumer",
     featured: 2,
     creationOrder: 5,
@@ -65,7 +63,7 @@ const projects = [
     text: "Built a full CRUD application with Next.js, TypeScript, and PostgreSQL, creating database models, controllers, and organized queries. Implemented transaction states, data validation, UI consistency with MUI, and simulated payment success/failure, while reinforcing clean project architecture and component best practices",
     techs: ["NextJS", "TYPESCRIPT", "MUI", "PostgreSQL"],
     github: "https://github.com/Mateus1rosengarten/PayoutStructure",
-
+    website: "https://payout-simulation.vercel.app/",
     ProjectKind: "Academic",
     featured: 5,
     creationOrder: 4,
