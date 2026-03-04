@@ -98,7 +98,7 @@ const projects = [
     text: "Menu Restaurant Optimizer is my own fullstack SaaS project, designed and developed a SaaS platform enabling digital ordering and operational tracking. Built REST APIs with Express and PostgreSQL, and implemented state management with Redux.",
     techs: ["REACT", "TYPESCRIPT", "NodeJS", "EXPRESS", "PostgreSQL", "MUI"],
     github: "https://github.com/Mateus1rosengarten/AllYouCanEat-Manager",
-
+    website: "https://github.com/Mateus1rosengarten/AllYouCanEat-Manager",
     ProjectKind: "Costumer",
     featured: 6,
     creationOrder: 6,
@@ -115,9 +115,8 @@ const projects = [
     ],
     text: "Contributed to the evolution of frontend architecture and code efficiency. Restructured code written by previous developers by organizing folder structure, eliminating duplicated and unnecessary code, and improving data integration and efficiency from the backend via Redux.",
     techs: ["REACT", "TAILWIND", "TYPESCRIPT", "RADIX UI"],
-    github:
-      "https://github.com/Mateus1rosengarten/GesplanListaFornecedores/tree/master",
-
+    github: "https://github.com/Mateus1rosengarten/SB-APP",
+    website: "https://github.com/Mateus1rosengarten/SB-APP",
     ProjectKind: "Costumer",
     featured: 3,
     creationOrder: 7,
@@ -136,7 +135,7 @@ const projects = [
     text: "These projects are a selected showcase of the many applications I completed during the Full Stack course (online and in-person, Tel Aviv 2022–2023).Built multiple full-stack applications using Javascript, React, Node.js and Express, creating dynamic UI features, implementing authentication, database integration while following industry best practices.",
     techs: ["REACT", "JAVASCRIPT", "EXPRESS", "FIREBASE", "NodeJS", "MongoDB"],
     github: "https://github.com/Mateus1rosengarten?tab=repositories",
-
+    website: "https://github.com/Mateus1rosengarten?tab=repositories",
     ProjectKind: "Academic",
     featured: 8,
     creationOrder: 1,
