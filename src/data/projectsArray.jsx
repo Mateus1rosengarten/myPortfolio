@@ -73,12 +73,12 @@ const projects = [
   {
     title: "Guto Therapist Page",
     carousel: [
-      require("../images/therapist-land-page-1.png"),
-      require("../images/therapist-land-page-2.png"),
-      require("../images/therapist-land-page-3.png"),
+      require("../images/guto-1.png"),
+      require("../images/guto-2.png"),
+      require("../images/guto-3.png"),
     ],
 
-    text: "Developed a simple user-friendly responsive landing page for a client providing neurodivergent therapy services using Next.js and Styled Components. Focused on building simple components with clear structure, ensuring clean design, and handled deployment with custom domain configuration.",
+    text: "Developed a user-friendly responsive landing page for a client providing neurodivergent therapy services using Next.js and Styled Components. Focused on building simple components with clear structure, ensuring clean design.Was my first deployment with custom domain configuration.",
     techs: ["NextJS", "TYPESCRIPT", "STYLED-COMPONENTS"],
     github: "https://github.com/Mateus1rosengarten/gutoMaia",
     website: "https://gutomaia.vercel.app/",
