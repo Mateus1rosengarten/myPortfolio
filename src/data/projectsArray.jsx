@@ -12,7 +12,7 @@ const projects = [
     text: "Developed a responsive landing page with React, TypeScript, and Tailwind, translating design prototypes into components. Implemented UI animations with tsparticles and Framer Motion, dark/light themes, and a validated contact form using EmailJS and Zod, focusing on clean architecture and readable code.",
     techs: ["REACT", "TYPESCRIPT", "TAILWIND"],
     github: "https://github.com/Mateus1rosengarten/GrupoM2-MARKETPLACES",
-    website: "https://grupom2.netlify.app/",
+    website: "https://m2grupo.com.br/",
     ProjectKind: "Costumer",
     featured: 1,
     creationOrder: 8,
