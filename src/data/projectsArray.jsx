@@ -46,7 +46,7 @@ const projects = [
       require("../images/e-commerce-3.png"),
     ],
     website:
-      "https://github.com/Mateus1rosengarten/SustentoolsComercioSustentavel",
+      "https://github.com/Mateus1rosengarten/SustentoolsComercioSustentavel-",
     github:
       "https://github.com/Mateus1rosengarten/SustentoolsComercioSustentavel-",
     text: "Implemented full frontend from Figma designs and developed authentication and advanced product filtering. Worked on backend integration with Express and MongoDB, gaining practical experience in full-stack architecture and team collaboration. Although the project is currently on hold due to changes in Brazil taxation policies that affected international product sourcing.",
