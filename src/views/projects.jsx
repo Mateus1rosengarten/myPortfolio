@@ -63,7 +63,7 @@ function Projects() {
       <SectionIntro
         title={"Some of my Projects"}
         text={
-          "A showcase of full-featured projects in which I either built the entire code or contributed significantly. This does not include projects where I only fixed bugs or implemented minor features."
+          "A showcase of full-featured projects in which I either built the entire code or contributed significantly. This does not include projects where I only fixed bugs or implemented minor features.I don’t have permission to publicly share all code or deployments, but I’m happy to show specific projects in a call if you’re interested"
         }
       />
 
