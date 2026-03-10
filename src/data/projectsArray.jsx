@@ -18,6 +18,7 @@ const projects = [
     creationOrder: 8,
     challangeOrder: 7,
     apprenticeshipOrder: 7,
+    isPrivate: false,
   },
   {
     title: "MKT Embalagem website",
@@ -37,6 +38,7 @@ const projects = [
     creationOrder: 5,
     challangeOrder: 6,
     apprenticeshipOrder: 6,
+    isPrivate: false,
   },
   {
     title: "Sustentools E-commerce",
@@ -56,6 +58,7 @@ const projects = [
     creationOrder: 3,
     challangeOrder: 3,
     apprenticeshipOrder: 2,
+    isPrivate: true,
   },
   {
     title: "Payment Simulation CRUD",
@@ -73,6 +76,7 @@ const projects = [
     creationOrder: 4,
     challangeOrder: 4,
     apprenticeshipOrder: 5,
+    isPrivate: false,
   },
   {
     title: "Guto Therapist Page",
@@ -91,6 +95,7 @@ const projects = [
     creationOrder: 4,
     challangeOrder: 8,
     apprenticeshipOrder: 8,
+    isPrivate: false,
   },
   {
     title: "Menu Restaurant",
@@ -116,6 +121,7 @@ const projects = [
     creationOrder: 6,
     challangeOrder: 2,
     apprenticeshipOrder: 3,
+    isPrivate: true,
   },
 
   {
@@ -134,6 +140,7 @@ const projects = [
     creationOrder: 7,
     challangeOrder: 5,
     apprenticeshipOrder: 4,
+    isPrivate: true,
   },
   {
     title: "Student Course Projects",
@@ -153,6 +160,7 @@ const projects = [
     creationOrder: 1,
     challangeOrder: 1,
     apprenticeshipOrder: 1,
+    isPrivate: false,
   },
 ];
 

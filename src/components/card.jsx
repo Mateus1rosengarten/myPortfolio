@@ -14,6 +14,7 @@ const ProjectCard = ({
   text,
   techs,
   loading,
+  isPrivate,
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -59,7 +60,14 @@ const ProjectCard = ({
             onClick={() => setIsExpanded(!isExpanded)}
           />
         </div>
+
         <Card.Text className="d-none d-md-block px-1 px-sm-2 px-lg-3 text-left font-secondary">
+          {isPrivate && (
+            <Card.Text className="fs-7 text-danger mb-2">
+              * Code and deployment cannot be publicly shared due to
+              permissions. Available to demonstrate in a call.
+            </Card.Text>
+          )}
           {text}
         </Card.Text>
         <Collapse in={isExpanded}>
