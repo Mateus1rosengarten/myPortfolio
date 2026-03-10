@@ -132,7 +132,7 @@ const projects = [
       require("../images/basket-3.png"),
     ],
     text: "Contributed to the evolution of frontend architecture and code efficiency. Restructured code written by previous developers by organizing folder structure, eliminating duplicated and unnecessary code, and improving data integration and efficiency from the backend via Redux.",
-    techs: ["REACT", "TAILWIND", "TYPESCRIPT", "RADIX UI"],
+    techs: ["REACT", "TAILWIND", "TYPESCRIPT", "SHADCN UI"],
     github: "https://github.com/Mateus1rosengarten/SB-APP",
     website: "https://github.com/Mateus1rosengarten/SB-APP",
     ProjectKind: "Costumer",
