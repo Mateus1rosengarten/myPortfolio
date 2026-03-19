@@ -27,7 +27,6 @@ const ProjectCard = ({
       rel="noopener noreferrer"
     >
       <ImgCarousel images={images} loading={loading} />
-
       <Card.Body className="d-flex flex-column gap-2 gap-sm-3 position-relative">
         <Card.Title className="text-center text-decoration-underline font-primary">
           <Card.Link
@@ -46,12 +45,19 @@ const ProjectCard = ({
                 <FontAwesomeIcon
                   icon={faGithub}
                   className="ms-2 fs-5 text-info"
-                  href={github}
                 />
               </Card.Link>
             )}
           </Card.Link>
         </Card.Title>
+
+        {isPrivate && (
+          <Card.Text className="fs-7 text-danger mb-2 text-center">
+            * Code and deployment cannot be publicly shared due to permissions.
+            Available to demonstrate in a call.
+          </Card.Text>
+        )}
+
         <div className="d-md-none text-start ms-2">
           <FontAwesomeIcon
             icon={!isExpanded ? faChevronCircleDown : faChevronCircleUp}
@@ -62,14 +68,9 @@ const ProjectCard = ({
         </div>
 
         <Card.Text className="d-none d-md-block px-1 px-sm-2 px-lg-3 text-left font-secondary">
-          {isPrivate && (
-            <Card.Text className="fs-7 text-danger mb-2">
-              * Code and deployment cannot be publicly shared due to
-              permissions. Available to demonstrate in a call.
-            </Card.Text>
-          )}
           {text}
         </Card.Text>
+
         <Collapse in={isExpanded}>
           <Card.Text className="d-md-none px-1 px-sm-2 px-lg-3 text-left font-secondary">
             {text}
